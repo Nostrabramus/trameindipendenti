@@ -4,6 +4,7 @@
 ![Trame Indipendenti](meta/logo-trameindipendenti.png)
 
 ## struttura repository
+### meta: meta file del progetto
 ### red: tema statico
 - https://wrapbootstrap.com/theme/red-one-multi-page-html-website-template-WB04265G7
 - librerie
