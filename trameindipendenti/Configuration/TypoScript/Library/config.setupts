@@ -1,0 +1,9 @@
+config.spamProtectEmailAddresses = ascii
+
+[globalVar = LIT:1 = {$production}]
+    config.compressJs = 1
+    config.compressCss = 1
+    config.concatenateCss = 1
+    config.concatenateJs = 1
+    config.moveJsFromHeaderToFooter = 1
+[global]

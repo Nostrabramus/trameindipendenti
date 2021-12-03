@@ -1,0 +1,62 @@
+# customsubcategory=01_Images=Images
+# customsubcategory=02_Pages=Pagine
+# customsubcategory=03_Folders=Folder Dati
+# customsubcategory=04_Social=Social
+# customsubcategory=05_Contacts=Contatti
+# customsubcategory=06_Footer=Footer
+# customsubcategory=07_Production=Produzione/Sviluppo
+
+# cat=site/01_Images/1; type=string; label= url alla favicon
+favicon = EXT:trameindipendenti/Resources/Public/Icons/favicon.ico
+
+# cat=site/02_Pages/1; type=int; label= Id della pagina Archivio News
+id_archivio_news =
+# cat=site/02_Pages/2; type=int; label= Id della pagina di Login
+id_login =
+# cat=site/02_Pages/3; type=int; label= Id della pagina di Registrazione
+id_registration =
+# cat=site/02_Pages/4; type=int; label= Id della pagina Accesso Civico
+id_privacy =
+# cat=site/02_Pages/5; type=int; label= Id della pagina Note Legali
+id_note_legali =
+# cat=site/02_Pages/6; type=int; label= Id della pagina Mappa del Sito
+id_mappa =
+# cat=site/02_Pages/7; type=int; label= Id della pagina Credits
+id_credits =
+
+# cat=site/03_Folders/1; type=int; label= Id della folder che contiene le News
+id_newsfolder =
+# cat=site/03_Folders/2; type=int; label= Id della folder che contiene gli Utenti
+id_userfolder =
+
+# cat=site/04_Social/1; type=string; label= Link alla pagina Facebook
+facebook = https://www.facebook.com/
+# cat=site/04_Social/2; type=string; label= Link all'account Twitter
+twitter = https://twitter.com/
+# cat=site/04_Social/3; type=string; label= Link all'account Instagram
+instagram = https://www.instagram.com/
+# cat=site/04_Social/4; type=string; label= Link al canale Youtube
+youtube = https://www.youtube.com/
+# cat=site/04_Social/5; type=string; label= Link al canale Youtube
+vimeo =
+
+# cat=site/05_Contacts/1; type=string; label = Indirizzo email
+email = trameindipendenti@gmail.com
+# cat=site/05_Contacts/2; type=string; label = Indirizzo PEC
+pec = 
+# cat=site/05_Contacts/3; type=string; label = Telefono
+tel = 
+# cat=site/05_Contacts/4; type=string; label = Fax
+fax =
+
+# cat=site/07_Footer/1; type=string; label = Copyright ITA
+copyright_it = © 2021 Copyright: <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
+# cat=site/07_Footer/2; type=string; label = Copyright ENG
+copyright_en = © 2021 Copyright: <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
+# cat=site/07_Footer/3; type=string; label = Credits ITA
+credits_it = website developed by: <a href="https://github.com/Nostrabramus">Nostrabramus</a>
+# cat=site/07_Footer/4; type=string; label = Credits ENG
+credits_en = sito web sviluppato da: <a href="https://github.com/Nostrabramus">Nostrabramus</a>
+
+# cat=site/08_Production/1; type=boolean; label = Production
+production = true

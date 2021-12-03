@@ -1,0 +1,45 @@
+plugin.tx_news {
+    settings {
+        detail.media.image.maxWidth = 400
+        list.media {
+            dummyImage = EXT:trameindipendenti/Resources/Public/Images/news-no-img.jpg
+            image.maxWidth = 443
+            image.maxHeight = 245
+        }
+        startingpoint = {$id_newsfolder}
+    }
+    view {
+        templateRootPaths {
+            100 = EXT:trameindipendenti/Resources/Private/Extensions/news/Templates/
+        }
+        partialRootPaths {
+            100 = EXT:trameindipendenti/Resources/Private/Extensions/news/Partials/
+        }
+        layoutRootPaths {
+            100 = EXT:trameindipendenti/Resources/Private/Extensions/news/Layouts/
+        }
+    }
+}
+
+[globalVar = _GET|tx_news_pi1|news > 0]
+
+    temp.newsTitle = RECORDS
+    temp.newsTitle {
+        dontCheckPid = 1
+        tables = tx_news_domain_model_news
+        source.data = GP:tx_news_pi1|news
+        source.intval = 1
+        conf.tx_news_domain_model_news = TEXT
+        conf.tx_news_domain_model_news {
+            field = title
+            htmlSpecialChars = 1
+        }
+        wrap = |
+    }
+
+    config.pageTitle.stdWrap.override.cObject < temp.newsTitle
+
+    page.10.variables.pageTitle >
+    page.10.variables.pageTitle < temp.newsTitle
+
+[global]

@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Home" />
+<f:section name="Main">
+
+    <div class="col-sm-12">
+        <f:render partial="Area/Hero" section="Default" arguments="{_all}" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <f:cObject typoscriptObjectPath="lib.content.home.evidence" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <f:cObject typoscriptObjectPath="lib.content.home.aboutus" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <f:cObject typoscriptObjectPath="lib.content.home.services" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <f:cObject typoscriptObjectPath="lib.content.home.clients" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <f:cObject typoscriptObjectPath="lib.content.home.news" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <f:cObject typoscriptObjectPath="lib.content.home.bottom_left" />
+            </div>
+            <div class="col-sm-6">
+                <f:cObject typoscriptObjectPath="lib.content.home.bottom_right" />
+            </div>
+        </div>
+    </div>
+
+</f:section>
+</html>
+
+

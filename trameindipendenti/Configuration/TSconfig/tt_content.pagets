@@ -1,0 +1,18 @@
+#rimuovo tutti i layout non default da tutti i ctype
+TCEFORM.tt_content.layout {
+    removeItems = 1,2,3
+}
+
+#aggiungo i layout per i singoli cType
+TCEFORM.tt_content {
+    layout {
+        types {
+            textpic {
+                addItems {
+                    101 = Hero Slide
+                }
+            }
+        }
+    }
+}
+

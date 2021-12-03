@@ -1,0 +1,42 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="Default">
+    <footer class="overlay_bg3 background_bg footer_dark" data-img-src="images/sfondi/footer_bg.jpg">
+        <div class="top_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation text-center text-md-left" data-animation="fadeInUp" data-animation-delay="0.2s">
+                        ### typoscriptObjectPath footer bio ###
+                        <f:cObject typoscriptObjectPath="lib.content.footer.left" />
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 animation text-center text-md-left" data-animation="fadeInUp" data-animation-delay="0.3s">
+                        ### typoscriptObjectPath contatti ###
+                        <f:cObject typoscriptObjectPath="lib.content.footer.centerleft" />
+                    </div>
+                    <div class="col-lg-2 col-md-6 animation text-center" data-animation="fadeInUp" data-animation-delay="0.5s">
+                        ### typoscriptObjectPath accrediti (mepa) ###
+                        <f:cObject typoscriptObjectPath="lib.content.footer.centerright" />
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation text-center text-lg-right" data-animation="fadeInUp" data-animation-delay="0.4s">
+                        ### typoscriptObjectPath certificati (typo3-partner silver-member) ###
+                        <f:cObject typoscriptObjectPath="lib.content.footer.right" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer border_top_tran">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        ### typoscriptObjectPath link social ###
+                        <f:cObject typoscriptObjectPath="lib.footer.credits.left" />
+                    </div>
+                    <div class="col-md-6">
+                        ### typoscriptObjectPath linkutili (cookie, privacy...) ###
+                        <f:cObject typoscriptObjectPath="lib.footer.credits.right" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</f:section>

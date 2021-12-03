@@ -1,0 +1,93 @@
+lib.content {
+    main = COA
+    main {
+        10 < styles.content.get
+        10.select.where = colPos=0
+    }
+    column_left = COA
+    column_left {
+        10 < styles.content.get
+        10.select.where = colPos=1
+    }
+    column_right = COA
+    column_right {
+        10 < styles.content.get
+        10.select.where = colPos=2
+    }
+    home {
+        hero = COA
+        hero {
+            10 < styles.content.get
+            10.select.where = colPos=4
+        }
+        evidence = COA
+        evidence {
+            10 < styles.content.get
+            10.select.where = colPos=3
+        }
+        aboutus = COA
+        aboutus{
+            10 < styles.content.get
+            10.select.where = colPos=0
+        }
+        services = COA
+        services{
+            10 < styles.content.get
+            10.select.where = colPos=1
+        }
+        clients = COA
+        clients{
+            10 < styles.content.get
+            10.select.where = colPos=2
+        }
+        news = COA
+        news{
+            10 < styles.content.get
+            10.select.where = colPos=5
+        }
+        bottom_left = COA
+        bottom_left {
+            10 < styles.content.get
+            10.select.where = colPos=6
+        }
+        bottom_right = COA
+        bottom_right {
+            10 < styles.content.get
+            10.select.where = colPos=7
+        }
+    }
+    footer {
+        left = COA
+        left {
+            10 < styles.content.get
+            10 {
+                select.where = colPos=11
+                slide = -1
+            }
+        }
+        centerleft = COA
+        centerleft {
+            10 < styles.content.get
+            10 {
+                select.where = colPos=12
+                slide = -1
+            }
+        }
+        centerright = COA
+        centerright {
+            10 < styles.content.get
+            10 {
+                select.where = colPos=13
+                slide = -1
+            }
+        }
+        right = COA
+        right {
+            10 < styles.content.get
+            10 {
+                select.where = colPos=14
+                slide = -1
+            }
+        }
+    }
+}

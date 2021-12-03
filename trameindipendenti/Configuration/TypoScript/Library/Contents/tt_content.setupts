@@ -1,0 +1,50 @@
+lib.contentElement {
+    templateRootPaths {
+        200 = EXT:trameindipendenti/Resources/Private/Contents/Templates/
+    }
+    partialRootPaths {
+        200 = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+    }
+    layoutRootPaths {
+        200 = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+    }
+}
+
+tt_content {
+    trameindipendenti_card_giurato =< lib.contentElement
+    trameindipendenti_card_giurato {
+        templateName = SchedaPersona
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
+            20 {
+                maxGalleryWidth = {$styles.content.textmedia.maxW}
+                maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
+                columnSpacing = {$styles.content.textmedia.columnSpacing}
+                borderWidth = {$styles.content.textmedia.borderWidth}
+                borderPadding = {$styles.content.textmedia.borderPadding}
+            }
+        }
+    }
+    trameindipendenti_card_film =< lib.contentElement
+    trameindipendenti_card_film {
+        templateName = CardFilm
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
+            20 {
+                maxGalleryWidth = {$styles.content.textmedia.maxW}
+                maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
+                columnSpacing = {$styles.content.textmedia.columnSpacing}
+                borderWidth = {$styles.content.textmedia.borderWidth}
+                borderPadding = {$styles.content.textmedia.borderPadding}
+            }
+        }
+    }
+}

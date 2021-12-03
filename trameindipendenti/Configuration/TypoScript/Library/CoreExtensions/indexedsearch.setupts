@@ -1,0 +1,19 @@
+page.config.index_enable = 1
+
+plugin.tx_indexedsearch {
+    settings {
+        displayRules = 0
+        displayAdvancedSearchLink = 0
+    }
+    view {
+        templateRootPaths {
+            100 = EXT:trameindipendenti/Resources/Private/CoreExtensions/indexed_search/Templates/
+        }
+        partialRootPaths {
+            100 = EXT:trameindipendenti/Resources/Private/CoreExtensions/indexed_search/Partials/
+        }
+        layoutRootPaths {
+            100 = EXT:trameindipendenti/Resources/Private/CoreExtensions/indexed_search/Layouts/
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="Default">
+    <div class="supheader">
+        {supHeaderText}
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><f:cObject typoscriptObjectPath="lib.logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <f:cObject typoscriptObjectPath="lib.mainNavigation" />
+            <f:cObject typoscriptObjectPath="lib.searchbox" />
+        </div>
+    </nav>
+</f:section>

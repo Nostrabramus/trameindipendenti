@@ -1,0 +1,17 @@
+page.includeJSFooterlibs {
+    jquery = EXT:trameindipendenti/Resources/Public/Javascript/jquery.slim.min.js
+    jquery {
+        excludeFromConcatenation = 1
+        disableCompression = 1
+    }
+    popper = EXT:trameindipendenti/Resources/Public/Javascript/popper.min.js
+    popper {
+        excludeFromConcatenation = 1
+        disableCompression = 1
+    }
+    bootstrap = EXT:trameindipendenti/Resources/Public/Javascript/bootstrap.min.js
+    bootstrap {
+        excludeFromConcatenation = 1
+        disableCompression = 1
+    }
+}

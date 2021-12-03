@@ -1,0 +1,8 @@
+lib.footer {
+    credits {
+        left = TEXT
+        left.value = {$copyright_it}
+        right = TEXT
+        right.value =  {$credits_it}
+    }
+}

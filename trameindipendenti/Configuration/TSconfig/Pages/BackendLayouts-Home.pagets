@@ -1,0 +1,107 @@
+mod.web_layout.BackendLayouts {
+    Home {
+        icon = EXT:trameindipendenti/Resources/Public/Icons/BackendLayouts/Home.jpg
+        name = Home
+        title = Home
+        config {
+            backend_layout {
+                colCount = 12
+                rowCount = 6
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Hero
+                                colPos = 4
+                                colspan = 12
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Evidenza
+                                colPos = 3
+                                colspan = 12
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Chi Siamo
+                                colPos = 0
+                                colspan = 12
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Servizi
+                                colPos = 1
+                                colspan = 12
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = Clienti
+                                colPos = 2
+                                colspan = 12
+                            }
+                        }
+                    }
+                    6 {
+                        columns {
+                            1 {
+                                name = Ultime Notizie
+                                colPos = 5
+                                colspan = 12
+                            }
+                        }
+                    }
+                    7 {
+                        columns {
+                            1 {
+                                name = Contatti
+                                colPos = 6
+                                colspan = 6
+                            }
+                            2 {
+                                name = Google Map
+                                colPos = 7
+                                colspan = 6
+                            }
+                        }
+                    }
+                    8 {
+                        columns {
+                            1 {
+                                name = Footer Sx
+                                colPos = 11
+                                colspan = 3
+                            }
+                            2 {
+                                name = Footer CSx
+                                colPos = 12
+                                colspan = 3
+                            }
+                            3 {
+                                name = Footer CDx
+                                colPos = 13
+                                colspan = 3
+                            }
+                            4 {
+                                name = Footer Dx
+                                colPos = 14
+                                colspan = 3
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.special {
+    elements {
+        trameindipendenti_card_film {
+            iconIdentifier = card-film
+            title = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film
+            description = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.description
+            tt_content_defValues {
+                CType = trameindipendenti_card_film
+            }
+        }
+    }
+    show := addToList(trameindipendenti_card_film)
+}

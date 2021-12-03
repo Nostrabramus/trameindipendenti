@@ -1,0 +1,31 @@
+lib.langMenu = COA
+lib.langMenu {
+    10 = HMENU
+    10 {
+        wrap = <ul class="dropdown-menu" aria-labelledby="dropdownLangMenu">|</ul>
+        special = language
+        special {
+            value = 0, 1, 2
+            normalWhenNoLanguage = 0
+        }
+        1 = TMENU
+        1 {
+            NO = 1
+            NO {
+                allWrap = <li>|</li>
+                ATagParams = class="dropdown-item"
+            }
+            ACT < .NO
+            ACT {
+                doNotLinkIt = 1
+                allWrap = <li><a class="dropdown-item btn disabled">|</a></li>
+            }
+
+            USERDEF1 = 1
+            USERDEF1 {
+                doNotShowLink = 1
+            }
+        }
+    }
+}
+lib.langMenu.wrap = <div class="dropdown"><button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Language<span class="caret"></span></button>|</div>

@@ -1,0 +1,65 @@
+page = PAGE
+page.typeNum = 0
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+    format = html
+
+    file = EXT:trameindipendenti/Resources/Private/Templates/1Col.html
+    partialRootPath = EXT:trameindipendenti/Resources/Private/Partials/
+    layoutRootPath = EXT:trameindipendenti/Resources/Private/Layouts/
+
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+        key.data = levelfield:-1, backend_layout_next_level, slide
+        key.override.field = backend_layout
+
+        default = TEXT
+        default.value = EXT:trameindipendenti/Resources/Private/Templates/1Col.html
+
+        pagets__Home = TEXT
+        pagets__Home.value = EXT:trameindipendenti/Resources/Private/Templates/Home.html
+        pagets__1Col = TEXT
+        pagets__1Col.value = EXT:trameindipendenti/Resources/Private/Templates/1Col.html
+        pagets__2ColAsideLeft = TEXT
+        pagets__2ColAsideLeft.value = EXT:trameindipendenti/Resources/Private/Templates/2ColAsideLeft.html
+        pagets__2ColAsideRight = TEXT
+        pagets__2ColAsideRight.value = EXT:trameindipendenti/Resources/Private/Templates/2ColAsideRight.html
+        pagets__3Col = TEXT
+        pagets__3Col.value = EXT:trameindipendenti/Resources/Private/Templates/3Col.html
+    }
+    settings {
+        pages{
+            id_archivio_news = {$id_archivio_news}
+            id_login = {$id_login}
+            id_registration ={$id_registration}
+            id_privacy = {$id_privacy}
+            id_mappa = {$id_mappa}
+            id_credits = {$id_credits}
+        }
+        contacts {
+            email = {$email}
+            pec = {$pec}
+            tel = {$tel}
+            fax = {$fax}
+        }
+        social {
+            facebook = {$facebook}
+            twitter = {$twitter}
+            instagram = {$instagram}
+            youtube = {$youtube}
+        }
+    }
+    variables {
+        pageTitle = TEXT
+        pageTitle.data = page : title
+        pageSubTitle = TEXT
+        pageSubTitle.data = page : subtitle
+        supHeaderText = TEXT
+        supHeaderText.value = {$supheadertext_it}
+        copyright = TEXT
+        copyright.value = {$copyright_it}
+        credits = TEXT
+        credits.value = {$credits_it}
+    }
+}

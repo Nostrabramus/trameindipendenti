@@ -1,0 +1,8 @@
+lib.logo = IMAGE
+lib.logo {
+    file = EXT:trameindipendenti/Resources/Public/Images/logo-trameindipendenti.png
+    file.width = 260
+    file.height = 49
+    altText =
+    titleText =
+}

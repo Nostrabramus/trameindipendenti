@@ -1,0 +1,17 @@
+page {
+    meta {
+        viewport = width=device-width, initial-scale=1, shrink-to-fit=no
+        X-UA-Compatible = IE=edge
+        X-UA-Compatible.attribute = http-equiv
+        keywords =
+        og:site_name =
+        og:site_name.attribute = property
+        description =
+        dc.description =
+        og:description =
+        og:description.attribute = property
+        og:locale = in_IT
+        og:locale.attribute = property
+        refresh.attribute = http-equiv
+    }
+}
