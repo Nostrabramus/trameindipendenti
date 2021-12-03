@@ -1,0 +1,235 @@
+///////////////////////////////////////////////////////
+RED - One-Multi Page HTML Website Template
+Changelog
+///////////////////////////////////////////////////////
+
+
+======================
+Updating information:
+======================
+
+Explanation: Because of the nature of the HTML, it is not possible to use dynamic features to update the template automatically. 
+All code changes and updates must be made manually!
+
+IMPORTANT!: Before you proceed to update, make sure that you have made copies of all the template files, 
+in case something goes wrong then you can restore the previous version.
+
+The best way to update the template is to use some file comparison software to compare the differences between the old and new template versions (I recommend “WinMerge”: http://winmerge.org/). Then make the necessary changes. I know this may be time-consuming, but unfortunately, there is no easier solution.
+
+
+----------------------------------
+Version 3.0 (03 April 2021):
+----------------------------------
+
+BIG UPDATE! Everything is changed and remade.
+
+- Improved and changed HTML structure
+- Improved and changed CSS code
+- Improved and changed JS code
+- Improved and changed file structure
+
+- Added page "about-us.html"
+- Added page "blog-grid.html"
+- Added page "blog-grid-sidebar.html"
+- Added page "blog-single-post.html"
+- Added page "blog-standard.html"
+- Added page "contact.html"
+- Added page "contact-2.html"
+- Added page "dummy-page.html"
+- Added page "elements-buttons.html"
+- Added page "elements-forms.html"
+- Added page "elements-typography.html"
+- Added page "one-page-image-intro.html"
+- Added page "one-page-slideshow-intro.html"
+- Added page "one-page-video-intro.html"
+- Added page "portfolio.html"
+- Added page "portfolio-alter.html"
+- Added page "portfolio-image-gallery.html"
+- Added page "resources.html"
+- Added page "resources-2.html"
+- Added page "services.html"
+
+
+Changed files:
+
+- theme.css
+- theme.js
+- All HTML files
+- Documentation
+
+
+----------------------------------
+Version 2.0 (08 November 2020):
+----------------------------------
+
+- Updated "Bootstrap" to latest version.
+- Updated "Font Awesome" to latest version.
+- Updated "YTPlayer" to latest version.
+- Updated "jQuery" to latest version.
+- Updated some outdated links.
+- Fixed font https issue.
+- Improved slider nav buttons to show on small screens.
+
+
+Changed files:
+
+- theme.css
+- theme.js
+- All HTML files
+- Documentation
+
+
+
+----------------------------------
+Version 1.9 (13 June 2019):
+----------------------------------
+
+- Updated "Bootstrap3" to "Bootstrap4".
+- Updated "Font Awesome" to latest version.
+- Updated "YTPlayer" to latest version.
+- Changed accordion structure (re-styled and 4 styles added).
+- Removed "Smoothscroll" plugin.
+- Improved code comments.
+- Improved helper classes.
+- Minor CSS fixes and general improvements.
+
+
+Changed files:
+
+- theme.css
+- menu.css
+- helper.css
+- theme.js
+- All HTML files
+
+
+
+----------------------------------
+Version 1.8 (02 November 2018):
+----------------------------------
+
+- Updated "fontawesome" plugin (free version).
+- Updated "Owl Carousel" plugin.
+- Updated "YTPlayer" plugin.
+- Fixed missing article title links.
+- Fixed missing "Counter Up" icon.
+- Minor CSS fixes and general improvements.
+
+
+Changed files:
+
+- theme.css
+- index.html
+- slideshow-intro.html
+- video-intro.html
+
+
+
+----------------------------------
+Version 1.7 (18 August 2018):
+----------------------------------
+
+- Added "favicon.ico"
+- Updated "fontawesome" plugin (free version).
+- Updated "YTPlayer" plugin.
+- Updated "Masonry" plugin.
+- Updated "Imagesloaded" plugin.
+- Minor CSS fixes and general improvements.
+
+
+Changed files:
+
+- theme.css
+- theme.js
+- All HTML files
+
+
+
+----------------------------------
+Version 1.6 (17 December 2017):
+----------------------------------
+
+- Updated "YTPlayer" plugin.
+- Minor CSS fixes and general improvements.
+
+
+Changed files:
+
+- theme.css
+- theme.js
+
+
+
+-------------------------------
+Version 1.5 (08 July 2017):
+-------------------------------
+
+- Updated "jQuery".
+- Updated "Owl Carousel" plugin.
+- Updated "YTPlayer" plugin.
+- Updated "Masonry" plugin.
+- Removed "Stellar" plugin (no longer maintained).
+- Minor CSS fixes and general improvements.
+
+
+Changed files:
+
+- All HTML files
+- theme.css
+- theme.js
+
+
+
+-------------------------------
+Version 1.4 (23 January 2017):
+-------------------------------
+
+- Updated "Bootstrap".
+- Updated "fontawesome" plugin.
+- Updated "Magnific Popup" plugin.
+- Updated "Owl Carousel" plugin.
+- Updated "YTPlayer" plugin.
+- Updated "Imagesloaded" plugin.
+- Updated "Masonry" plugin.
+- Updated "Waypoints" plugin.
+
+
+
+-------------------------------
+Version 1.3 (19 January 2016):
+-------------------------------
+
+- Fixed "CounterUp" plugin issue.
+- Updated "Magnific-Popup" plugin.
+- Updated "YTPlayer" plugin.
+- Updated "Imagesloaded" plugin.
+- Updated "Masonry" plugin.
+
+
+
+--------------------------------
+Version 1.2 (06 December 2015):
+--------------------------------
+
+- Added "Magnific Popup" plugin (for portfolio items).
+- Improved OWL Carousel (you can use data attriputes to change carousel options).
+- Minor CSS fixes and general improvements.
+- Updated plugins to latest version.
+
+
+
+-------------------------------
+Version 1.1 (14 October 2015):
+-------------------------------
+
+- Fixed responsive issue with portfolio items in Firefox.
+
+
+
+------------------------------
+Version 1.0 (31 August 2015):
+------------------------------
+
+- Initial Release
+
+
