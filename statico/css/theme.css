@@ -59,6 +59,7 @@
 *  Social buttons
 *  Forms
 *  Footer
+*  Language Menu
 *  Scroll to top button
 */
 
@@ -540,7 +541,7 @@ section .container {
 ================= */
 .intro-caption {
 	position: absolute;
-	bottom: 80px;
+	bottom: 120px;
 	left: 80px;
 	z-index: 3;
 	z-index: 2;
@@ -7199,6 +7200,42 @@ select.form-control-sm:not([size]):not([multiple]) {
 	color: #585858;
 }
 
+
+/* ------------------------------------ *
+ *  Language Menu
+/* ------------------------------------ */
+
+.langmenu {
+	position: fixed;
+	display: inline;
+	bottom: 15px;
+	left: 15px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #FFF;
+	text-align: center;
+	font-size: 24px;
+	color: #F20000;
+	text-decoration: none;
+	z-index: 9999;
+}
+.langmenu:hover, .langmenu:focus {
+	color: #F20000;
+}
+@media (max-width: 768px) {
+	.langmenu {
+		bottom: 15px;
+		left: 15px;
+	}
+}
+.langmenu img {
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	top: 12px;
+	right: 12px;
+}
 
 /* ------------------------------------ *
  *  Scroll to top button
