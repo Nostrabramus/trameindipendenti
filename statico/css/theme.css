@@ -2356,8 +2356,9 @@ a.info-box:focus {
 }
 .portfolio-grid.pgi-counter .portfolio-grid-item .pgi-image-wrap::after {
 	position: absolute;
-	counter-increment: pgi-counter;
-	content: "#" counter(pgi-counter, decimal-leading-zero);
+	/*counter-increment: pgi-counter;
+	content: "#" counter(pgi-counter, decimal-leading-zero);*/
+	content: attr(alt);
 	right: 20px;
 	bottom: 20px;
 	display: inline-block;
