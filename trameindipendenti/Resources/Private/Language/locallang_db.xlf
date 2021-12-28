@@ -9,6 +9,18 @@
 			<trans-unit id="card_film.description" xml:space="preserve">
 				<source>Contenuto custom per inserire una scheda film</source>
 			</trans-unit>
+			<trans-unit id="card_film.titolo" xml:space="preserve">
+				<source>Titolo</source>
+			</trans-unit>
+			<trans-unit id="card_film.autore" xml:space="preserve">
+				<source>Autore</source>
+			</trans-unit>
+			<trans-unit id="card_film.paese" xml:space="preserve">
+				<source>Paese</source>
+			</trans-unit>
+			<trans-unit id="card_film.anno" xml:space="preserve">
+				<source>Anno</source>
+			</trans-unit>
 			<trans-unit id="card_film.sinossi" xml:space="preserve">
 				<source>Sinossi</source>
 			</trans-unit>

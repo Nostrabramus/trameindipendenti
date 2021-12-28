@@ -29,7 +29,12 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 	'showitem' => '
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
 			--palette--;;general,
-			--palette--;;headers,
+			header;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.titolo,
+			subheader;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.autore,
+			--linebreak--,
+			--palette--;;,header_layout;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.paese,
+			header_position;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.anno,
+			--linebreak--,
 			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.sinossi,
 			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.locandina,	
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
@@ -41,6 +46,68 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 			categories,
 		',
 	'columnsOverrides' => [
+		'header_layout' => [
+			'config' => [
+				'type' => 'select',
+				'renderType' => 'selectSingle',
+				'items' => [
+					[
+						'Italia',
+						'0'
+					],
+					[
+						'Spagna',
+						'1'
+					],
+					[
+						'Francia',
+						'2'
+					],
+					[
+						'Germania',
+						'3'
+					],
+					[
+						'Inghilterra',
+						'4'
+					],
+					[
+						'Iran',
+						'5'
+					],
+					[
+						'Austria',
+						'100'
+					]
+				],
+				'default' => 0
+			]
+		],
+		'header_position' => [
+			'config' => [
+				'type' => 'select',
+				'renderType' => 'selectSingle',
+				'items' => [
+					[
+						'2001',
+						'2001'
+					],
+					[
+						'2002',
+						'2002'
+					],
+					[
+						'2003',
+						'2003'
+					],
+					[
+						'2004',
+						'2004'
+					]
+				],
+				'default' => '2001'
+			]
+		],
 		'bodytext' => [
 			'config' => [
 				'enableRichtext' => true,
