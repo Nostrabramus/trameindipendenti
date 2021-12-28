@@ -5,12 +5,12 @@
     background-color: #fafafa;
 }
 .dashboard-header {
-    background-color: rgba(255,255,255,0.75) !important;
+    background-color: rgba(255,255,255,0.95) !important;
 }
 
 .svg-tree-wrapper>svg {
     margin:5px;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.95);
     padding: 5px 0 0;
     border-radius: .25rem;
     width: calc(100% - 10px);
@@ -21,7 +21,7 @@
 
 .svg-tree-wrapper .node-over:not(.node-selected),
 .svg-tree-wrapper .node-selected {
-    fill: #ffca41;
+    fill: #93a4db;
     stroke-width: 0;
     width: calc(100% + 4px);
     margin-left: -2px;
@@ -115,5 +115,5 @@
 }
 
 .callout-info {
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.95);
 }
