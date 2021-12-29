@@ -1,28 +1,33 @@
 #typo3-pagetree-treeContainer,
 .module {
-    background-image: url("tile_background.png");
+    background-image: url("tile_background.jpg");
     background-repeat: repeat;
-    background-color: #fafafa;
+    background-color: #dddddd;
 }
+
+#typo3-pagetree-tree,
+.module-body {
+    background-color: rgba(255,255,255,0.9);
+}
+
 .dashboard-header {
     background-color: rgba(255,255,255,0.95) !important;
 }
 
 .svg-tree-wrapper>svg {
     margin:5px;
-    background-color: rgba(255,255,255,0.95);
+    background-color: rgba(255,255,255,0.5);
     padding: 5px 0 0;
     border-radius: .25rem;
     width: calc(100% - 10px);
-    box-shadow: 0 1px 4px rgba(24,28,33,0.012);
-    border: 1px solid rgba(24,28,33,0.06);
     overflow: visible;
 }
 
 .svg-tree-wrapper .node-over:not(.node-selected),
 .svg-tree-wrapper .node-selected {
-    fill: #93a4db;
-    stroke-width: 0;
+    fill: #eee;
+    stroke: #981c1f;
+    stroke-width: 0.5px;
     width: calc(100% + 4px);
     margin-left: -2px;
 }
@@ -31,8 +36,8 @@
 .t3js-title-inlineedit {
     font-variant: small-caps;
     font-weight: bold;
-    text-shadow: 1px 1px 2px #000000;
-    color: #ffffff;
+    text-shadow: 2px 2px 0px #fff, -2px -2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff;
+    color: #981c1f;
     margin: 5px;
     padding: 2px 5px 2px 0;
     text-align: left;
@@ -63,6 +68,7 @@
     font-size: 1.4rem;
     color: #4E5155;
     text-align: left;
+    background-color: #981c1f;
     border-bottom: 1px solid rgba(24,28,33,0.06);
     margin: 10px;
 }
@@ -70,11 +76,11 @@
 .t3-page-column-header-label {
     display: inline-block;
     min-width: 100px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     padding: 1px 30px 3px;
     font-weight: 900;
-    color: #666;
+    color: #fafafa;
     font-variant: small-caps;
     text-align: center;
 }
