@@ -24,17 +24,26 @@ $ll = 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:';
 	'after'
 );
 
+// Configure palette for card-film
+$GLOBALS['TCA']['tt_content']['palettes']['film_headers'] = array(
+	'label' => 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.headers',
+	'showitem' => '
+			header;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.titolo,
+			--linebreak--,
+			subheader;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.autore,
+			--linebreak--,
+			header_layout;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.paese,
+			date;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.anno,
+			header_position;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.genere
+		',
+);
+
 // Configure the default backend fields for the content element card-film
 $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 	'showitem' => '
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
 			--palette--;;general,
-			header;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.titolo,
-			subheader;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.autore,
-			--linebreak--,
-			--palette--;;,header_layout;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.paese,
-			header_position;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.anno,
-			--linebreak--,
+			--palette--;;film_headers,
 			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.sinossi,
 			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.locandina,	
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
@@ -46,34 +55,42 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 			categories,
 		',
 	'columnsOverrides' => [
+		'date' => [
+			'label' => 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.anno',
+		],
 		'header_layout' => [
+			'label' => 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.paese',
 			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectSingle',
 				'items' => [
 					[
-						'Italia',
+						'Non Specificato',
 						'0'
 					],
 					[
-						'Spagna',
+						'Italia',
 						'1'
 					],
 					[
-						'Francia',
+						'Spagna',
 						'2'
 					],
 					[
-						'Germania',
+						'Francia',
 						'3'
 					],
 					[
-						'Inghilterra',
+						'Germania',
 						'4'
 					],
 					[
-						'Iran',
+						'Inghilterra',
 						'5'
+					],
+					[
+						'Iran',
+						'6'
 					],
 					[
 						'Austria',
@@ -84,29 +101,37 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 			]
 		],
 		'header_position' => [
+			'label' => 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.genere',
 			'config' => [
 				'type' => 'select',
 				'renderType' => 'selectSingle',
 				'items' => [
 					[
-						'2001',
-						'2001'
+						'Non Specificato',
+						''
 					],
 					[
-						'2002',
-						'2002'
+						'Drammatico',
+						'drama'
 					],
 					[
-						'2003',
-						'2003'
+						'Commedia',
+						'comedy'
 					],
 					[
-						'2004',
-						'2004'
+						'Horror',
+						'horror'
+					],
+					[
+						'Noir',
+						'noir'
 					]
 				],
-				'default' => '2001'
+				'default' => ''
 			]
+		],
+		'subheader' => [
+			'label' => 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.autore',
 		],
 		'bodytext' => [
 			'config' => [
