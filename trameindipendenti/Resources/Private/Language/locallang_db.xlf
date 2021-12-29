@@ -39,10 +39,13 @@
 			<trans-unit id="card_giurato.description" xml:space="preserve">
 				<source>Contenuto custom per inserire una scheda giurato</source>
 			</trans-unit>
-			<trans-unit id="card_giurato.giurato_bio" xml:space="preserve">
+			<trans-unit id="card_giurato.nome" xml:space="preserve">
+				<source>Nome</source>
+			</trans-unit>
+			<trans-unit id="card_giurato.bio" xml:space="preserve">
 				<source>Bio</source>
 			</trans-unit>
-			<trans-unit id="card_giurato.giurato_foto" xml:space="preserve">
+			<trans-unit id="card_giurato.foto" xml:space="preserve">
 				<source>Foto</source>
 			</trans-unit>
         </body>

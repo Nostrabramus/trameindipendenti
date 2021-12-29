@@ -192,9 +192,9 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_giurato'] = array
 	'showitem' => '
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
 			--palette--;;general,
-			--palette--;;headers,
-			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_giurato.giurato_bio,
-			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_giurato.giurato_foto,
+			--palette--;;,header;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_giurato.nome,
+			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_giurato.bio,
+			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_giurato.foto,
 		--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 			--palette--;;frames,
 			--palette--;;appearanceLinks,
