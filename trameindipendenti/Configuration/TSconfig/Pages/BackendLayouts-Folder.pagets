@@ -1,6 +1,6 @@
 mod.web_layout.BackendLayouts {
     Folder {
-        icon = EXT:trameindipendenti/Resources/Public/Icons/BackendLayouts/1Col.jpg
+        icon = EXT:trameindipendenti/Resources/Public/Icons/BackendLayouts/Folder.jpg
         name = Folder
         title = Folder
         config {
