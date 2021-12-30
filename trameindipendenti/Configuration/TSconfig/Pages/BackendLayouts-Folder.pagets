@@ -1,0 +1,24 @@
+mod.web_layout.BackendLayouts {
+    Folder {
+        icon = EXT:trameindipendenti/Resources/Public/Icons/BackendLayouts/1Col.jpg
+        name = Folder
+        title = Folder
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Schede Film / Giurati
+                                colspan = 3
+                                colPos = 99
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
