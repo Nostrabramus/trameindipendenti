@@ -1,3 +1,11 @@
 page.includeCSS {
-
+    10 = EXT:trameindipendenti/Resources/Public/css/bootstrap.min.css
+    20 = EXT:trameindipendenti/Resources/Public/css/fontawesome-all.min.css
+    30 = EXT:trameindipendenti/Resources/Public/css/jquery.mb.YTPlayer.min.css
+    40 = EXT:trameindipendenti/Resources/Public/css/magnific-popup.css
+    50 = EXT:trameindipendenti/Resources/Public/css/owl.carousel.min.css
+    60 = EXT:trameindipendenti/Resources/Public/css/animate.css
+    70 = EXT:trameindipendenti/Resources/Public/css/menu.css
+    80 = EXT:trameindipendenti/Resources/Public/css/helper.css
+    90 = EXT:trameindipendenti/Resources/Public/css/theme.css
 }
