@@ -4,6 +4,9 @@ page.headerData.10.value (
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Favicon and Touch Icons -->
 <link href="/typo3conf/ext/trameindipendenti/Resources/Public/Icons/favicon.png" rel="shortcut icon" type="image/png">
+<!-- Google fonts - (more info: https://fonts.google.com/) -->
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css">
 )
 
 page.headerData.20 = TEXT
@@ -14,8 +17,6 @@ page.headerData.20.value (
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 )
-
-
 
 page.footerData.10 = TEXT
 page.footerData.10.value(
