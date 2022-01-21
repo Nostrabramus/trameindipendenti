@@ -1,17 +1,26 @@
 page.includeJSFooterlibs {
-    jquery = EXT:trameindipendenti/Resources/Public/Javascript/jquery.slim.min.js
+    jquery = EXT:trameindipendenti/Resources/Public/Javascript/jquery-min.js
     jquery {
         excludeFromConcatenation = 1
         disableCompression = 1
     }
-    popper = EXT:trameindipendenti/Resources/Public/Javascript/popper.min.js
-    popper {
-        excludeFromConcatenation = 1
-        disableCompression = 1
-    }
-    bootstrap = EXT:trameindipendenti/Resources/Public/Javascript/bootstrap.min.js
+    bootstrap = EXT:trameindipendenti/Resources/Public/Javascript/bootstrap.bundle.min.js
     bootstrap {
         excludeFromConcatenation = 1
         disableCompression = 1
     }
+    easing = EXT:trameindipendenti/Resources/Public/Javascript/jquery.easing.min.js
+    counter = EXT:trameindipendenti/Resources/Public/Javascript/jquery.counterup.min.js
+    waypoints = EXT:trameindipendenti/Resources/Public/Javascript/waypoints.min.js
+    ytplayer = EXT:trameindipendenti/Resources/Public/Javascript/jquery.mb.YTPlayer.min.js
+    magnific = EXT:trameindipendenti/Resources/Public/Javascript/jquery.magnific-popup.min.js
+    isotope = EXT:trameindipendenti/Resources/Public/Javascript/isotope.pkgd.min.js
+    imagesloader = EXT:trameindipendenti/Resources/Public/Javascript/imagesloaded.pkgd.min.js
+    owlcarousel = EXT:trameindipendenti/Resources/Public/Javascript/owl.carousel.min.js
+    owlcarousel {
+        excludeFromConcatenation = 1
+        disableCompression = 1
+    }
+    mousewheel = EXT:trameindipendenti/Resources/Public/Javascript/jquery.mousewheel.min.js
+    theme = EXT:trameindipendenti/Resources/Public/Javascript/theme.js
 }
