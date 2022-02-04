@@ -51,12 +51,12 @@ page.10 {
         }
     }
     variables {
+        baseUrl = TEXT
+        baseUrl.data = site:base
         pageTitle = TEXT
         pageTitle.data = page : title
         pageSubTitle = TEXT
         pageSubTitle.data = page : subtitle
-        supHeaderText = TEXT
-        supHeaderText.value = {$supheadertext_it}
         copyright = TEXT
         copyright.value = {$copyright_it}
         credits = TEXT
