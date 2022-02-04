@@ -271,7 +271,7 @@
 	-webkit-transform: translate3d(0, -50%, 0);
 	transform: translate3d(0, -50%, 0);
 	right: 1em;
-	background: url("../img/menu/cd-arrow.svg") no-repeat center center;
+	background: url("../Icons/cd-arrow.svg") no-repeat center center;
 	background-size: 8px 11px;
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
