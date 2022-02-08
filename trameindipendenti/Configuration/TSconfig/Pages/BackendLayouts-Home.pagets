@@ -76,30 +76,6 @@ mod.web_layout.BackendLayouts {
                             }
                         }
                     }
-                    8 {
-                        columns {
-                            1 {
-                                name = Footer Sx
-                                colPos = 11
-                                colspan = 3
-                            }
-                            2 {
-                                name = Footer CSx
-                                colPos = 12
-                                colspan = 3
-                            }
-                            3 {
-                                name = Footer CDx
-                                colPos = 13
-                                colspan = 3
-                            }
-                            4 {
-                                name = Footer Dx
-                                colPos = 14
-                                colspan = 3
-                            }
-                        }
-                    }
                 }
             }
         }

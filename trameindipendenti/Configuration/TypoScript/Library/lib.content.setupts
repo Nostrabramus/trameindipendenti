@@ -56,38 +56,4 @@ lib.content {
             10.select.where = colPos=7
         }
     }
-    footer {
-        left = COA
-        left {
-            10 < styles.content.get
-            10 {
-                select.where = colPos=11
-                slide = -1
-            }
-        }
-        centerleft = COA
-        centerleft {
-            10 < styles.content.get
-            10 {
-                select.where = colPos=12
-                slide = -1
-            }
-        }
-        centerright = COA
-        centerright {
-            10 < styles.content.get
-            10 {
-                select.where = colPos=13
-                slide = -1
-            }
-        }
-        right = COA
-        right {
-            10 < styles.content.get
-            10 {
-                select.where = colPos=14
-                slide = -1
-            }
-        }
-    }
 }
