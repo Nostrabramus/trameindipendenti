@@ -58,8 +58,20 @@ page.10 {
         pageSubTitle = TEXT
         pageSubTitle.data = page : subtitle
         copyright = TEXT
-        copyright.value = {$copyright_it}
         credits = TEXT
-        credits.value = {$credits_it}
     }
 }
+
+[siteLanguage("languageId") == 0]
+    page.10.variables {
+        copyright.value = {$copyright_it}
+        credits.value = {$credits_it}
+    }
+[global]
+
+[siteLanguage("languageId") == 1]
+    page.10.variables {
+        copyright.value = {$copyright_en}
+        credits.value = {$credits_en}
+    }
+[global]
