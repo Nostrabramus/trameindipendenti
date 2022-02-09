@@ -50,9 +50,9 @@ tel =
 fax =
 
 # cat=site/07_Footer/1; type=string; label = Copyright ITA
-copyright_it = 2022 © all right reserved by <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
+copyright_it = © all right reserved by <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
 # cat=site/07_Footer/2; type=string; label = Copyright ENG
-copyright_en = 2022 © tutti i diritti riservati da <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
+copyright_en = © tutti i diritti riservati da <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
 # cat=site/07_Footer/3; type=string; label = Credits ITA
 credits_it = website developed by <a href="https://github.com/Nostrabramus">Nostrabramus</a>
 # cat=site/07_Footer/4; type=string; label = Credits ENG
