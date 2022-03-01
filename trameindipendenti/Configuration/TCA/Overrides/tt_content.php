@@ -1067,6 +1067,14 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 						''
 					],
 					[
+						'Animazione',
+						'animation'
+					],
+					[
+						'Documentario',
+						'documentary'
+					],
+					[
 						'Drammatico',
 						'drama'
 					],
