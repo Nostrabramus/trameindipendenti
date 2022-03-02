@@ -4,14 +4,12 @@
     <f:render partial="Area/PageHeader" section="Default" arguments="{_all}" />
 </f:section>
 <f:section name="Main">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+    <div id="page-content">
+        <section class="padding-top-120 padding-bottom-120">
+            <div class="container">
                 <f:cObject typoscriptObjectPath="lib.content.main" />
             </div>
-        </div>
+        </section>
     </div>
-
 </f:section>
 </html>

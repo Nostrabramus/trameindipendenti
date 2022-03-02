@@ -4,17 +4,19 @@
     <f:render partial="Area/PageHeader" section="Default" arguments="{_all}" />
 </f:section>
 <f:section name="Main">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <f:cObject typoscriptObjectPath="lib.content.main" />
+    <div id="page-content">
+        <section class="blog-grid-section">
+            <div class="container-fluid max-width-1250 no-padding">
+                <div class="row no-margin">
+                    <div class="col-lg-8 no-padding-left no-padding-right">
+                        <f:cObject typoscriptObjectPath="lib.content.main" />
+                    </div>
+                    <div class="col-lg-4 no-padding-right">
+                        <f:cObject typoscriptObjectPath="lib.content.column_right" />
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <f:cObject typoscriptObjectPath="lib.content.column_right" />
-            </div>
-        </div>
+        </section>
     </div>
-
 </f:section>
 </html>
