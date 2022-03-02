@@ -1089,6 +1089,14 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 					[
 						'Noir',
 						'noir'
+					],
+					[
+						'Fantascienza',
+						'sci-if'
+					],
+					[
+						'Sperimentale',
+						'sperimental'
 					]
 				],
 				'default' => ''
