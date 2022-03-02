@@ -814,6 +814,7 @@ section .container {
 	display: inline-block;
 	padding: 0px 10px;
 	margin-right: 5px;
+	vertical-align: text-top;
 }
 
 /* page header subtitle */
