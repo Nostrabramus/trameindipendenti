@@ -1,0 +1,17 @@
+lib.headerImage = COA
+lib.headerImage {
+    10 = FILES
+    10 {
+        maxItems = 1
+        references {
+            data = levelmedia:-1, slide
+        }
+        renderObj = COA
+        renderObj {
+            10 = IMG_RESOURCE
+            10 {
+                file.import.data = file:current:publicUrl
+            }
+        }
+    }
+}

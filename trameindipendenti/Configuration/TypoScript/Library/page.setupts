@@ -57,6 +57,8 @@ page.10 {
         pageTitle.data = page : title
         pageSubTitle = TEXT
         pageSubTitle.data = page : subtitle
+        pageAbstract = TEXT
+        pageAbstract.data = page : abstract
         copyright = TEXT
         credits = TEXT
     }

@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="Default">
+    <div id="page-header" class="ph-lg ph-center bg-dark">
+
+        <div class="page-header-image cover-opacity-9 parallax-6 bg-image" style="background-image: url(/{f:cObject(typoscriptObjectPath: 'lib.headerImage')}); background-position: 50% 50%;"></div>
+
+        <div class="page-header-inner container">
+            <div class="page-header-caption ph-cap-xlg ph-cap-light parallax-5 fade-out-scroll-5">
+                <div class="ph-title-wrap">
+                    <h1 class="page-header-title"><span class="bg-main text-white">{pageTitle -> f:format.crop(maxCharacters: 1, append: '')}</span><span class="removeFirst">{pageTitle}</span></h1>
+                </div>
+                <div class="ph-subtitle-wrap max-width-900">
+                    <p class="page-header-subtitle">{pageSubTitle}</p>
+                </div>
+                <div class="page-header-description max-width-700">
+                    <div class="ph-desc-inner">
+                        <p>{pageAbstract}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down-arrow text-center parallax-3">
+            <a href="#page-content" class="page-scroll"><span><i class="fas fa-arrow-down"></i></span></a>
+        </div>
+
+    </div>
+</f:section>
