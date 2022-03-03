@@ -21,7 +21,7 @@
 	width: 100%;
 	z-index: 9999;
 	pointer-events: none;
-	
+
 	-webkit-transform: translateZ(0);
 	-webkit-backface-visibility: hidden;
 	-webkit-transition-property: -webkit-transform;
@@ -103,8 +103,8 @@
 }
 #cd-top-nav a:hover {
 	color: #F20000;
-	text-decoration: line-through;
-
+	background-color: #fff;
+	/* text-decoration: line-through; */
 }
 @media only screen and (min-width: 768px) {
 	#cd-top-nav {
@@ -238,7 +238,7 @@
 #cd-lateral-nav a:focus {
 	background-color: #F20000;
 	color: #FFF;
-	text-decoration: line-through;
+	/* text-decoration: line-through; */
 }
 @media (min-width: 768px) {
 	#cd-lateral-nav .cd-navigation {
