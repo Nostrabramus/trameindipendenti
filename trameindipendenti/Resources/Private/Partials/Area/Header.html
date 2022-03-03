@@ -3,21 +3,12 @@
 
     <header id="tt-header" class="is-fixed">
 
-        <!-- Logo -->
-
         <f:link.typolink parameter="{baseUrl}" additionalAttributes="{id:'cd-logo'}"><f:cObject typoscriptObjectPath="lib.logo" /></f:link.typolink>
 
-        <!-- Begin header links (optional) -->
-        <!-- <nav id="cd-top-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav> -->
-        <!-- Begin header links -->
+        <nav id="cd-top-nav">
+            <f:cObject typoscriptObjectPath="lib.topNavigation" />
+        </nav>
 
-        <!-- Menu trigger (menu button) -->
         <a id="cd-menu-trigger" href="#0"><span class="cd-menu-icon"></span></a>
 
     </header>

@@ -1,25 +1,37 @@
-#### Special Navigation ####
-lib.specialNavigation = COA
-lib.specialNavigation {
+#### Top Navigation ####
+lib.topNavigation = COA
+lib.topNavigation {
     10 = HMENU
     10 {
-        special = list
-        special.value =
         entryLevel = 0
         1 = TMENU
         1 {
+            expAll = 1
             wrap = <ul>|</ul>
             target = _top
             NO {
                 wrapItemAndSub = <li>|</li>
+                ATagTitle.field = title // subtitle // description
+                stdWrap.cObject = COA
+                stdWrap.cObject {
+                    # getting the navigation title with fallback to the title
+                    10 = TEXT
+                    10.field = nav_title // title
+                    10.wrap = |
+                    # getting the subtitle of the page
+                    20 = TEXT
+                    20.field = subtitle
+                    20.wrap = <span class="subTitle">|</span>
+                }
             }
-            ACT < .NO
-            ACT = 1
-            CUR < .NO
+
             CUR = 1
+            CUR < .NO
             CUR {
-                wrapItemAndSub = <li class="active">|</li>
+                wrapItemAndSub = <li class="current" aria-current="page">|</li>
             }
+            ACT = 1
+            ACT <.CUR
         }
     }
 }
