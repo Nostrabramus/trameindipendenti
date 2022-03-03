@@ -24,14 +24,21 @@ lib.topNavigation {
                     20.wrap = <span class="subTitle">|</span>
                 }
             }
-
-            CUR = 1
-            CUR < .NO
-            CUR {
-                wrapItemAndSub = <li class="current" aria-current="page">|</li>
-            }
             ACT = 1
-            ACT <.CUR
+            ACT {
+                stdWrap.cObject = COA
+                stdWrap.cObject {
+                    # getting the navigation title with fallback to the title
+                    10 = TEXT
+                    10.field = nav_title // title
+                    10.wrap = |
+                    # getting the subtitle of the page
+                    20 = TEXT
+                    20.field = subtitle
+                    20.wrap = <span class="subTitle">|</span>
+                }
+                linkWrap = <li class="current" aria-current="page">|</li>
+            }
         }
     }
 }

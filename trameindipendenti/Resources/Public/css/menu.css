@@ -99,9 +99,9 @@
 	font-weight: 600;
 	text-decoration: none;
 }
-#cd-top-nav a.current {
+#cd-top-nav .current a {
 	background-color: #F20000;
-	text-decoration: line-through;
+	color: #ffffff;
 }
 #cd-top-nav a:hover {
 	color: #F20000;
@@ -246,6 +246,13 @@
 	background-color: #F20000;
 	color: #FFF;
 	/* text-decoration: line-through; */
+}
+#cd-lateral-nav a .subTitle {
+	font-size: 12px;
+	display: block;
+	letter-spacing: 1px;
+	line-height: 1;
+	padding-bottom: 10px;
 }
 @media (min-width: 768px) {
 	#cd-lateral-nav .cd-navigation {
