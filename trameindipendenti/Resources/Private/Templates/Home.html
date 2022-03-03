@@ -1,44 +1,1973 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Home" />
+<f:section name="Header">
+    <f:render partial="Area/Hero" section="Default" arguments="{_all}" />
+</f:section>
 <f:section name="Main">
 
-    <div class="col-sm-12">
-        <f:render partial="Area/Hero" section="Default" arguments="{_all}" />
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <f:cObject typoscriptObjectPath="lib.content.home.evidence" />
+    <div id="page-content">
+
+        <section class="welcome-section bg-dark text-white">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-right col-lg-4">
+                        <div class="col-inner">
+                            <img src="img/logo-trameindipendenti.png">
+                        </div> <!-- /.col-inner -->
+                    </div> <!-- /.col -->
+
+                    <div class="col-left col-lg-8">
+                        <div class="col-inner">
+
+                            <!-- Begin Heading
+                            ===================
+                            * Use class "heading-center" or "heading-right" to align heading.
+                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
+                            -->
+                            <div class="heading heading-xlg mt-5">
+                                <h2 class="heading-title"><span class="bg-main text-white">Trame</span><span class="bg-white text-red">Indipendenti</span></h2>
+                            </div>
+                            <!-- End Heading -->
+
+                            <p class="lead">#festival #cortometraggi #cinema #animazioni #documentari</p>
+
+                        </div> <!-- /.col-inner -->
+                    </div> <!-- /.col -->
+
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- rules -->
+        <section class="team-section split-box no-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-left col-xl-6 no-padding">
+                        <div class="padding-height-70 bg-image" style="background-image: url(img/issalavela.jpg);"></div>
+                    </div>
+                    <div class="col-right col-xl-6 align-self-center no-padding">
+                        <div class="col-inner">
+                            <f:cObject typoscriptObjectPath="lib.content.home.evidence" />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <f:cObject typoscriptObjectPath="lib.content.home.aboutus" />
+        </section>
+
+        <!-- finalisti  FARE TObject -->
+        <section class="blog-carousel-section no-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3 no-padding">
+
+                        <!-- Begin blog carousel heading
+                        =================================-->
+                        <a href="blog-grid-sidebar.html" class="blog-carousel-heading">
+
+                            <!-- Begin Heading
+                            ===================
+                            * Use class "heading-center" or "heading-right" to align heading.
+                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
+                            -->
+                            <div class="heading heading-md align-center">
+                                <h2 class="heading-title"><span class="bg-white text-red">corti</span>finalisti</h2>
+                                <p>guardali tutti <i class="fas fa-arrow-right"></i></p>
+                            </div>
+                            <!-- End Heading -->
+
+                        </a>
+                        <!-- End blog carousel heading -->
+
+                    </div> <!-- /.col -->
+
+                    <div class="col-lg-8 col-xl-9 no-padding">
+
+                        <!-- Begin blog carousel
+                        =========================
+                        * Use class "bgi-alter" to enable blog grid item alternative style.
+                        -->
+                        <div class="blog-carousel bgi-alter">
+
+                            <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+                            ===========================================================================
+                            * Use class "nav-hover" to show navigation on hover.
+                            * Use class "nav-outside" to enable outside nav (requires boxed layout).
+                            * Use class "nav-outside-top" to enable outside top nav (requires enough space at the top of the carousel).
+                            * Use class "nav-bottom-right" to enable bottom right nav.
+                            * Use class "nav-rounded" to enable rounded nav (no effect if "nav-minimal" is enabled).
+                            * Use class "nav-light" to enable nav light style.
+                            * Use class "nav-dark" to enable nav dark style.
+                            * Use class "nav-minimal" to enable nav minimal style.
+                            * Use class "dots-outside" to enable outside dots (requires enough space at the bottom of the carousel).
+                            * Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
+                            * Use class "dots-rounded" to enable rounded dots.
+                            * Use class "owl-mousewheel" to enable mousewheel support.
+                            * Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
+                            * Use class "cc-hover-zoom" to enable carousel items hover zoom effect (for "cc-image" only!).
+                            * Use class "owl-size-1" ... up to "owl-size-20" to set carousel height (effect only if "cc-image" contain class "bg-image"!).
+                            * Use class "owl-size-full" to set carousel full height size for desktop (effect only if "cc-image" contain class "bg-image"!).
+                            * Use class "owl-size-full-m" to set carousel full height size for small screens (effect only if "cc-image" contain class "bg-image"!).
+                            ===========================================================================
+                            * Available carousel data attributes:
+                                    data-items="4".......................(items visible on desktop)
+                                    data-tablet-landscape="4"............(items visible on mobiles)
+                                    data-tablet-portrait="3".............(items visible on mobiles)
+                                    data-mobile-landscape="2"............(items visible on tablets)
+                                    data-mobile-portrait="1".............(items visible on tablets)
+                                    data-loop="true".....................(true/false)
+                                    data-margin="10".....................(space between items)
+                                    data-start-position="0"..............(item start position)
+                                    data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                                    data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                                    data-mouse-drag="false"..............(true/false)
+                                    data-touch-drag="false"..............(true/false)
+                                    data-autoheight="true"...............(true/false)
+                                    data-autoplay="true".................(true/false)
+                                    data-autoplay-timeout="5000".........(milliseconds)
+                                    data-autoplay-hover-pause="true".....(true/false)
+                                    data-autoplay-speed="800"............(milliseconds)
+                                    data-drag-end-speed="800"............(milliseconds)
+                                    data-nav="true"......................(true/false)
+                                    data-nav-speed="800".................(milliseconds)
+                                    data-dots="false"....................(true/false)
+                                    data-dots-speed="800"................(milliseconds)
+                            -->
+                            <div class="owl-carousel nav-hover nav-dark" data-items="4" data-loop="true" data-dots="false" data-nav="true" data-nav-speed="600" data-tablet-landscape="2" data-tablet-portrait="2" data-mobile-landscape="2" data-mobile-portrait="1">
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/anomalie.png" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Celli Jean Francois</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Anomalie</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2020</span>
+                                            <span class="posted-by">- Francia</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Read More</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/faleminderit.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Nicolas Neuhold</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Faleminderit</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2020</span>
+                                            <span class="posted-by">- Lussemburgo</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Scopri di più</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/hold-for-appllause.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Gerald B. Fillmore</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Hold For Applause</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2020</span>
+                                            <span class="posted-by">- USA</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Read More</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/iddhu.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Luigi Pironaci</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Iddhu</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2020</span>
+                                            <span class="posted-by">- Italia</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Scopri di più</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/just-like-water.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Manos Triantafillakis</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Just Like Water</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2021</span>
+                                            <span class="posted-by">- Grecia</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Read More</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/polter.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Álvaro Vicario</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Polter</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2020</span>
+                                            <span class="posted-by">- Spagna</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Scopri di più</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/roberto.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Carmen Córdoba González</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Roberto</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2020</span>
+                                            <span class="posted-by">- Spagna</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Read More</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/super-soup.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Iacopo Fulgi, Valerio Maggi</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Super Soup</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2020</span>
+                                            <span class="posted-by">- Italia</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Scopri di più</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                                <!-- Begin blog grid item
+                                ========================== -->
+                                <article class="blog-grid-item">
+
+                                    <!-- Begin blog grid item image wrap -->
+                                    <a href="blog-single-post.html" class="bgi-image-wrap">
+                                        <div class="bgi-image">
+                                            <img src="img/locandine/teresa.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                    <!-- End blog grid item image wrap -->
+
+                                    <!-- Begin blog grid item info -->
+                                    <div class="bgi-info">
+                                        <div class="bgi-categories-wrap">
+                                            <a href="#" class="bgi-category">Gabriele Ciances</a>
+                                        </div>
+                                        <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+                                        <h2 class="bgi-title">
+                                            <a href="#">Teresa</a>
+                                        </h2>
+                                        <div class="bgi-meta">
+                                            <span class="published">2019</span>
+                                            <span class="posted-by">- Italia</span>
+                                        </div>
+                                        <div class="bgi-description">
+                                        </div>
+                                        <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Scopri di più</a>
+                                    </div>
+                                    <!-- End blog grid item info -->
+
+                                </article>
+                                <!-- End blog grid item -->
+                            </div>
+                            <!-- End content carousel -->
+
+                        </div>
+                        <!-- End blog carousel -->
+
+                    </div> <!-- /.col -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- giuria  FARE TObject -->
+        <section class="what-we-to-section split-box bg-image" style="background-image: url(img/jury-bg.jpg);">
+
+            <!-- Element cover -->
+            <div class="cover cover-opacity-8-5"></div>
+
+            <div class="container-fluid text-white">
+                <div class="row">
+
+                    <div class="col-left col-xl-3 align-self-center no-padding">
+                        <div class="col-inner">
+
+                            <!-- Begin Heading
+                            ===================
+                            * Use class "heading-center" or "heading-right" to align heading.
+                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
+                            -->
+                            <div class="heading heading-xlg">
+                                <h2 class="heading-title"><span class="bg-main bg-white text-dark">La</span>Nostra<span class="bg-main bg-white text-red">Giuria</span></h2>
+                            </div>
+                            <!-- End Heading -->
+
+                            <p class="lead">Cras elementum, lacus nec egestas ultrices, felis purus lacinia ante,
+                                sollicitudin viverra ex eros ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Ut sagittis elit odio, a ultrices dolor dignissim eu.</p>
+
+                        </div> <!-- /.col-inner -->
+                    </div> <!-- /.col -->
+
+                    <div class="col-right col-xl-9">
+                        <div class="col-inner">
+
+                            <!-- Begin info box wrap
+                            =========================
+                            * Use class "ib-alter-1" or "ib-alter-2" to change info box style.
+                            * Use class "ib-boxed" enable info box boxed style.
+                            * Use class "ib-icon-color" to enable icon colored style (no effect with class: "ib-icon-bg-color").
+                            * Use class "ib-icon-bg" or "ib-icon-bg-color" to enable icon background.
+                            * Use class "ib-icon-rounded" to enable icon rounded style (class "ib-icon-bg" or "ib-icon-bg-color" is required!).
+                            * Use class "ib-icon-hover" to enable icon hover effect. (class "ib-icon-bg" or "ib-icon-bg-color" is required!)
+                            * Use class "ib-icon-animate" to enable icon animation on hover effect.
+                            * Use class "ib-hide-icon" to hide info box icon.
+                            * Use class "ib-light" if the background is dark.
+                            * Use class "ib-fixed-text" to enable info box text fixed height (shows only 3 lines).
+                            -->
+                            <div class="info-box-wrap ib-fixed-text ib-light ib-alter-1 ib-icon-bg ib-icon-rounded ib-icon-hover">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Begin info box -->
+                                        <div class="info-box">
+                                            <div class="info-box-jury"><img src="img/giuria/lorenzo-garzella.jpg"></div>
+                                            <div class="info-box-heading">
+                                                <h3 class="info-box-heading-title">Lorenzo Garzella</h3>
+                                                <hr class="hr-short">
+                                            </div>
+                                            <div class="info-box-info">
+                                                <div class="info-box-text">
+                                                    <p>Regista, produttore cinematografico e autore crossmediale. gestisce la società di produzione Nanof (Roma). Insegna Montaggio Video all'Università di Pisa.</p>
+                                                </div>
+                                            </div> <!-- /.info-box-info -->
+                                        </div>
+                                        <!-- End info box -->
+
+                                    </div> <!-- /.col -->
+
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Begin info box -->
+                                        <div class="info-box">
+                                            <div class="info-box-jury"><img src="img/giuria/lavinia-di-pierro.jpg"></div>
+                                            <div class="info-box-heading">
+                                                <h3 class="info-box-heading-title">Lavinia Di Pierro</h3>
+                                                <hr class="hr-short">
+                                            </div>
+                                            <div class="info-box-info">
+                                                <div class="info-box-text">
+                                                    <p>Direttrice di produzione presso l'associazione OCM - Organismi Cinematograficamente Modificati. Collabora all'organizzazione del Festival Trame Indipendenti.</p>
+                                                </div>
+                                            </div> <!-- /.info-box-info -->
+                                        </div>
+                                        <!-- End info box -->
+
+                                    </div> <!-- /.col -->
+
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Begin info box -->
+                                        <div class="info-box">
+                                            <div class="info-box-jury"><img src="img/giuria/federico-frusciante.jpg"></div>
+                                            <div class="info-box-heading">
+                                                <h3 class="info-box-heading-title">Federico Frusciante</h3>
+                                                <hr class="hr-short">
+                                            </div>
+                                            <div class="info-box-info">
+                                                <div class="info-box-text">
+                                                    <p>Gestore di una videoteca partecipa come ospite a molti festival italiani, ha girato alcuni corti ed è attivo sul suo canale YouTube con recensioni cinematografiche.</p>
+                                                </div>
+                                            </div> <!-- /.info-box-info -->
+                                        </div>
+                                        <!-- End info box -->
+
+                                    </div> <!-- /.col -->
+
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Begin info box -->
+                                        <div class="info-box">
+                                            <div class="info-box-jury"><img src="img/giuria/lucio-lepri.jpg"></div>
+                                            <div class="info-box-heading">
+                                                <h3 class="info-box-heading-title">Lucio Lepri</h3>
+                                                <hr class="hr-short">
+                                            </div>
+                                            <div class="info-box-info">
+                                                <div class="info-box-text">
+                                                    <p>Direttore della fotografia e colorist. Ha lavorato a numerosi seriali per il web e la TV, prodotti da Fox, Comedy Central e RAI. Docente presso la Scuola Nazionale di Cinema Indipendente di Firenze.</p>
+                                                </div>
+                                            </div> <!-- /.info-box-info -->
+                                        </div>
+                                        <!-- End info box -->
+
+                                    </div> <!-- /.col -->
+
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Begin info box -->
+                                        <div class="info-box">
+                                            <div class="info-box-jury"><img src="img/giuria/emily-mazzullo.jpg"></div>
+                                            <div class="info-box-heading">
+                                                <h3 class="info-box-heading-title">Emily Mazzullo</h3>
+                                                <hr class="hr-short">
+                                            </div>
+                                            <div class="info-box-info">
+                                                <div class="info-box-text">
+                                                    <p>Studentessa della facoltà di Discipline dello Spettacolo e della Comunicazione dell’Università di Pisa. Appassionata di cinema e teatro.</p>
+                                                </div>
+                                            </div> <!-- /.info-box-info -->
+                                        </div>
+                                        <!-- End info box -->
+
+                                    </div> <!-- /.col -->
+
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Begin info box -->
+                                        <div class="info-box">
+                                            <div class="info-box-jury"><img src="img/giuria/giulia-nannipieri.jpg"></div>
+                                            <div class="info-box-heading">
+                                                <h3 class="info-box-heading-title">Giulia Nannipieri</h3>
+                                                <hr class="hr-short">
+                                            </div>
+                                            <div class="info-box-info">
+                                                <div class="info-box-text">
+                                                    <p>Laureata in Traduzione per il cinema e studentessa presso il Master in Traduzione e adattamento delle opere audiovisive presso l’UNINT, collabora con il Cinema Arsenale nell’ambito della produzione.</p>
+                                                </div>
+                                            </div> <!-- /.info-box-info -->
+                                        </div>
+                                        <!-- End info box -->
+
+                                    </div> <!-- /.col -->
+
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Begin info box -->
+                                        <div class="info-box">
+                                            <div class="info-box-jury"><img src="img/giuria/anna-pala.jpg"></div>
+                                            <div class="info-box-heading">
+                                                <h3 class="info-box-heading-title">Anna Pala Spagnoli</h3>
+                                                <hr class="hr-short">
+                                            </div>
+                                            <div class="info-box-info">
+                                                <div class="info-box-text">
+                                                    <p>Appassionata di cinema e amante dei cortometraggi. Laureata in Storia Contemporanea e specializzata in Giornalismo e comunicazione di impresa. Membro del Centro Studi Commedia all’Italiana.</p>
+                                                </div>
+                                            </div> <!-- /.info-box-info -->
+                                        </div>
+                                        <!-- End info box -->
+
+                                    </div> <!-- /.col -->
+
+                                </div> <!-- /.row -->
+                            </div>
+                            <!-- End info box wrap -->
+
+                        </div> <!-- /.col-inner -->
+                    </div> <!-- /.col -->
+
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- numeri  FARE TObject -->
+        <section class="counter-up-section">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Count-1 -->
+                    <div class="col count-1 col-12 col-md-6 col-lg-3">
+                        <div class="counter-up-inner">
+                            <div class="counter-icon"><i class="fas fa-film"></i></div>
+                            <div class="counter">1387</div>
+                            <hr class="hr-short hr-short-center">
+                            <h4>Cortometraggi Selezionati</h4>
+                        </div>
+                    </div> <!-- /.col -->
+
+                    <!-- Count-2 -->
+                    <div class="col count-2 col-12 col-md-6 col-lg-3">
+                        <div class="counter-up-inner">
+                            <div class="counter-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="counter">36</div>
+                            <hr class="hr-short hr-short-center">
+                            <h4>Paesi in Gara</h4>
+                        </div>
+                    </div> <!-- /.col -->
+
+                    <!-- Count-3 -->
+                    <div class="col count-3 col-12 col-md-6 col-lg-3">
+                        <div class="counter-up-inner">
+                            <div class="counter-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="counter">12</div>
+                            <hr class="hr-short hr-short-center">
+                            <h4>Premi Assegnati</h4>
+                        </div>
+                    </div> <!-- /.col -->
+
+                    <!-- Count-4 -->
+                    <div class="col count-4 col-12 col-md-6 col-lg-3">
+                        <div class="counter-up-inner">
+                            <div class="counter-icon"><i class="fas fa-video"></i></div>
+                            <div class="counter">87</div>
+                            <hr class="hr-short hr-short-center">
+                            <h4>Proiezioni Pubbliche</h4>
+                        </div>
+                    </div> <!-- /.col -->
+
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- albo d'oro  FARE TObject-->
+        <section class="portfolio-section no-padding-bottom">
+            <div class="container-fluid no-padding">
+
+                <!-- Begin portfolio grid
+                ==========================
+                * Use class "pgi-counter" to enable portfolio grid item counter.
+                * Use class "pgi-hover-color" to enable portfolio grid item hover color.
+                * Use class "pgi-hover-zoom" to enable portfolio grid item hover zoom.
+                * Use class "pgi-alter" to enable portfolio grid item alternative style (recommended with item captions).
+                -->
+                <div class="portfolio-grid pgi-counter pgi-hover-color">
+
+                    <!-- ====================
+                    ///// Begin tt-Grid /////
+                    =========================
+                    * Use class "ttg-layout-2", "ttg-layout-3", "ttg-layout-4" to set grid layout (columns).
+                    * Use class "ttg-gap-1", "ttg-gap-2", "ttg-gap-3" or "ttg-gap-4" to add space between items.
+                    -->
+                    <div class="tt-grid ttg-layout-3">
+
+                        <!-- Begin grid items wrap
+                        =========================== -->
+                        <div class="tt-grid-items-wrap isotope-items-wrap">
+
+                            <!-- Isotope grid sizer (do not remove!!!) -->
+                            <div class="isotope-grid-sizer"></div>
+
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item pgh-width isotope-item"> <!-- Class "pgh-width" is for proper width on smaller screens -->
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin portfolio grid heading
+                                            ================================== -->
+                                            <div>
+                                                <div class="pgh-inner pgi-image"> <!-- Class "pgi-image" is for proper height -->
+                                                    <div class="pgh-content">
+                                                        <h2 class="pgh-title text-dark">Albo <span class="bg-main text-white">d'oro</span></h2>
+                                                    </div> <!-- /.pgh-content -->
+                                                </div> <!-- /.pgh-inner -->
+                                            </div>
+                                            <!-- End portfolio grid heading -->
+
+                                        </div> <!-- /.pgi-inner -->
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-1" class="pgi-image-wrap inline-popup-trigger" alt="2021">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/polter.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/polter.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #f20000;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-1" class="inline-popup-trigger">Elper Nomadis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Branding</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-1" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio della <span class="bg-white text-main">Giuria</span> 2021</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/polter.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Polter</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Álvaro Vicario</strong></li>
+                                                            <li>Paese: <strong>Francia</strong></li>
+                                                            <li>Anno: <strong>2020</strong></li>
+                                                            <li>Cast: <strong>Marie Pierre Nouveau, David Nathanson, Emreis Rolland, Henri Costa</strong></li>
+                                                            <li>Genere: <strong>Commedia</strong></li>
+                                                            <li>Durata: <strong>10 min</strong></li>
+                                                        </ul>
+                                                        <p>José affronta un evento paranormale che si manifesta nella sua casa. Mentre combatte per la sua vita contro questi i poteri dovrà scoprire il segreto che sta dietro a questi fenomeni se vorrà riprendere il controllo della sua casa.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-2" class="pgi-image-wrap inline-popup-trigger" alt="2021">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/roberto.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/roberto.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #ffd500;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-2" class="inline-popup-trigger">Futter Samantis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Print</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-2" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio del <span class="bg-white text-main">Pubblico</span> 2021</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/roberto.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Roberto</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Carmen Córdoba González</strong></li>
+                                                            <li>Paese: <strong>Spagna</strong></li>
+                                                            <li>Anno: <strong>2020</strong></li>
+                                                            <li>Genere: <strong>Animazione</strong></li>
+                                                            <li>Durata: <strong>9 min</strong></li>
+                                                        </ul>
+                                                        <p>Sono passati 15 e Roberto è ancora innamorato della sua vicina, ma lei preferisce nascondersi vergognandosi del proprio corpo. Con la sua arte e un vecchio stendibiancheria come unici mezzi di comunicazione, Roberto ha un piano per spingere la sua amata ad affrontare i suoi mostri.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-3" class="pgi-image-wrap inline-popup-trigger" alt="2020">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/cover.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/cover.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #8dcb0b;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-3" class="inline-popup-trigger">Tartumi Sandera Naomis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Motion</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-3" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio della <span class="bg-white text-main">Giuria</span> 2020</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/cover.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Cover</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Vahid Alvandifar</strong></li>
+                                                            <li>Paese: <strong>Iran</strong></li>
+                                                            <li>Anno: <strong>2019</strong></li>
+                                                            <li>Cast: <strong>Yousef Yazdani, Hadi Eftekharzade, Hamed Nasaji, Babak Rezapour</strong></li>
+                                                            <li>Genere: <strong>Commedia</strong></li>
+                                                            <li>Durata: <strong>15 min</strong></li>
+                                                        </ul>
+                                                        <p>Due lavoratori trasportano il corpo deceduto del loro collega, Ahmad, quando torna inaspettatamente dalla morte. Mentre i tre uomini guidano attraverso le strade di montagna per tornare a casa, Ahmad fa tutto ciò che è in suo potere per sfuggire alla sua vita passata.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-4" class="pgi-image-wrap inline-popup-trigger" alt="2020">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/bless-me-father.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/bless-me-father.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #e500ff;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-4" class="inline-popup-trigger">Tetera Laktus</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Digital</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-4" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio del <span class="bg-white text-main">Pubblico</span> 2020</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/bless-me-father.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Bless Me Father</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Boubkar Benzabat</strong></li>
+                                                            <li>Paese: <strong>Francia</strong></li>
+                                                            <li>Anno: <strong>2020</strong></li>
+                                                            <li>Genere: <strong>Commedia</strong></li>
+                                                            <li>Durata: <strong>12 min</strong></li>
+                                                        </ul>
+                                                        <p>Un uomo va in chiesa per confessare il suo ultimo peccato a un giovane prete esasperato.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-5" class="pgi-image-wrap inline-popup-trigger" alt="2019">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/forouzan.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/forouzan.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #00c5ff;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-5" class="inline-popup-trigger">Tant Saktra Memis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Motion</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-5" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio della <span class="bg-white text-main">Giuria</span> 2019</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/forouzan.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Forouzan</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Mirabbas Khosravinezhad</strong></li>
+                                                            <li>Paese: <strong>Iran</strong></li>
+                                                            <li>Anno: <strong>2018</strong></li>
+                                                            <li>Cast: <strong>Forouzan Rezaeiyan, Fariba Sagvand, Eedi Ali Nedjad, Fabiola Dalla Chiara, Maryam Ahmadi, Ahmad Reza Naderi, Alayhe NAderi</strong></li>
+                                                            <li>Genere: <strong>Drammatico</strong></li>
+                                                            <li>Durata: <strong>12 min</strong></li>
+                                                        </ul>
+                                                        <p>Una donna vive in un villagio con i suoi due figli. I ladri vogliono rubargli il bestiame ma lei se ne accorge.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-6" class="pgi-image-wrap inline-popup-trigger" alt="2019">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/repercussion.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/repercussion.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #b06400;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-6" class="inline-popup-trigger">Intuisa Jacobis Untra</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Print</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-6" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio del <span class="bg-white text-main">Pubblico</span> 2019</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/repercussion.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Repercussion</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Negin Homayounpour</strong></li>
+                                                            <li>Paese: <strong>Iran</strong></li>
+                                                            <li>Anno: <strong>2018</strong></li>
+                                                            <li>Cast: <strong>Ammar Tafti, Maryam Elhamian</strong></li>
+                                                            <li>Genere: <strong>Drammatico</strong></li>
+                                                            <li>Durata: <strong>4 min</strong></li>
+                                                        </ul>
+                                                        <p>Una famiglia guarda in tv un film di guerra, all'improvviso si trova a vivere gli stessi eventi.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-7" class="pgi-image-wrap inline-popup-trigger" alt="2018">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/chimere.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/chimere.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #001db0;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-7" class="inline-popup-trigger">Marevik Trastis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Digital</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-7" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio della <span class="bg-white text-main">Giuria</span> 2018</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/chimere.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Chimère</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Nathan Vaillant</strong></li>
+                                                            <li>Paese: <strong>Francia</strong></li>
+                                                            <li>Anno: <strong>2017</strong></li>
+                                                            <li>Cast: <strong>Sarah Perriez</strong></li>
+                                                            <li>Genere: <strong>Drammatico</strong></li>
+                                                            <li>Durata: <strong>16 min</strong></li>
+                                                        </ul>
+                                                        <p>Una notte, dopo aver commesso uno sbaglio per cattiva condotta professionale ed essere stata sospesa dal suo lavoro, Anna torna a casa e scopre l'infedeltà del marito.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-8" class="pgi-image-wrap inline-popup-trigger" alt="2018">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/insetti.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/insetti.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #f20000;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-7" class="inline-popup-trigger">Marevik Trastis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Digital</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-8" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio del <span class="bg-white text-main">Pubblico</span> 2018</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/insetti.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Insetti</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Gianluca Manzetti</strong></li>
+                                                            <li>Paese: <strong>Italia</strong></li>
+                                                            <li>Anno: <strong>2018</strong></li>
+                                                            <li>Cast: <strong>Alessandro Haber, Carlo Luca De Ruggieri, Mauro Racanati, Alice Papes</strong></li>
+                                                            <li>Genere: <strong>Commedia nera</strong></li>
+                                                            <li>Durata: <strong>20 min</strong></li>
+                                                        </ul>
+                                                        <p>Entrando all'interno di un circuito elettrico, un piccolo insetto innesca l'allarme di un appartamento. Da questo piccolo scaturirà l'incontro tra il nipote del proprietario dell'appartamento, un vecchio vicino instabile e un'eccentrica Guardia di sicurezza. I personaggi si troveranno rinchiusi in un vortice di equivoci e violenza. La stessa condizione esistenziale del piccolo insetto all'interno del circuito.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-9" class="pgi-image-wrap inline-popup-trigger" alt="2017">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/primavera-invernale.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/primavera-invernale.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #ffd500;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-7" class="inline-popup-trigger">Marevik Trastis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Digital</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-9" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio della <span class="bg-white text-main">Giuria</span> 2017</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/primavera-invernale.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Primavera Invernale</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Mohamed Kamel</strong></li>
+                                                            <li>Paese: <strong>Egitto</strong></li>
+                                                            <li>Anno: <strong>2015</strong></li>
+                                                            <li>Cast: <strong>Ahmed Kamal, Eman Moustafa</strong></li>
+                                                            <li>Genere: <strong>Drammatico</strong></li>
+                                                            <li>Durata: <strong>16 min</strong></li>
+                                                        </ul>
+                                                        <p>Ogni cambiamento nella nostra vita ha le sue conseguenze, possiamo comprenderlo e accettarlo o armonizzarci con esso?</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item isotope-item">
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin item image wrap -->
+                                            <a href="#pgi-popup-10" class="pgi-image-wrap inline-popup-trigger" alt="2017">
+                                                <div class="pgi-image">
+                                                    <img src="img/locandine/gionatan-con-la-g.jpg" alt="image">
+                                                </div>
+
+                                                <div class="pgi-image-ghost">
+                                                    <img src="img/locandine/gionatan-con-la-g.jpg" alt="image">
+                                                </div>
+
+                                                <!-- Hover color ("portfolio-grid" must contain a class "pgi-hover-color") -->
+                                                <div class="cover-hover-color" style="background-color: #8dcb0b;"></div>
+                                            </a>
+                                            <!-- End item image wrap -->
+
+                                            <!-- Begin item caption -->
+                                            <!-- <div class="pgi-caption">
+                                                <h2 class="pgi-caption-title">
+                                                    <a href="#pgi-popup-7" class="inline-popup-trigger">Marevik Trastis</a>
+                                                </h2>
+                                                <div class="pgi-categories-wrap">
+                                                    <a href="" class="pgi-category">Digital</a>
+                                                </div>
+                                            </div> -->
+                                            <!-- End item caption -->
+
+                                        </div> <!-- /.pgi-inner -->
+
+                                        <!-- Begin inline popup content
+                                        ================================
+                                        * Class "mfp-hide" is required to make dialog hidden!
+                                        -->
+                                        <div id="pgi-popup-10" class="pgi-popup inline-popup mfp-hide">
+                                            <div class="inline-popup-inner">
+                                                <div class="row">
+                                                    <div class="col-12 heading heading-xlg mt-5">
+                                                        <h2 class="heading-title text-white text-center">Premio del <span class="bg-white text-main">Pubblico</span> 2017</h2>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <img class="thumbnail margin-bottom-40" src="img/locandine/gionatan-con-la-g.jpg" alt="image">
+                                                    </div> <!-- /.col -->
+
+                                                    <div class="col-md-8">
+                                                        <h3 class="no-margin-top"><span class="bg-main text-white">Gionatan con la G</span></h3>
+                                                        <ul class="list-unstyled">
+                                                            <li>Regia: <strong>Gianluca Santoni</strong></li>
+                                                            <li>Paese: <strong>Italia</strong></li>
+                                                            <li>Anno: <strong>2016</strong></li>
+                                                            <li>Cast: <strong>Eduardo Scarpetta, Eleonora Belcamino, Luis Dobre, Gianluca</strong></li>
+                                                            <li>Genere: <strong>Drammatico</strong></li>
+                                                            <li>Durata: <strong>15 min</strong></li>
+                                                        </ul>
+                                                        <p>Gionatan ha nove anni e gli occhi di un adulto. In una sala d'aspetto di un pronto soccorso, attende che sua madre si faccia controllare delle vecchie ferite al volto. Con delle caramelle in mano e un'idea terribile in testa, Gionatan decide di scappare. La sua casa si trova nella zona del Ponte di Nona - un sobborgo di Roma, dove i colori brillanti degli edifici contrastano con il disagio che li circonda – dove il piccolo Gionatan trova Secco, un criminale, e lo persuade a seguirlo, dicendo di aver visto alcuni uomini che picchiavano il suo fratellino.</p>
+                                                    </div> <!-- /.col -->
+                                                </div>
+                                            </div> <!-- /.inline-popup-inner -->
+                                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <!-- End inline popup content -->
+
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                            <!-- Begin tt-Grid item
+                            ======================== -->
+                            <div class="tt-grid-item pgh-width isotope-item"> <!-- Class "pgh-width" is for proper width on smaller screens -->
+                                <div class="ttg-item-inner">
+
+                                    <!-- Begin portfolio grid item
+                                    ===============================
+                                    * Use class "pgi-height-1" or "pgi-height-2" to enable item fixed height.
+                                    -->
+                                    <div class="portfolio-grid-item pgi-height-1">
+                                        <div class="pgi-inner">
+
+                                            <!-- Begin portfolio grid heading
+                                            ================================== -->
+                                            <div class="portfolio-grid-heading">
+                                                <div class="pgh-inner pgi-image"> <!-- Class "pgi-image" is for proper height -->
+                                                    <div class="pgh-content">
+                                                        <h2 class="pgh-title"><span class="bg-main text-white">Albo</span> d'oro</h2>
+                                                    </div> <!-- /.pgh-content -->
+                                                </div> <!-- /.pgh-inner -->
+                                            </div>
+                                            <!-- End portfolio grid heading -->
+
+                                        </div> <!-- /.pgi-inner -->
+                                    </div>
+                                    <!-- End portfolio grid item -->
+
+                                </div> <!-- /.ttg-item-inner -->
+                            </div>
+                            <!-- End tt-Grid item -->
+
+                        </div>
+                        <!-- End grid items wrap -->
+
+                    </div>
+                    <!-- End tt-Grid -->
+
+                </div>
+                <!-- End portfolio grid -->
+
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- testimonial  FARE TObject -->
+        <section class="testimonial-section bg-dark text-white">
+            <div class="container">
+
+                <!-- Begin testimonial slider
+                ============================== -->
+                <div class="testimonial-slider text-center">
+
+                    <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+                    ===========================================================================
+                    * Use class "nav-hover" to show navigation on hover.
+                    * Use class "nav-outside" to enable outside nav (requires boxed layout).
+                    * Use class "nav-outside-top" to enable outside top nav (requires enough space at the top of the carousel).
+                    * Use class "nav-bottom-right" to enable bottom right nav.
+                    * Use class "nav-rounded" to enable rounded nav (no effect if "nav-minimal" is enabled).
+                    * Use class "nav-light" to enable nav light style.
+                    * Use class "nav-dark" to enable nav dark style.
+                    * Use class "nav-minimal" to enable nav minimal style.
+                    * Use class "dots-outside" to enable outside dots (requires enough space at the bottom of the carousel).
+                    * Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
+                    * Use class "dots-rounded" to enable rounded dots.
+                    * Use class "owl-mousewheel" to enable mousewheel support.
+                    * Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
+                    * Use class "cc-hover-zoom" to enable carousel items hover zoom effect (for "cc-image" only!).
+                    * Use class "owl-size-1" ... up to "owl-size-20" to set carousel height (effect only if "cc-image" contain class "bg-image"!).
+                    * Use class "owl-size-full" to set carousel full height size for desktop (effect only if "cc-image" contain class "bg-image"!).
+                    * Use class "owl-size-full-m" to set carousel full height size for small screens (effect only if "cc-image" contain class "bg-image"!).
+                    ===========================================================================
+                    * Available carousel data attributes:
+                            data-items="4".......................(items visible on desktop)
+                            data-tablet-landscape="4"............(items visible on mobiles)
+                            data-tablet-portrait="3".............(items visible on mobiles)
+                            data-mobile-landscape="2"............(items visible on tablets)
+                            data-mobile-portrait="1".............(items visible on tablets)
+                            data-loop="true".....................(true/false)
+                            data-margin="10".....................(space between items)
+                            data-start-position="0"..............(item start position)
+                            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                            data-mouse-drag="false"..............(true/false)
+                            data-touch-drag="false"..............(true/false)
+                            data-autoheight="true"...............(true/false)
+                            data-autoplay="true".................(true/false)
+                            data-autoplay-timeout="5000".........(milliseconds)
+                            data-autoplay-hover-pause="true".....(true/false)
+                            data-autoplay-speed="800"............(milliseconds)
+                            data-drag-end-speed="800"............(milliseconds)
+                            data-nav="true"......................(true/false)
+                            data-nav-speed="800".................(milliseconds)
+                            data-dots="false"....................(true/false)
+                            data-dots-speed="800"................(milliseconds)
+                    -->
+                    <div class="owl-carousel cursor-grab dots-rounded" data-items="1" data-loop="true" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-hover-pause="true" data-autoplay-speed="600" data-dots="true" data-dots-speed="600">
+
+                        <!-- Begin carousel item
+                        ========================= -->
+                        <div class="cc-item">
+
+                            <blockquote>
+                                <p>"La maggior parte dei registi fanno i film con i loro occhi. Io faccio film con i miei testicoli."</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Alejandro Jodorowsky</cite></footer>
+                            </blockquote>
+
+                        </div>
+                        <!-- End carousel item -->
+
+                        <!-- Begin carousel item
+                        ========================= -->
+                        <div class="cc-item">
+
+                            <blockquote>
+                                <p>"Il cinema è un’esplosione del mio amore per la realtà."</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Pier Paolo Pasolini</cite></footer>
+                            </blockquote>
+
+                        </div>
+                        <!-- End carousel item -->
+
+                        <!-- Begin carousel item
+                        ========================= -->
+                        <div class="cc-item">
+
+                            <blockquote>
+                                <p>"    Il cinema è l’unica forma d’arte nella quale le opere si muovono e lo spettatore rimane immobile."</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Ennio Flaiano</cite></footer>
+                            </blockquote>
+
+                        </div>
+                        <!-- End carousel item -->
+
+                        <!-- Begin carousel item
+                        ========================= -->
+                        <div class="cc-item">
+
+                            <blockquote>
+                                <p>"la durata di un film dovrebbe essere direttamente commisurata alla capacità di resistenza della vescica umana."</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Alfred Joseph Hitchcock</cite></footer>
+                            </blockquote>
+
+                        </div>
+                        <!-- End carousel item -->
+
+                    </div>
+                    <!-- End content carousel -->
+
+                </div>
+                <!-- End testimonial slider -->
+
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- TRA LEVARE ? -->
+        <section class="video-demo-section split-box no-padding">
+            <div class="container-fluid">
+                <div class="row bg-light-gray">
+
+                    <div class="col-left col-xl-6 no-padding">
+                        <div class="col-inner no-padding">
+
+                            <!-- Begin embed video (more info about reffering embed videos: https://www.feedthebot.com/pagespeed/defer-videos.htm) -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gyI5144ruKk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <!-- End embed video -->
+
+                        </div> <!-- /.col-inner -->
+                    </div> <!-- /.col -->
+
+                    <div class="col-right col-xl-6 align-self-center no-padding">
+                        <div class="col-inner">
+
+                            <!-- Begin Heading
+                            ===================
+                            * Use class "heading-center" or "heading-right" to align heading.
+                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
+                            -->
+                            <div class="heading heading-xlg">
+                                <h2 class="heading-title text-dark">Teatro <span class="bg-main text-white">Rossi</span> Aperto</h2>
+                            </div>
+                            <!-- End Heading -->
+
+                            <p class="lead">Cras elementum, lacus nec egestas ultrices, felis purus lacinia ante,
+                                sollicitudin viverra ex eros ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Ut sagittis elit odio, a ultrices dolor dignissim eu.</p>
+
+                        </div> <!-- /.col-inner -->
+                    </div> <!-- /.col -->
+
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- FAQ FARE CType -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <div class="col-inner">
+                            <f:cObject typoscriptObjectPath="lib.content.home.aboutus" />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <f:cObject typoscriptObjectPath="lib.content.home.services" />
+        </section>
+
+        <!-- Partner FARE TObject -->
+        <section class="partners-carousel-section bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <div class="col-inner">
+                            <div class="heading heading-xlg heading-center">
+                                <h2 class="heading-title">I Nostri <span class="bg-main bg-white text-red">Partner</span></h2>
+                            </div>
+                        </div>
+
+                        <!-- Begin partners carousel
+                        ============================ -->
+                        <div class="partners-carousel">
+
+                            <!-- Begin content carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+                            ===========================================================================
+                            * Use class "nav-hover" to show navigation on hover.
+                            * Use class "nav-outside" to enable outside nav (requires boxed layout).
+                            * Use class "nav-outside-top" to enable outside top nav (requires enough space at the top of the carousel).
+                            * Use class "nav-bottom-right" to enable bottom right nav.
+                            * Use class "nav-rounded" to enable rounded nav (no effect if "nav-minimal" is enabled).
+                            * Use class "nav-light" to enable nav light style.
+                            * Use class "nav-dark" to enable nav dark style.
+                            * Use class "nav-minimal" to enable nav minimal style.
+                            * Use class "dots-outside" to enable outside dots (requires enough space at the bottom of the carousel).
+                            * Use class "dots-left", "dots-right" or "dots-center-right" to align dots.
+                            * Use class "dots-rounded" to enable rounded dots.
+                            * Use class "owl-mousewheel" to enable mousewheel support.
+                            * Use class "cursor-grab" to enable cursor grab icon (no effect on links!).
+                            * Use class "cc-hover-zoom" to enable carousel items hover zoom effect (for "cc-image" only!).
+                            * Use class "owl-size-1" ... up to "owl-size-20" to set carousel height (effect only if "cc-image" contain class "bg-image"!).
+                            * Use class "owl-size-full" to set carousel full height size for desktop (effect only if "cc-image" contain class "bg-image"!).
+                            * Use class "owl-size-full-m" to set carousel full height size for small screens (effect only if "cc-image" contain class "bg-image"!).
+                            ===========================================================================
+                            * Available carousel data attributes:
+                                    data-items="4".......................(items visible on desktop)
+                                    data-tablet-landscape="4"............(items visible on mobiles)
+                                    data-tablet-portrait="3".............(items visible on mobiles)
+                                    data-mobile-landscape="2"............(items visible on tablets)
+                                    data-mobile-portrait="1".............(items visible on tablets)
+                                    data-loop="true".....................(true/false)
+                                    data-margin="10".....................(space between items)
+                                    data-start-position="0"..............(item start position)
+                                    data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                                    data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                                    data-mouse-drag="false"..............(true/false)
+                                    data-touch-drag="false"..............(true/false)
+                                    data-autoheight="true"...............(true/false)
+                                    data-autoplay="true".................(true/false)
+                                    data-autoplay-timeout="5000".........(milliseconds)
+                                    data-autoplay-hover-pause="true".....(true/false)
+                                    data-autoplay-speed="800"............(milliseconds)
+                                    data-drag-end-speed="800"............(milliseconds)
+                                    data-nav="true"......................(true/false)
+                                    data-nav-speed="800".................(milliseconds)
+                                    data-dots="false"....................(true/false)
+                                    data-dots-speed="800"................(milliseconds)
+                            -->
+                            <div class="owl-carousel" data-lazy-load="true" data-items="5" data-margin="10" data-loop="true" data-autoplay="true" data-autoplay-timeout="7000" data-autoplay-hover-pause="true" data-autoplay-speed="600" data-dots="false" data-tablet-landscape="4" data-tablet-portrait="3" data-mobile-landscape="2" data-mobile-portrait="2">
+
+                                <!-- Begin carousel item
+                                ========================= -->
+                                <div class="cc-item">
+
+                                    <!-- Begin client -->
+                                    <a href="#" target="_blank" class="partners-carousel-item" title="Cinema Arsenale">
+                                        <img data-src="img/partners/arsenale-logo-white.png" class="cc-client-logo owl-lazy" alt="Cinema Arsenale">
+                                    </a>
+                                    <!-- End client -->
+
+                                </div>
+                                <!-- End carousel item -->
+
+                                <!-- Begin carousel item
+                                ========================= -->
+                                <div class="cc-item">
+
+                                    <!-- Begin client -->
+                                    <a href="#" target="_blank" class="partners-carousel-item" title="Centro Studi Commedia all'Italiana">
+                                        <img data-src="img/partners/centro-studi-commedia-italiana-logo-white.png" class="cc-client-logo owl-lazy" alt="Centro Studi Commedia all'Italiana">
+                                    </a>
+                                    <!-- End client -->
+
+                                </div>
+                                <!-- End carousel item -->
+
+                                <!-- Begin carousel item
+                                ========================= -->
+                                <div class="cc-item">
+
+                                    <!-- Begin client -->
+                                    <a href="#" target="_blank" class="partners-carousel-item" title="Nostalgia Film Festival">
+                                        <img data-src="img/partners/nostalgia-film-festival-logo-white.png" class="cc-client-logo owl-lazy" alt="Nostalgia Film Festival">
+                                    </a>
+                                    <!-- End client -->
+
+                                </div>
+                                <!-- End carousel item -->
+
+                                <!-- Begin carousel item
+                                ========================= -->
+                                <div class="cc-item">
+
+                                    <!-- Begin client -->
+                                    <a href="#" target="_blank" class="partners-carousel-item" title="Lanteri Cinema Caffè">
+                                        <img data-src="img/partners/lanteri-logo-white.png" class="cc-client-logo owl-lazy" alt="Lanteri Cinema Caffè">
+                                    </a>
+                                    <!-- End client -->
+
+                                </div>
+                                <!-- End carousel item -->
+
+                                <!-- Begin carousel item
+                                ========================= -->
+                                <div class="cc-item">
+
+                                    <!-- Begin client -->
+                                    <a href="#" target="_blank" class="partners-carousel-item" title="Circolo Arci L'Ortaccio">
+                                        <img data-src="img/partners/ortaccio-logo-white.png" class="cc-client-logo owl-lazy" alt="Circolo Arci L'Ortaccio">
+                                    </a>
+                                    <!-- End client -->
+
+                                </div>
+                                <!-- End carousel item -->
+
+                            </div>
+                            <!-- End content carousel -->
+
+                        </div>
+                        <!-- End partners carousel -->
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- Partner Istituzionali FARE TObject -->
+        <section class="istitutions-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col col-lg-12">
+                        <div class="col-inner">
+
+                            <!-- Begin Heading
+                            ===================
+                            * Use class "heading-center" or "heading-right" to align heading.
+                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
+                            -->
+                            <div class="heading heading-xlg heading-center">
+                                <h2 class="heading-title">Partner <span class="bg-main bg-white text-red">Istituzionali</span></h2>
+                            </div>
+                            <!-- End Heading -->
+
+                        </div> <!-- /.col-inner -->
+                    </div> <!-- /.col -->
+
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- contatti FARE Form-->
+        <section class="contact-section padding-top-120 padding-bottom-120 bg-dark text-white bg-image" style="background-image: url(img/map-bg.jpg);">
+
+            <!-- Element cover -->
+            <div class="cover cover-opacity-9"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-left col-lg-6">
+                        <div class="col-inner">
+
+                            <!-- Begin Heading
+                            ===================
+                            * Use class "heading-center" or "heading-right" to align heading.
+                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
+                            -->
+                            <div class="heading heading-xlg margin-bottom-50">
+                                <h2 class="heading-title">Contatta<span class="bg-main text-white">Ci</span></h2>
+                            </div>
+                            <!-- End Heading -->
+
+                            <!-- Begin contact info -->
+                            <div class="contact-info margin-bottom-50">
+                                <p><span class="ci-icon"><i class="fas fa-home"></i></span> Studio legale Orsitto, via Oberdan 129, 56127 Pisa. Italia</p>
+                                <p><span class="ci-icon"><i class="fas fa-envelope"></i></span> trameindipendenti@gmail.com</p>
+                            </div>
+                            <!-- End contact info -->
+
+                            <!-- Begin social icons -->
+                            <div class="social-icons margin-bottom-50">
+                                <!-- <h5>Follow Us:</h5> -->
+                                <a href="https://www.facebook.com/themetorium" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Facebook">
+                                    <span class="btn-social-icon"><i class="fab fa-facebook"></i></span>
+                                </a>
+                                <a href="https://twitter.com/Themetorium" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Instagram">
+                                    <span class="btn-social-icon"><i class="fab fa-instagram"></i></span>
+                                </a>
+                            </div>
+                            <!-- End social icons -->
+
+                        </div> <!-- /.col-inner -->
+                    </div>
+
+                    <div class="col-right col-lg-6">
+                        <div class="col-inner">
+
+                            <f:cObject typoscriptObjectPath="lib.content.home.services" />
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <f:cObject typoscriptObjectPath="lib.content.home.clients" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <f:cObject typoscriptObjectPath="lib.content.home.news" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <f:cObject typoscriptObjectPath="lib.content.home.bottom_left" />
-            </div>
-            <div class="col-sm-6">
-                <f:cObject typoscriptObjectPath="lib.content.home.bottom_right" />
-            </div>
-        </div>
+        </section>
+
+
     </div>
 
 </f:section>
