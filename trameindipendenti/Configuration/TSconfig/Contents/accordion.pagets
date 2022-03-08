@@ -1,4 +1,4 @@
-mod.wizards.newContentElement.wizardItems.common {
+mod.wizards.newContentElement.wizardItems.special {
     elements {
         trameindipendenti_accordion {
             iconIdentifier = accordion

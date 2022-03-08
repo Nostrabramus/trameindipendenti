@@ -21,7 +21,7 @@ $ll = 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:';
 		'trameindipendenti_accordion',
 		'accordion',
 	],
-	'textmedia',
+	'html',
 	'after'
 );
 
@@ -60,7 +60,7 @@ $GLOBALS['TCA']['tt_content']['columns']['accordion_item'] = array (
 		'trameindipendenti_card_film',
 		'card_film',
 	],
-	'html',
+	'accordion',
 	'after'
 );
 
