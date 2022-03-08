@@ -3,6 +3,27 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2020-03-25T11:48:33Z" product-name="template-bootstrap">
         <header/>
         <body>
+			<trans-unit id="accordion" xml:space="preserve">
+				<source>Accordion</source>
+			</trans-unit>
+			<trans-unit id="accordion.description" xml:space="preserve">
+				<source>Contenuto accordion per gestire contenuti TextPic Apri/Chiudi</source>
+			</trans-unit>
+			<trans-unit id="accordion.titolo" xml:space="preserve">
+				<source>Titolo (non visibile in frontend)</source>
+			</trans-unit>
+			<trans-unit id="accordion.elementi" xml:space="preserve">
+				<source>Elementi</source>
+			</trans-unit>
+			<trans-unit id="accordion.item" xml:space="preserve">
+				<source>Elemento</source>
+			</trans-unit>
+			<trans-unit id="accordionItem.header" xml:space="preserve">
+				<source>Titolo</source>
+			</trans-unit>
+			<trans-unit id="accordionItem.bodytext" xml:space="preserve">
+				<source>Testo</source>
+			</trans-unit>
 			<trans-unit id="card_film" xml:space="preserve">
 				<source>Card Film</source>
 			</trans-unit>

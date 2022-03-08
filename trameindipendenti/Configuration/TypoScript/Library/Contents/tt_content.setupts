@@ -12,6 +12,23 @@ lib.customContentElement {
 }
 
 tt_content {
+    trameindipendenti_accordion =< lib.customContentElement
+    trameindipendenti_accordion {
+        templateName = Accordion
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            10 {
+                table = tx_trameindipendenti_accordion_item
+                pidInList.field = pid
+                where {
+                    data = field:uid
+                    intval = 1
+                    wrap = tt_content=|
+                }
+                orderBy = sorting
+            }
+        }
+    }
     trameindipendenti_card_giurato =< lib.customContentElement
     trameindipendenti_card_giurato {
         templateName = SchedaPersona

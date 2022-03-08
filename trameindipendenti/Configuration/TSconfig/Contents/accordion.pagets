@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        trameindipendenti_accordion {
+            iconIdentifier = accordion
+            title = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:accordion
+            description = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:accordion.description
+            tt_content_defValues {
+                CType = trameindipendenti_accordion
+            }
+        }
+    }
+    show := addToList(trameindipendenti_accordion)
+}

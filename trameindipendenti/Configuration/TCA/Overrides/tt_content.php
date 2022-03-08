@@ -10,6 +10,46 @@ defined('TYPO3_MODE') or die();
 
 $ll = 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:';
 
+
+// CType Accordion
+// Adds the content element to the "Type" dropdown
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+	'tt_content',
+	'CType',
+	[
+		$ll .'accordion',
+		'trameindipendenti_accordion',
+		'accordion',
+	],
+	'textmedia',
+	'after'
+);
+
+// Configure the default backend fields for the content element accordion
+$GLOBALS['TCA']['tt_content']['types']['trameindipendenti_accordion'] = array(
+	'showitem' => '
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+			--palette--;;general,
+			--palette--;;,header;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:accordion.titolo,
+			--palette--;;,accordion_item;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:accordion.elementi,
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+			--palette--;;language,
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+			--palette--;;hidden,
+			--palette--;;access,
+		',
+);
+$GLOBALS['TCA']['tt_content']['columns']['accordion_item'] = array (
+	'exclude' => false,
+	'label' => $ll.'scheda_persona.employee_facebook',
+	'config' => [
+		'type' => 'inline',
+		'foreign_table' => 'tx_trameindipendenti_accordion_item',
+		'foreign_field' => 'tt_content',
+	]
+);
+
+
 // CType CardFilm
 // Adds the content element to the "Type" dropdown
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(

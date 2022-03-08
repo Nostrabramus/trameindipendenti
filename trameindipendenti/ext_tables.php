@@ -33,4 +33,13 @@
 $GLOBALS['TBE_STYLES']['skins']['trameindipendenti']['stylesheetDirectories'][] = 'EXT:trameindipendenti/Resources/Public/css/backend/';
 
 
+# TCA configuration
+$boot = function () {
+	foreach (['accordion_item'] as $table) {
+		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_trameindipendenti_'.$table,'EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf');
+		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_trameindipendenti_'.$table);
+	}
+};
+$boot();
+unset($boot);
 ?>
