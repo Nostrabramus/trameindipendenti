@@ -1,6 +1,3 @@
-lib.giuria = TEXT
-lib.giuria.value = giuria
-
 lib.giuria = CONTENT
 lib.giuria {
     table = tt_content
