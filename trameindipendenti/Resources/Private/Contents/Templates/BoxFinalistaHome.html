@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Clean" />
+<f:section name="Main">
+    <f:debug>{_all}</f:debug>
+    <article class="blog-grid-item">
+
+        <!-- Begin blog grid item image wrap -->
+        <a href="blog-single-post.html" class="bgi-image-wrap">
+            <div class="bgi-image">
+                <img src="/fileadmin{files.0.originalFile.identifier}" alt="{data.header}">
+            </div>
+        </a>
+        <!-- End blog grid item image wrap -->
+
+        <!-- Begin blog grid item info -->
+        <div class="bgi-info">
+            <div class="bgi-categories-wrap">
+                <a href="#" class="bgi-category">{data.subheader}</a>
+            </div>
+            <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
+            <h2 class="bgi-title">
+                <a href="#">{data.header}</a>
+            </h2>
+            <div class="bgi-meta">
+                <span class="published"><f:format.date format="Y">{data.date}</f:format.date></span>
+                <span class="posted-by"> - {data.header_layout}</span>
+            </div>
+            <div class="bgi-description">
+                <f:format.html>{data.bodytext}</f:format.html>
+            </div>
+            <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Read More</a>
+        </div>
+        <!-- End blog grid item info -->
+
+    </article>
+
+</f:section>
+</html>

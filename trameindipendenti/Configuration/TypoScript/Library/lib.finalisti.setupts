@@ -1,0 +1,30 @@
+lib.finalisti = CONTENT
+lib.finalisti {
+    table = tt_content
+    select {
+        pidInList = {$id_finalisti}
+        where = CType = 'trameindipendenti_card_film'
+        orderBy = sorting
+        languageField = sys_language_uid
+    }
+    renderObj = FLUIDTEMPLATE
+    renderObj {
+        file = EXT:trameindipendenti/Resources/Private/Contents/Templates/BoxFinalistaHome.html
+        partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+        layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
+            20 {
+                maxGalleryWidth = {$styles.content.textmedia.maxW}
+                maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
+                columnSpacing = {$styles.content.textmedia.columnSpacing}
+                borderWidth = {$styles.content.textmedia.borderWidth}
+                borderPadding = {$styles.content.textmedia.borderPadding}
+            }
+        }
+    }
+}
