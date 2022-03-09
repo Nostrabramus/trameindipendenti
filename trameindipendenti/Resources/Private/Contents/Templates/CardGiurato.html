@@ -1,7 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:layout name="Default" />
+<f:layout name="CardGiurato" />
 <f:section name="Main">
+    <div class="team-item">
+        <div class="owl-lazy-wrap"><div class="owl-lazy-loader"></div><div class="cc-image team-item-image bg-image owl-lazy" data-src="/fileadmin{files.0.originalFile.identifier}" style="background-image: url(&quot;/fileadmin{files.0.originalFile.identifier}&quot;); opacity: 1;"></div></div>
 
+        <div class="team-item-caption">
+            <h4 class="team-item-title"><span>{data.header}</span></h4>
+            <div class="team-item-subtitle"><f:format.html>{data.bodytext}</f:format.html></div>
+        </div>
+    </div>
 </f:section>
 </html>
