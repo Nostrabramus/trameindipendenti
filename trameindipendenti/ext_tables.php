@@ -32,6 +32,24 @@
  */
 $GLOBALS['TBE_STYLES']['skins']['trameindipendenti']['stylesheetDirectories'][] = 'EXT:trameindipendenti/Resources/Public/css/backend/';
 
+if (TYPO3_MODE === 'BE') {
+	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+		'Tra.trameindipendenti',
+		'web',          						// Main area
+		'tx_trameindipendenti_configuration',	// Name of the module
+		'after:template',             			// Position of the module
+		[
+			'ModuleConf' => 'index, save'
+		],
+		[               // Additional configuration
+			'access' => 'user,group',
+			'iconIdentifier' => 'module-icon',
+			'labels' => 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_mod.xlf',
+			'navigationComponentId' => 'TYPO3/CMS/Backend/PageTree/PageTreeElement',
+			'inheritNavigationComponentFromMainModule' => true,
+		]
+	);
+}
 
 # TCA configuration
 $boot = function () {

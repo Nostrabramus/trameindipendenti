@@ -38,15 +38,16 @@ if (!defined('TYPO3_MODE'))
 if (TYPO3_MODE === 'BE') {
 	$icons = [
 		'accordion' => 'accordion.svg',
-		'card-giurato' => 'card-giurato.svg',
 		'card-film' => 'card-film.svg',
+		'card-giurato' => 'card-giurato.svg',
+		'module-icon' => 'module-icon.svg',
 	];
 	$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 	foreach ($icons as $identifier => $path) {
 		$iconRegistry->registerIcon(
 			$identifier,
 			\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-			['source' => 'EXT:trameindipendenti/Resources/Public/Icons/Contents/' . $path]
+			['source' => 'EXT:trameindipendenti/Resources/Public/Icons/' . $path]
 		);
 	}
 }

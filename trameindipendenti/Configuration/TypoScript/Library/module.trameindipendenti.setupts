@@ -1,0 +1,13 @@
+module.tx_trameindipendenti {
+    view {
+        partialRootPaths {
+            10 = EXT:trameindipendenti/Resources/Private/Backend/Partials/
+        }
+        templateRootPaths {
+            10 = EXT:trameindipendenti/Resources/Private/Backend/Templates/
+        }
+        layoutRootPaths {
+            10 = EXT:trameindipendenti/Resources/Private/Backend/Layouts/
+        }
+    }
+}
