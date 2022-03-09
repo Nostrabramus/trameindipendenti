@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Clean" />
+<f:section name="Main">
+    <f:debug>{_all}</f:debug>
+    <div id="c{data.uid}" class="col-12 col-md-4">
+        <div class="info-box">
+            <div class="info-box-jury"><img src="/fileadmin{files.0.originalFile.identifier}"></div>
+            <div class="info-box-heading">
+                <h3 class="info-box-heading-title">{data.header}</h3>
+                <hr class="hr-short">
+            </div>
+            <div class="info-box-info">
+                <div class="info-box-text">
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </div>
+            </div>
+        </div>
+    </div>
+</f:section>
+</html>

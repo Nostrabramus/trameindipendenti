@@ -1,0 +1,33 @@
+lib.giuria = TEXT
+lib.giuria.value = giuria
+
+lib.giuria = CONTENT
+lib.giuria {
+    table = tt_content
+    select {
+        pidInList = {$id_giuria}
+        where = CType = 'trameindipendenti_card_giurato'
+        orderBy = sorting
+        languageField = sys_language_uid
+    }
+    renderObj = FLUIDTEMPLATE
+    renderObj {
+        file = EXT:trameindipendenti/Resources/Private/Contents/Templates/BoxGiuratoHome.html
+        partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+        layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
+            20 {
+                maxGalleryWidth = {$styles.content.textmedia.maxW}
+                maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
+                columnSpacing = {$styles.content.textmedia.columnSpacing}
+                borderWidth = {$styles.content.textmedia.borderWidth}
+                borderPadding = {$styles.content.textmedia.borderPadding}
+            }
+        }
+    }
+}
