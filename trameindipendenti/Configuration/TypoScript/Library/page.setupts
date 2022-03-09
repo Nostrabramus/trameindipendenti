@@ -30,9 +30,9 @@ page.10 {
     }
     settings {
         pages{
+            id_giuria = {$id_giuria}
+            id_finalisti ={$id_finalisti}
             id_archivio_news = {$id_archivio_news}
-            id_login = {$id_login}
-            id_registration ={$id_registration}
             id_privacy = {$id_privacy}
             id_mappa = {$id_mappa}
             id_credits = {$id_credits}

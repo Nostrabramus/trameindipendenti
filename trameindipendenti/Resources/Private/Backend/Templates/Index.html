@@ -1,4 +1,142 @@
 
 <f:layout name="default" />
 <f:section name="content">
+    <div class="row">
+        <div class="col-sm-6">
+            <f:form action="salvaSocial" name="socialconf">
+                <div class="card-container">
+                    <div class="card card-size-large">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fa fa-share-alt"></i>
+                            </div>
+                            <div class="card-header-body">
+                                <h1 class="card-title">Social</h1>
+                                <span class="card-subtitle">Configurazione delle pagine social linkate nel sito</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="form-group">
+                                <label for="facebook">Facebook</label>
+                                <f:form.textfield name="facebook" value="{f:if(condition: '{vettSocialConf.facebook} >= 0', then: '{vettSocialConf.facebook}')}" class="form-control" placeholder="{contantsExtensionSocial.facebook}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="twitter">Twitter</label>
+                                <f:form.textfield name="twitter" value="{f:if(condition: '{vettSocialConf.twitter} >= 0', then: '{vettSocialConf.twitter}')}" class="form-control" placeholder="{contantsExtensionSocial.twitter}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="instagram">Instagram</label>
+                                <f:form.textfield name="instagram" value="{f:if(condition: '{vettSocialConf.instagram} >= 0', then: '{vettSocialConf.instagram}')}" class="form-control" placeholder="{contantsExtensionSocial.instagram}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="youtube">YouTube</label>
+                                <f:form.textfield name="youtube" value="{f:if(condition: '{vettSocialConf.youtube} >= 0', then: '{vettSocialConf.youtube}')}" class="form-control" placeholder="{contantsExtensionSocial.youtube}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="vimeo">Vimeo</label>
+                                <f:form.textfield name="vimeo" value="{f:if(condition: '{vettSocialConf.vimeo} >= 0', then: '{vettSocialConf.vimeo}')}" class="form-control" placeholder="{contantsExtensionSocial.vimeo}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="linkedin">LinkedIn</label>
+                                <f:form.textfield name="linkedin" value="{f:if(condition: '{vettSocialConf.linkedin} >= 0', then: '{vettSocialConf.linkedin}')}" class="form-control" placeholder="{contantsExtensionSocial.linkedin}"/>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <f:form.button class="btn btn-primary ">Salva</f:form.button>
+                        </div>
+                    </div>
+                </div>
+            </f:form>
+        </div>
+        <div class="col-sm-3">
+            <f:form action="salvaPage" name="pageconf">
+                <div class="card-container">
+                    <div class="card card-size-large">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fa fa-sitemap"></i>
+                            </div>
+                            <div class="card-header-body">
+                                <h1 class="card-title">Pagine</h1>
+                                <span class="card-subtitle">Configurazione delle pagine utilizzate dalle varie funzionalità del sito</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="form-group">
+                                <label for="id_giuria">Pagina Giuria Edizione in Corso</label>
+                                <f:form.textfield name="id_giuria" value="{f:if(condition: '{vettPageConf.id_giuria} >= 0', then: '{vettPageConf.id_giuria}')}" class="form-control" placeholder="{contantsExtension.id_giuria}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_finalisti">Pagina Finalisti Edizione in Corso</label>
+                                <f:form.textfield name="id_finalisti" value="{f:if(condition: '{vettPageConf.id_finalisti} >= 0', then: '{vettPageConf.id_finalisti}')}" class="form-control" placeholder="{contantsExtension.id_finalisti}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_archivio_news">Archivio News</label>
+                                <f:form.textfield name="id_archivio_news" value="{f:if(condition: '{vettPageConf.id_archivio_news} >= 0', then: '{vettPageConf.id_archivio_news}')}" class="form-control" placeholder="{contantsExtension.id_archivio_news}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_privacy">Pagina contente l'informativa Privacy</label>
+                                <f:form.textfield name="id_privacy" value="{f:if(condition: '{vettPageConf.id_privacy} >= 0', then: '{vettPageConf.id_privacy}')}" class="form-control" placeholder="{contantsExtension.id_privacy}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_note_legali">Pagina contenente le note legali</label>
+                                <f:form.textfield name="id_note_legali" value="{f:if(condition: '{vettPageConf.id_note_legali} >= 0', then: '{vettPageConf.id_note_legali}')}" class="form-control"placeholder="{contantsExtension.id_note_legali}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_mappa">Mappa del Sito Web</label>
+                                <f:form.textfield name="id_mappa" value="{f:if(condition: '{vettPageConf.id_mappa} >= 0', then: '{vettPageConf.id_mappa}')}" class="form-control" placeholder="{contantsExtension.id_mappa}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_credits">Pagina dei Credits</label>
+                                <f:form.textfield name="id_credits" value="{f:if(condition: '{vettPageConf.id_credits} >= 0', then: '{vettPageConf.id_credits}')}" class="form-control" placeholder="{contantsExtension.id_credits}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_credits">Pagina di Ricerca</label>
+                                <f:form.textfield name="id_search" value="{f:if(condition: '{vettPageConf.id_search} >= 0', then: '{vettPageConf.id_search}')}" class="form-control" placeholder="{contantsExtension.id_search}"/>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <f:form.button class="btn btn-primary ">Salva</f:form.button>
+                        </div>
+                    </div>
+                </div>
+            </f:form>
+        </div>
+        <div class="col-sm-3">
+            <f:form action="salvaContainer" name="pageconf">
+                <div class="card-container">
+                    <div class="card card-size-large">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fa fa-folder"></i>
+                            </div>
+                            <div class="card-header-body">
+                                <h1 class="card-title">Contenitori</h1>
+                                <span class="card-subtitle">Configurazione delle folder che contengono news, utenti, clienti</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="form-group">
+                                <label for="id_newsfolder">Contenitore News</label>
+                                <f:form.textfield name="id_newsfolder" value="{f:if(condition: '{vettPageConf.id_newsfolder} >= 0', then: '{vettPageConf.id_newsfolder}')}" class="form-control" placeholder="{contantsExtension.id_newsfolder}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_userfolder">Contenitore Utenti</label>
+                                <f:form.textfield name="id_userfolder" value="{f:if(condition: '{vettPageConf.id_userfolder} >= 0', then: '{vettPageConf.id_userfolder}')}" class="form-control" placeholder="{contantsExtension.id_userfolder}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_clientfolder">Contenitore Clienti</label>
+                                <f:form.textfield name="id_clientfolder" value="{f:if(condition: '{vettPageConf.id_clientfolder} >= 0', then: '{vettPageConf.id_clientfolder}')}" class="form-control" placeholder="{contantsExtension.id_clientfolder}"/>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <f:form.button class="btn btn-primary ">Salva</f:form.button>
+                        </div>
+                    </div>
+                </div>
+            </f:form>
+        </div>
+    </div>
+
+
 </f:section>

@@ -9,12 +9,12 @@
 # cat=site/01_Images/1; type=string; label= url alla favicon
 favicon = EXT:trameindipendenti/Resources/Public/Icons/favicon.ico
 
-# cat=site/02_Pages/1; type=int; label= Id della pagina Archivio News
-id_archivio_news =
-# cat=site/02_Pages/2; type=int; label= Id della pagina di Login
-id_login =
+# cat=site/02_Pages/1; type=int; label= Id della pagina che contiene la Giuria della edizione in corso
+id_giuria =
+# cat=site/02_Pages/2; type=int; label= Id della pagina che contiene i Finalisti della edizione in corso
+id_finalisti =
 # cat=site/02_Pages/3; type=int; label= Id della pagina di Registrazione
-id_registration =
+id_archivio_news =
 # cat=site/02_Pages/4; type=int; label= Id della pagina Accesso Civico
 id_privacy =
 # cat=site/02_Pages/5; type=int; label= Id della pagina Note Legali

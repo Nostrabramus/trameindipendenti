@@ -39,7 +39,7 @@ if (TYPO3_MODE === 'BE') {
 		'tx_trameindipendenti_configuration',	// Name of the module
 		'after:template',             			// Position of the module
 		[
-			'ModuleConf' => 'index, save'
+			'ModuleConf' => 'index, salvaSocial, salvaPage, salvaContainer, salvaContatti, salvaCopyright'
 		],
 		[               // Additional configuration
 			'access' => 'user,group',
