@@ -25,7 +25,7 @@
 				<source>Testo</source>
 			</trans-unit>
 			<trans-unit id="card_film" xml:space="preserve">
-				<source>Card Film</source>
+				<source>Card Film TRAME</source>
 			</trans-unit>
 			<trans-unit id="card_film.description" xml:space="preserve">
 				<source>Contenuto custom per inserire una scheda film</source>
@@ -55,7 +55,7 @@
 				<source>Locandina</source>
 			</trans-unit>
 			<trans-unit id="card_giurato" xml:space="preserve">
-				<source>Card Giurato</source>
+				<source>Card Giurato TRAME</source>
 			</trans-unit>
 			<trans-unit id="card_giurato.description" xml:space="preserve">
 				<source>Contenuto custom per inserire una scheda giurato</source>

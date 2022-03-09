@@ -1,7 +1,7 @@
 mod.wizards.newContentElement.wizardItems.special {
     elements {
         trameindipendenti_card_giurato {
-            iconIdentifier = card-giurato
+            iconIdentifier = card_giurato
             title = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_giurato
             description = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_giurato.description
             tt_content_defValues {

@@ -38,8 +38,8 @@ if (!defined('TYPO3_MODE'))
 if (TYPO3_MODE === 'BE') {
 	$icons = [
 		'accordion' => 'accordion.svg',
-		'card-film' => 'card-film.svg',
-		'card-giurato' => 'card-giurato.svg',
+		'card_film' => 'card_film.svg',
+		'card_giurato' => 'card_giurato.svg',
 		'module-icon' => 'module-icon.svg',
 	];
 	$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
