@@ -41,6 +41,8 @@ return [
 		'typeicon_classes' => [
 			'default' => 'content-bootstrappackage-accordion-item',
 		],
+		'searchFields' => 'header,bodytext',
+		'iconfile' => 'EXT:trameindipendenti/Resources/Public/Icons/accordion.svg',
 	],
 	'interface' => [
 		'showRecordFieldList' => '
