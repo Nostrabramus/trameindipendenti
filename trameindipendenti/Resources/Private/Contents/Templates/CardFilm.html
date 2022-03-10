@@ -1,6 +1,24 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:layout name="Default" />
+<f:layout name="Clean" />
 <f:section name="Main">
+    <f:debug>{_all}</f:debug>
+    <style>
+        header#tt-header { display: none;}
+    </style>
+
+
+    <f:switch expression="{data.layout}">
+        <f:case value="101">
+            <f:render partial="Cards/CardFilmV" section="Default" arguments="{_all}" />
+        </f:case>
+        <f:case value="102">
+            <f:render partial="Cards/CardFilmH" section="Default" arguments="{_all}" />
+        </f:case>
+        <f:defaultCase>
+            <f:render partial="Cards/CardFilmV" section="Default" arguments="{_all}" />
+        </f:defaultCase>
+    </f:switch>
+
 </f:section>
 </html>

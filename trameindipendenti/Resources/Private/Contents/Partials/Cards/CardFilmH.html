@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="Default">
+    <div id="c{data.uid}" class='card-movie-2'>
+        <div class='card-movie-2_left'>
+            <img src="/fileadmin{files.0.originalFile.identifier}">
+        </div>
+        <div class='card-movie-2_right'>
+            <h1>{data.header}</h1>
+            <h2>{data.subheader}</h2>
+            <div class='card-movie-2_right__details'>
+                <ul>
+                    <li><f:format.date format="Y">{data.date}</f:format.date></li>
+                    <li>{data.header_layout}</li>
+                    <li>{data.header_position}</li>
+                </ul>
+                <div class='card-movie-2_right__review'>
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </div>
+            </div>
+        </div>
+    </div>
+</f:section>
+
