@@ -12,6 +12,12 @@ TCEFORM.tt_content {
                     101 = Hero Slide
                 }
             }
+            trameindipendenti_card_film {
+                addItems {
+                    101 = Verticale (locandina e testi su hover)
+                    102 = Orizzontale (locandina SX e testi DX)
+                }
+            }
         }
     }
 }

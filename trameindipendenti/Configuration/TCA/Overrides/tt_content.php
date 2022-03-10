@@ -86,6 +86,8 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 			--palette--;;film_headers,
 			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.sinossi,
 			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.locandina,	
+		--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+			--palette--;;,layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
 			--palette--;;language,
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
