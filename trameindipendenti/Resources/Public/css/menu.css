@@ -190,6 +190,7 @@
 	display: inline;
 	bottom: 15px;
 	right: 15px;
+	padding-right: 3px;
 	height: 60px;
 	line-height: 60px;
 	background-color: #FFF;
@@ -216,10 +217,16 @@ ul.language-menu li.inactive img {
 	cursor: not-allowed;
 }
 
-ul.language-menu li.active img:hover,
-ul.language-menu li.active img:focus {
+ul.language-menu li img:hover,
+ul.language-menu li img:focus {
 	-webkit-box-shadow: 0 0 0 3px #F20000;
 	box-shadow: 0 0 0 3px #F20000;
+}
+
+ul.language-menu li.inactive img:hover,
+ul.language-menu li.inactive img:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 /* ------------------------------------ *
