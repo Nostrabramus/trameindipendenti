@@ -28,6 +28,13 @@ page.10 {
         pagets__3Col = TEXT
         pagets__3Col.value = EXT:trameindipendenti/Resources/Private/Templates/3Col.html
     }
+    dataProcessing {
+        40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+        40 {
+            languages = auto
+            as = languagenavigation
+        }
+    }
     settings {
         pages{
             id_giuria = {$id_giuria}

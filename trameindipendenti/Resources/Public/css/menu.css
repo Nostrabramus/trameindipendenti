@@ -182,6 +182,47 @@
 
 
 /* ------------------------------------ *
+ *  Language menu
+/* ------------------------------------ */
+
+.langMenu {
+	position: fixed;
+	display: inline;
+	bottom: 15px;
+	right: 15px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #FFF;
+	text-align: center;
+	font-size: 24px;
+	color: #F20000;
+	text-decoration: none;
+	z-index: 9998;
+}
+
+ul.language-menu {
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.language-menu li {
+	padding: 0;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+ul.language-menu li.inactive img {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+ul.language-menu li.active img:hover,
+ul.language-menu li.active img:focus {
+	-webkit-box-shadow: 0 0 0 3px #F20000;
+	box-shadow: 0 0 0 3px #F20000;
+}
+
+/* ------------------------------------ *
  *  Navigation menu
 /* ------------------------------------ */
 
@@ -191,7 +232,7 @@
 	right: 15px;
 	top: 15px;
 	visibility: hidden;
-	z-index: 999;
+	z-index: 9999;
 	width: 260px;
 	background-color: #181818;
 	overflow-y: auto;

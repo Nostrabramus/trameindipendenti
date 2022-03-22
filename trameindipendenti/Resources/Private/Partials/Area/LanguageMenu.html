@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="Default">
+
+    <div class="langMenu">
+        <nav id="cd-language-nav">
+            <ul id="language_menu" class="language-menu">
+                <f:for each="{languagenavigation}" as="item">
+                    <li class="{f:if(condition: item.active, then: 'active')}{f:if(condition: item.available, else: 'inactive')}">
+                        <f:if condition="{item.available}">
+                            <f:then>
+                                <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                                    <img src="/typo3conf/ext/trameindipendenti/Resources/Public/Icons/{item.flag}.svg" width="30" alt="{item.navigationTitle}">
+                                </a>
+                            </f:then>
+                            <f:else>
+                                <a><img src="/typo3conf/ext/trameindipendenti/Resources/Public/Icons/{item.flag}.svg" width="30" alt="{item.navigationTitle}"></a>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </nav>
+    </div>
+
+</f:section>
