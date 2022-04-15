@@ -20,7 +20,7 @@ mod.web_layout.BackendLayouts {
                     2 {
                         columns {
                             1 {
-                                name = Finalisti
+                                name = Giuria
                                 colspan = 3
                                 colPos = 1
                             }
@@ -29,7 +29,7 @@ mod.web_layout.BackendLayouts {
                     3 {
                         columns {
                             1 {
-                                name = Giuria
+                                name = Finalisti
                                 colspan = 3
                                 colPos = 2
                             }

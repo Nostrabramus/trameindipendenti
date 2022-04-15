@@ -56,4 +56,21 @@ lib.content {
             10.select.where = colPos=7
         }
     }
+    festival {
+        main = COA
+        main {
+            10 < styles.content.get
+            10.select.where = colPos=0
+        }
+        giuria = COA
+        giuria {
+            10 < styles.content.get
+            10.select.where = colPos=1
+        }
+        finalisti = COA
+        finalisti {
+            10 < styles.content.get
+            10.select.where = colPos=2
+        }
+    }
 }

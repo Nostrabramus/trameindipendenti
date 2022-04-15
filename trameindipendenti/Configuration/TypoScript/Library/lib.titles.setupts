@@ -1,0 +1,27 @@
+lib.titles {
+    finalisti = TEXT
+    finalisti.value = Finalisti <span class="bg-main text-white">2021</span>
+    giuria = TEXT
+    giuria.value = La nostra <span class="bg-main text-white">Giuria</span>
+    partner = TEXT
+    partner.value = I nostri <span class="bg-main text-white">Partner</span>
+    patrocini = TEXT
+    patrocini.value = Con il <span class="bg-main text-white">Patrocinio</span> di
+    contributi = TEXT
+    contributi.value = Con il <span class="bg-main text-white">Contributo</span> di
+}
+
+[siteLanguage("languageId") == 1]
+    lib.titles {
+        hero.value (
+                <h1>Trame Indipendenti</h1>
+                <h2>International independent short film festival</h2>
+                <h6>June 24, 2022 Pisa - Capannori - Castiglioncello - Vicopisano - Volterra</h6>
+            )
+        finalisti.value = Finalists <span class="bg-main text-white">2021</span>
+        giuria.value = Our <span class="bg-main text-white">Jury</span>
+        partner.value = Our <span class="bg-main text-white">Partners</span>
+        patrocini.value = Under the <span class="bg-main text-white">Patronage</span> of
+        contributi.value = With the <span class="bg-main text-white">Support</span> of
+    }
+[global]

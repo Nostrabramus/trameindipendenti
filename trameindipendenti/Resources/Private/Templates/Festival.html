@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Header">
+    <f:render partial="Area/PageHeader" section="Default" arguments="{_all}" />
+</f:section>
+<f:section name="Main">
+    <div id="page-content-festival">
+        <section class="padding-top-120 padding-bottom-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <f:cObject typoscriptObjectPath="lib.content.festival.main" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.giuria')}">
+            <section class="team-section">
+                <div class="container">
+                    <div class="heading heading-lg heading-center margin-bottom-60">
+                        <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.giuria" /></h2>
+                    </div>
+                    <div class="row">
+                        <f:cObject typoscriptObjectPath="lib.content.festival.giuria" />
+                    </div>
+                </div>
+            </section>
+        </f:if>
+
+
+        <section class="padding-top-120 padding-bottom-120">
+            <div class="container">
+                <f:cObject typoscriptObjectPath="lib.content.festival.finalisti" />
+            </div>
+        </section>
+    </div>
+</f:section>
+</html>
