@@ -122,6 +122,11 @@ div[data-colpos="99"] .t3-page-ce:first-child {
     border: 1px solid #eee;
     border-top: 0;
 }
+.t3-page-ce .t3-page-ce-body .exampleContent a {
+    display: inline-block;
+    max-height: 124px;
+    overflow: hidden;
+}
 
 .t3-page-columns .btn-default {
     background-color: #f5f5f5;
