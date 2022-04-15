@@ -65,12 +65,12 @@ lib.content {
         giuria = COA
         giuria {
             10 < styles.content.get
-            10.select.where = colPos=1
+            10.select.where = colPos=2
         }
         finalisti = COA
         finalisti {
             10 < styles.content.get
-            10.select.where = colPos=2
+            10.select.where = colPos=3
         }
     }
 }

@@ -22,7 +22,7 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Giuria
                                 colspan = 3
-                                colPos = 1
+                                colPos = 2
                             }
                         }
                     }
@@ -31,7 +31,7 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Finalisti
                                 colspan = 3
-                                colPos = 2
+                                colPos = 3
                             }
                         }
                     }
