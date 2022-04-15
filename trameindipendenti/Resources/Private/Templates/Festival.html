@@ -28,47 +28,56 @@
             </section>
         </f:if>
 
-
-        <section class="padding-top-120 padding-bottom-120">
-            <div class="container-fluid">
-                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.narrativi')}">
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.narrativi')}||{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.animazioni')}||{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.documentari')}">
+            <section class="blog-carousel-section no-padding">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-xl-3 no-padding">
-                            <a class="blog-carousel-heading">
-                                <div class="heading heading-md align-center">
-                                    <h2 class="heading-title">categoria<span class="bg-white text-red">narrativi</span></h2>
-                                </div>
-                            </a>
+                        <div class="heading heading-lg heading-center margin-bottom-100">
+                            <f:cObject typoscriptObjectPath="lib.titles.festival.finalisti" />
+                            <hr class="hr-short">
                         </div>
-                        <f:cObject typoscriptObjectPath="lib.content.festival.finalisti.narrativi" />
                     </div>
-                </f:if>
-                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.animazioni')}">
-                    <div class="row">
-                        <div class="col-lg-4 col-xl-3 no-padding">
-                            <a class="blog-carousel-heading animazioni">
-                                <div class="heading heading-md align-center">
-                                    <h2 class="heading-title text-red">categoria<span class="bg-red text-white">animazioni</span></h2>
-                                </div>
-                            </a>
+                </div>
+                <div class="container-fluid">
+                    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.narrativi')}">
+                        <div class="row">
+                            <div class="col-lg-4 col-xl-3 no-padding">
+                                <a class="blog-carousel-heading">
+                                    <div class="heading heading-md align-center">
+                                        <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.festival.narrativi" /></h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <f:cObject typoscriptObjectPath="lib.content.festival.finalisti.narrativi" />
                         </div>
-                        <f:cObject typoscriptObjectPath="lib.content.festival.finalisti.animazioni" />
-                    </div>
-                </f:if>
-                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.documentari')}">
-                    <div class="row">
-                        <div class="col-lg-4 col-xl-3 no-padding">
-                            <a class="blog-carousel-heading documentari">
-                                <div class="heading heading-md align-center">
-                                    <h2 class="heading-title">categoria<span class="bg-white text-red">documentari</span></h2>
-                                </div>
-                            </a>
+                    </f:if>
+                    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.animazioni')}">
+                        <div class="row">
+                            <div class="col-lg-4 col-xl-3 no-padding">
+                                <a class="blog-carousel-heading animazioni">
+                                    <div class="heading heading-md align-center">
+                                        <h2 class="heading-title text-red"><f:cObject typoscriptObjectPath="lib.titles.festival.animazioni" /></h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <f:cObject typoscriptObjectPath="lib.content.festival.finalisti.animazioni" />
                         </div>
-                        <f:cObject typoscriptObjectPath="lib.content.festival.finalisti.documentari" />
-                    </div>
-                </f:if>
-            </div>
-        </section>
+                    </f:if>
+                    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.finalisti.documentari')}">
+                        <div class="row">
+                            <div class="col-lg-4 col-xl-3 no-padding">
+                                <a class="blog-carousel-heading documentari">
+                                    <div class="heading heading-md align-center">
+                                        <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.festival.documentari" /></h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <f:cObject typoscriptObjectPath="lib.content.festival.finalisti.documentari" />
+                        </div>
+                    </f:if>
+                </div>
+            </section>
+        </f:if>
     </div>
 </f:section>
 </html>
