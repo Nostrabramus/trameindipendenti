@@ -73,6 +73,17 @@
     margin: 10px;
 }
 
+.module-body form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos="2"] div[data-table="tt_content"] {
+    float: left;
+    width: 250px;
+    margin-right: 50px;
+}
+.module-body form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos="3"] div[data-table="tt_content"] {
+    float: left;
+    width: 150px;
+    margin-right: 50px;
+}
+
 .t3-page-column-header-label {
     display: inline-block;
     min-width: 100px;
