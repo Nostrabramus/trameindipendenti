@@ -86,6 +86,7 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 			--palette--;;film_headers,
 			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.sinossi,
 			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.locandina,	
+			--palette--;;,frame_class;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.vincitore,
 		--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 			--palette--;;,layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
 		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
@@ -1156,6 +1157,44 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 			'config' => [
 				'maxitems' => 1,
 				'autoSizeMax' => true
+			]
+		],
+		'frame_class' => [
+			'label' => 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:card_film.vincitore',
+			'config' => [
+				'type' => 'select',
+				'renderType' => 'selectMultipleSideBySide',
+				'items' => [
+					[
+						'Narrativi - Giuria',
+						'NJ'
+					],
+					[
+						'Narrativi - Pubblico',
+						'NP'
+					],
+					[
+						'Animazioni - Giuria',
+						'AJ'
+					],
+					[
+						'Animazioni - Pubblico',
+						'AP'
+					],
+					[
+						'Documentari - Giuria',
+						'DJ'
+					],
+					[
+						'Documentari - Pubblico',
+						'DP'
+					],
+					[
+						'',
+						''
+					]
+				],
+				'default' => ''
 			]
 		]
 	]

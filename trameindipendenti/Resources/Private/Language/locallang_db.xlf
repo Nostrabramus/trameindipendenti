@@ -54,6 +54,9 @@
 			<trans-unit id="card_film.locandina" xml:space="preserve">
 				<source>Locandina</source>
 			</trans-unit>
+			<trans-unit id="card_film.vincitore" xml:space="preserve">
+				<source>Premi Vinti</source>
+			</trans-unit>
 			<trans-unit id="card_giurato" xml:space="preserve">
 				<source>Card Giurato TRAME</source>
 			</trans-unit>
