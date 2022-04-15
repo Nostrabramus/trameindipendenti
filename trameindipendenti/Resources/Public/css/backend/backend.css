@@ -150,3 +150,7 @@ div[data-colpos="99"] .t3-page-ce:first-child {
 .callout-info {
     background-color: rgba(255,255,255,0.95);
 }
+
+.table-fit {
+    background-color: #f7f7f7;
+}
