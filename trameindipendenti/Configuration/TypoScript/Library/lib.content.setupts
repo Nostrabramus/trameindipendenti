@@ -67,10 +67,23 @@ lib.content {
             10 < styles.content.get
             10.select.where = colPos=2
         }
-        finalisti = COA
         finalisti {
-            10 < styles.content.get
-            10.select.where = colPos=3
+            narrativi = COA
+            narrativi {
+                10 < styles.content.get
+                10.select.where = colPos=3
+            }
+            animazioni = COA
+            animazioni {
+                10 < styles.content.get
+                10.select.where = colPos=8
+            }
+            documentari = COA
+            documentari {
+                10 < styles.content.get
+                10.select.where = colPos=9
+            }
         }
+
     }
 }

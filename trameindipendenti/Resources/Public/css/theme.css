@@ -4569,6 +4569,12 @@ body:not(.is-mobile) .bgi-alter .blog-grid-item:hover .bgi-meta {
 	background-color: #F20000;
 	color: #FFF;
 }
+.blog-carousel-heading.animazioni {
+	background-color: #FAFAFA;
+}
+.blog-carousel-heading.documentari {
+	background-color: #000000;
+}
 @media (max-width: 768px) {
 	.blog-carousel-heading {
 		height: 300px;

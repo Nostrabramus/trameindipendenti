@@ -6,7 +6,7 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 1
-                rowCount = 3
+                rowCount = 5
                 rows {
                     1 {
                         columns {
@@ -29,9 +29,27 @@ mod.web_layout.BackendLayouts {
                     3 {
                         columns {
                             1 {
-                                name = Finalisti
+                                name = Finalisti Narrativi
                                 colspan = 3
                                 colPos = 3
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Finalisti Animazioni
+                                colspan = 3
+                                colPos = 8
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = Finalisti Documentari
+                                colspan = 3
+                                colPos = 9
                             }
                         }
                     }
