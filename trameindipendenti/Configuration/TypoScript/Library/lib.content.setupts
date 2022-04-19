@@ -72,16 +72,34 @@ lib.content {
             narrativi {
                 10 < styles.content.get
                 10.select.where = colPos=3
+                10.renderObj = FLUIDTEMPLATE
+                10.renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                }
             }
             animazioni = COA
             animazioni {
                 10 < styles.content.get
                 10.select.where = colPos=8
+                10.renderObj = FLUIDTEMPLATE
+                10.renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                }
             }
             documentari = COA
             documentari {
                 10 < styles.content.get
                 10.select.where = colPos=9
+                10.renderObj = FLUIDTEMPLATE
+                10.renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                }
             }
         }
 
