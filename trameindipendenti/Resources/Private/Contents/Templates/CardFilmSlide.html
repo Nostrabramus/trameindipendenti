@@ -3,7 +3,28 @@
 <f:layout name="Clean" />
 <f:section name="Main">
 
-    <f:render partial="Cards/CardFilmV" section="Default" arguments="{_all}" />
+<f:debug>{_all}</f:debug>
+
+    <article class="blog-grid-item">
+
+        <a class="bgi-image-wrap">
+            <div class="bgi-image">
+                <img src="https://via.placeholder.com/318x450">
+            </div>
+        </a>
+        <div class="bgi-info">
+            <div class="bgi-categories-wrap">
+                <a href="#" class="bgi-category">{data.subheader}</a>
+            </div>
+            <h2 class="bgi-title">
+                <a href="#">{data.header}</a>
+            </h2>
+            <div class="bgi-meta">
+                <span class="published"><f:format.date format="Y">{data.date}</f:format.date></span> - <span class="posted-by">{data.header_layout}</span>
+            </div>
+        </div>
+
+    </article>
 
 </f:section>
 </html>
