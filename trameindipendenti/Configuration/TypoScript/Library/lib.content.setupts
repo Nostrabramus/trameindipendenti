@@ -77,6 +77,12 @@ lib.content {
                     file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
                 }
             }
             animazioni = COA
@@ -88,6 +94,12 @@ lib.content {
                     file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
                 }
             }
             documentari = COA
@@ -99,6 +111,12 @@ lib.content {
                     file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
                 }
             }
         }
