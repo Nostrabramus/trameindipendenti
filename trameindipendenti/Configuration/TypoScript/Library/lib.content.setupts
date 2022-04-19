@@ -77,9 +77,13 @@ lib.content {
             10 < styles.content.get
             10.select.where = colPos=0
         }
-        vincitori = COA
+        vincitori = CONTENT
         vincitori {
-
+            table = tt_content
+            select {
+                where = frame_class <> 'default' AND frame_class <> '' AND CType = 'trameindipendenti_card_film'
+                languageField = sys_language_uid
+            }
         }
         giuria = COA
         giuria {
