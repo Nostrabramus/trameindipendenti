@@ -56,11 +56,30 @@ lib.content {
             10.select.where = colPos=7
         }
     }
+    card_film < styles.content.get
+    card_film {
+        renderObj = FLUIDTEMPLATE
+        renderObj {
+            file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
+            partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+            layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references.fieldName = image
+                }
+            }
+        }
+    }
     festival {
         main = COA
         main {
             10 < styles.content.get
             10.select.where = colPos=0
+        }
+        vincitori = COA
+        vincitori {
+
         }
         giuria = COA
         giuria {
@@ -70,54 +89,18 @@ lib.content {
         finalisti {
             narrativi = COA
             narrativi {
-                10 < styles.content.get
+                10 < lib.content.card_film
                 10.select.where = colPos=3
-                10.renderObj = FLUIDTEMPLATE
-                10.renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
-                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
-                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
-                    dataProcessing {
-                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                        10 {
-                            references.fieldName = image
-                        }
-                    }
-                }
             }
             animazioni = COA
             animazioni {
-                10 < styles.content.get
+                10 < lib.content.card_film
                 10.select.where = colPos=8
-                10.renderObj = FLUIDTEMPLATE
-                10.renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
-                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
-                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
-                    dataProcessing {
-                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                        10 {
-                            references.fieldName = image
-                        }
-                    }
-                }
             }
             documentari = COA
             documentari {
-                10 < styles.content.get
+                10 < lib.content.card_film
                 10.select.where = colPos=9
-                10.renderObj = FLUIDTEMPLATE
-                10.renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmSlide.html
-                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
-                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
-                    dataProcessing {
-                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                        10 {
-                            references.fieldName = image
-                        }
-                    }
-                }
             }
         }
 
