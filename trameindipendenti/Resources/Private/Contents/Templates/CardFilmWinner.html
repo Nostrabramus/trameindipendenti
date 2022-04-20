@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Clean" />
+<f:section name="Main">
+    <div class="tt-grid-item isotope-item">
+        <div class="ttg-item-inner">
+            <div class="portfolio-grid-item pgi-height-1">
+                <div class="pgi-inner">
+                    <a href="#pgi-popup-{data.uid}" class="pgi-image-wrap inline-popup-trigger">
+                        <div class="pgi-image">
+                            <img src="/fileadmin{files.0.originalFile.identifier}" alt="{data.header}">
+                        </div>
+                        <div class="pgi-image-ghost">
+                            <img src="/fileadmin{files.0.originalFile.identifier}" alt="{data.header}">
+                        </div>
+                        <div class="cover-hover-color" style="background-color: #f20000;"></div>
+                    </a>
+                </div>
+                <div id="pgi-popup-{data.uid}" class="pgi-popup inline-popup mfp-hide">
+                    <div class="inline-popup-inner">
+                        <div class="row">
+                            <div class="col-12 heading heading-xlg mt-5">
+                                <f:switch expression="{data.frame_class}">
+                                    <f:case value="NJ">
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeG" /></h2>
+                                    </f:case>
+                                    <f:case value="NP">
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeP" /></h2>
+                                    </f:case>
+                                    <f:case value="AJ">
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAJ" /></h2>
+                                    </f:case>
+                                    <f:case value="AP">
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAP" /></h2>
+                                    </f:case>
+                                    <f:case value="DJ">
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDG" /></h2>
+                                    </f:case>
+                                    <f:case value="DP">
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDP" /></h2>
+                                    </f:case>
+                                    <f:defaultCase><h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeG" /></f:defaultCase>
+                                </f:switch>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/fileadmin{files.0.originalFile.identifier}" alt="{data.header}">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="no-margin-top"><span class="bg-main text-white">{data.header}</span></h3>
+                                <ul class="list-unstyled">
+                                    <li>Regia: <strong>{data.subheader}</strong></li>
+                                    <li>Paese: <strong>{data.header_layout}</strong></li>
+                                    <li>Anno: <strong><f:format.date format="Y">{data.date}</f:format.date></strong></li>
+                                    <li>Genere: <strong>{data.header_position}</strong></li>
+                                </ul>
+                                <f:format.html>{data.bodytext}</f:format.html>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</f:section>
+</html>
