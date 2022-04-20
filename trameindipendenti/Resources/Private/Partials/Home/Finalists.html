@@ -5,26 +5,18 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 col-xl-3 no-padding">
-
-                    <f:link.typolink parameter="{settings.pages.id_finalisti}" class="blog-carousel-heading">
+                    <a class="blog-carousel-heading">
                         <div class="heading heading-md align-center">
-                            <h2 class="heading-title"><span class="bg-white text-red">corti</span>finalisti</h2>
-                            <p>guardali tutti <i class="fas fa-arrow-right"></i></p>
+                            <f:cObject typoscriptObjectPath="lib.titles.home.finalisti" />
                         </div>
-                    </f:link.typolink>
-
+                    </a>
                 </div>
-
                 <div class="col-lg-8 col-xl-9 no-padding">
-
                     <div class="blog-carousel bgi-alter">
                         <div class="owl-carousel nav-hover nav-dark" data-items="4" data-loop="true" data-dots="false" data-nav="true" data-nav-speed="600" data-tablet-landscape="2" data-tablet-portrait="2" data-mobile-landscape="2" data-mobile-portrait="1">
-
                             <f:cObject typoscriptObjectPath="lib.finalisti" />
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

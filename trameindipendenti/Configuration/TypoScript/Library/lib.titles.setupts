@@ -9,6 +9,10 @@ lib.titles {
     patrocini.value = Con il <span class="bg-main text-white">Patrocinio</span> di
     contributi = TEXT
     contributi.value = Con il <span class="bg-main text-white">Contributo</span> di
+    home {
+        finalisti = TEXT
+        finalisti.value = <h2 class="heading-title"><span class="bg-white text-red">corti</span>finalisti</h2><p>guardali tutti <i class="fas fa-arrow-right"></i></p>
+    }
     festival {
         winner = TEXT
         winner.value = Cortometraggi <span class="bg-main text-white">Vincitori</span>
@@ -35,6 +39,9 @@ lib.titles {
                 <h6>June 24, 2022 Pisa - Capannori - Castiglioncello - Vicopisano - Volterra</h6>
             )
         finalisti.value = Finalists <span class="bg-main text-white">2021</span>
+        home {
+            finalisti = <h2 class="heading-title">short movie <span class="bg-white text-red">finalists</span></h2><p>look at them all <i class="fas fa-arrow-right"></i></p>
+        }
         festival {
             winner.value = <span class="bg-main text-white">Winning</span> Short Movies
             prizeG.value = <span class="bg-white text-main">Jury</span> Prize

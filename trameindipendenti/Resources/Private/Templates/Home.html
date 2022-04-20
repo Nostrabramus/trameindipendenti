@@ -55,8 +55,7 @@
             </div>
         </section>
 
-        <!-- finalisti  FARE TObject -->
-        <f:if condition="{settings.pages.id_finalisti}!=''">
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.finalisti')}">
             <f:render partial="Home/Finalists" section="Default" arguments="{_all}" />
         </f:if>
 
