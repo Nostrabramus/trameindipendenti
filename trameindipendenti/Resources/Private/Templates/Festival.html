@@ -5,16 +5,33 @@
 </f:section>
 <f:section name="Main">
     <div id="page-content-festival">
-        <section class="padding-top-120 padding-bottom-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <f:cObject typoscriptObjectPath="lib.content.festival.main" />
-                        <f:cObject typoscriptObjectPath="lib.content.festival.vincitori" />
+
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.main')}">
+            <section class="padding-top-120 padding-bottom-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <f:cObject typoscriptObjectPath="lib.content.festival.main" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </f:if>
+
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.vincitori')}">
+            <section class="padding-top-120 padding-bottom-120 winner">
+                <div class="container">
+                    <div class="heading heading-lg heading-center margin-bottom-60">
+                        <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.festival.winner" /></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <f:cObject typoscriptObjectPath="lib.content.festival.vincitori" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </f:if>
 
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.giuria')}">
             <section class="team-section">

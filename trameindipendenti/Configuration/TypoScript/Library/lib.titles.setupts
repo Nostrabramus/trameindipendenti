@@ -10,6 +10,8 @@ lib.titles {
     contributi = TEXT
     contributi.value = Con il <span class="bg-main text-white">Contributo</span> di
     festival {
+        winner = TEXT
+        winner.value = Cortometraggi <span class="bg-main text-white">Vincitori</span>
         finalisti = TEXT
         finalisti.value = <p class="margin-bottom-20">Cortometraggi</p><h2 class="heading-title">Finalisti</h2>
         narrativi = TEXT
@@ -30,6 +32,7 @@ lib.titles {
             )
         finalisti.value = Finalists <span class="bg-main text-white">2021</span>
         festival {
+            winner.value = <span class="bg-main text-white">Winning</span> Short Movies
             finalisti.value = <p class="margin-bottom-20">Short Movies</p><h2 class="heading-title">Finalists</h2>
             narrativi.value = category<span class="bg-white text-red">narrative</span>
             animazioni.value = category<span class="bg-red text-white">animation</span>
