@@ -2,8 +2,8 @@ lib.giuria = CONTENT
 lib.giuria {
     table = tt_content
     select {
-        pidInList = {$id_giuria}
-        where = CType = 'trameindipendenti_card_giurato'
+        pidInList = {$id_festival}
+        where = CType = 'trameindipendenti_card_giurato' AND colPos=2
         orderBy = sorting
         languageField = sys_language_uid
     }

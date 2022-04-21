@@ -2,8 +2,8 @@ lib.finalisti = CONTENT
 lib.finalisti {
     table = tt_content
     select {
-        pidInList = {$id_finalisti}
-        where = CType = 'trameindipendenti_card_film'
+        pidInList = {$id_festival}
+        where = CType = 'trameindipendenti_card_film' AND colPos=3
         orderBy = sorting
         languageField = sys_language_uid
     }

@@ -59,7 +59,7 @@
             <f:render partial="Home/Finalists" section="Default" arguments="{_all}" />
         </f:if>
 
-        <f:if condition="{settings.pages.id_giuria}!=''">
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.giuria')}">
             <f:render partial="Home/Jury" section="Default" arguments="{_all}" />
         </f:if>
 
