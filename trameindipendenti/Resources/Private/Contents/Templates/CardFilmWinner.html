@@ -2,11 +2,12 @@
 
 <f:layout name="Clean" />
 <f:section name="Main">
+    <f:debug>{_all}</f:debug>
     <div class="tt-grid-item isotope-item">
         <div class="ttg-item-inner">
             <div class="portfolio-grid-item pgi-height-1">
                 <div class="pgi-inner">
-                    <a href="#pgi-popup-{data.uid}" class="pgi-image-wrap inline-popup-trigger">
+                    <a href="#pgi-popup-{data.uid}" class="pgi-image-wrap inline-popup-trigger" alt="{f:format.date(date: data.starttime, format: '%Y')}">
                         <div class="pgi-image">
                             <img src="/fileadmin{files.0.originalFile.identifier}" alt="{data.header}">
                         </div>
@@ -22,22 +23,22 @@
                             <div class="col-12 heading heading-xlg mt-5">
                                 <f:switch expression="{data.frame_class}">
                                     <f:case value="NJ">
-                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeG" /></h2>
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeG" /> <f:format.date format="Y">{data.starttime}</f:format.date></h2>
                                     </f:case>
                                     <f:case value="NP">
-                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeP" /></h2>
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeP" /> <f:format.date format="Y">{data.starttime}</f:format.date></h2>
                                     </f:case>
                                     <f:case value="AJ">
-                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAJ" /></h2>
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAJ" /> <f:format.date format="Y">{data.starttime}</f:format.date></h2>
                                     </f:case>
                                     <f:case value="AP">
-                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAP" /></h2>
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAP" /> <f:format.date format="Y">{data.starttime}</f:format.date></h2>
                                     </f:case>
                                     <f:case value="DJ">
-                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDG" /></h2>
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDG" /> <f:format.date format="Y">{data.starttime}</f:format.date></h2>
                                     </f:case>
                                     <f:case value="DP">
-                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDP" /></h2>
+                                        <h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDP" /> <f:format.date format="Y">{data.starttime}</f:format.date></h2>
                                     </f:case>
                                     <f:defaultCase><h2 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeG" /></f:defaultCase>
                                 </f:switch>

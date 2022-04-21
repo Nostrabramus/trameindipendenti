@@ -1,0 +1,23 @@
+lib.albodoro = CONTENT
+lib.albodoro {
+    table = tt_content
+    select {
+        pidInList = 84
+        recursive = 3
+        where = frame_class <> 'default' AND frame_class <> '' AND CType = 'trameindipendenti_card_film' AND colPos=3
+        orderBy = pid, frame_class
+        languageField = sys_language_uid
+    }
+    renderObj = FLUIDTEMPLATE
+    renderObj {
+        file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+        partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+        layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+        }
+    }
+}
