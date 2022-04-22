@@ -6,12 +6,12 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 12
-                rowCount = 6
+                rowCount = 13
                 rows {
                     1 {
                         columns {
                             1 {
-                                name = Hero
+                                name = Slideshow
                                 colPos = 4
                                 colspan = 12
                             }
@@ -29,7 +29,7 @@ mod.web_layout.BackendLayouts {
                     3 {
                         columns {
                             1 {
-                                name = Chi Siamo
+                                name = Regole
                                 colPos = 0
                                 colspan = 12
                             }
@@ -38,8 +38,7 @@ mod.web_layout.BackendLayouts {
                     4 {
                         columns {
                             1 {
-                                name = Servizi
-                                colPos = 1
+                                name = Corti Finalisti (si compila prendendo i film dalla pagina dell'ultima edizione del festival)
                                 colspan = 12
                             }
                         }
@@ -47,8 +46,7 @@ mod.web_layout.BackendLayouts {
                     5 {
                         columns {
                             1 {
-                                name = Clienti
-                                colPos = 2
+                                name = Giuria (si compila prendendo i giurati dalla pagina dell'ultima edizione del festival)
                                 colspan = 12
                             }
                         }
@@ -56,8 +54,7 @@ mod.web_layout.BackendLayouts {
                     6 {
                         columns {
                             1 {
-                                name = Ultime Notizie
-                                colPos = 5
+                                name = Numeri (si compila usando le costanti modificabili dal modulo Configurazione Sito)
                                 colspan = 12
                             }
                         }
@@ -65,14 +62,62 @@ mod.web_layout.BackendLayouts {
                     7 {
                         columns {
                             1 {
-                                name = Contatti
-                                colPos = 6
-                                colspan = 6
+                                name = Albo d'Oro (si compila prendendo i film vincitori dalle varie edizioni del festival)
+                                colspan = 12
                             }
-                            2 {
-                                name = Google Map
+                        }
+                    }
+                    8 {
+                        columns {
+                            1 {
+                                name = Citazioni
+                                colPos = 1
+                                colspan = 12
+                            }
+                        }
+                    }
+                    9 {
+                        columns {
+                            1 {
+                                name = Chi Siamo
+                                colPos = 2
+                                colspan = 12
+                            }
+                        }
+                    }
+                    10 {
+                        columns {
+                            1 {
+                                name = FAQ / News
+                                colPos = 5
+                                colspan = 12
+                            }
+                        }
+                    }
+                    11 {
+                        columns {
+                            1 {
+                                name = I nostri Partner
+                                colPos = 6
+                                colspan = 12
+                            }
+                        }
+                    }
+                    12 {
+                        columns {
+                            1 {
+                                name = Partner Istituzionali
                                 colPos = 7
-                                colspan = 6
+                                colspan = 12
+                            }
+                        }
+                    }
+                    13 {
+                        columns {
+                            1 {
+                                name = Contatti
+                                colPos = 8
+                                colspan = 12
                             }
                         }
                     }

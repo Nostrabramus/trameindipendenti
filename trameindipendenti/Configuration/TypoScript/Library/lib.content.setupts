@@ -15,8 +15,8 @@ lib.content {
         10.select.where = colPos=2
     }
     home {
-        hero = COA
-        hero {
+        slideshow = COA
+        slideshow {
             10 < styles.content.get
             10.select.where = colPos=4
         }
@@ -25,35 +25,40 @@ lib.content {
             10 < styles.content.get
             10.select.where = colPos=3
         }
-        aboutus = COA
-        aboutus{
+        rules = COA
+        rules{
             10 < styles.content.get
             10.select.where = colPos=0
         }
-        services = COA
-        services{
+        citations = COA
+        citations{
             10 < styles.content.get
             10.select.where = colPos=1
         }
-        clients = COA
-        clients{
+        aboutus = COA
+        aboutus{
             10 < styles.content.get
             10.select.where = colPos=2
         }
-        news = COA
-        news{
+        faq = COA
+        faq{
             10 < styles.content.get
             10.select.where = colPos=5
         }
-        bottom_left = COA
-        bottom_left {
+        partner = COA
+        partner{
             10 < styles.content.get
             10.select.where = colPos=6
         }
-        bottom_right = COA
-        bottom_right {
+        istitutionals = COA
+        istitutionals{
             10 < styles.content.get
             10.select.where = colPos=7
+        }
+        contacts = COA
+        contacts {
+            10 < styles.content.get
+            10.select.where = colPos=8
         }
     }
     card_film < styles.content.get
