@@ -72,6 +72,36 @@
 			<trans-unit id="card_giurato.foto" xml:space="preserve">
 				<source>Foto</source>
 			</trans-unit>
+			<trans-unit id="partner" xml:space="preserve">
+                <source>Partner</source>
+            </trans-unit>
+            <trans-unit id="partner.description" xml:space="preserve">
+                <source>Contenuto custom per inserire un partner</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_title" xml:space="preserve">
+                <source>Nome</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_link" xml:space="preserve">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_description" xml:space="preserve">
+                <source>Descrizione</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_logo" xml:space="preserve">
+                <source>Logo</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_logo.layout" xml:space="preserve">
+                <source>Layout</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_logo.default" xml:space="preserve">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_logo.black" xml:space="preserve">
+                <source>Nero</source>
+            </trans-unit>
+            <trans-unit id="partner.partner_logo.white" xml:space="preserve">
+                <source>Bianco</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

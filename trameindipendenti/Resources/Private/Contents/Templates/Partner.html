@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+<f:section name="Main">
+    <div class="portfolio_item {data.subheader}">
+        <a href="#" class="image_link">
+            <f:for each="{files}" as="image">
+                <f:media class="image-embed-item" file="{image}" width="{image.width}" height="{image.height}" alt="{image.alternative}" title="{image.title}" loading="{settings.media.lazyLoading}" />
+            </f:for>
+        </a>
+        <div class="portfolio_content">
+            <h5>
+                <f:if condition="{data.header_link}">
+                    <f:then>
+                        <f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink>
+                    </f:then>
+                    <f:else>
+                        {data.header}
+                    </f:else>
+                </f:if>
+            </h5>
+            <f:format.html>{data.bodytext}</f:format.html>
+        </div>
+    </div>
+</f:section>
+</html>

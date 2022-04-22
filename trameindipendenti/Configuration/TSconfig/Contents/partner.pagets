@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.special {
+    elements {
+        trameindipendenti_partner {
+            iconIdentifier = partner
+            title = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:partner
+            description = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:partner.description
+            tt_content_defValues {
+                CType = trameindipendenti_partner
+            }
+        }
+    }
+    show := addToList(trameindipendenti_partner)
+}

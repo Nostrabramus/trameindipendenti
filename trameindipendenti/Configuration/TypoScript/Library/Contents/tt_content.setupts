@@ -65,4 +65,14 @@ tt_content {
             }
         }
     }
+    trameindipendenti_partner =< lib.customContentElement
+    trameindipendenti_partner {
+        templateName = Partner
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+        }
+    }
 }

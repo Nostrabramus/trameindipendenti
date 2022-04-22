@@ -43,3 +43,10 @@ CREATE TABLE tx_trameindipendenti_accordion_item (
    KEY t3ver_oid (t3ver_oid,t3ver_wsid),
    KEY language (l10n_parent,sys_language_uid)
 );
+
+#
+# Aggiunto campo Layout a immagine
+#
+CREATE TABLE sys_file_reference (
+    layout tinyint(4) DEFAULT '0' NOT NULL
+);

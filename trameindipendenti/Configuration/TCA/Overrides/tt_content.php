@@ -1200,7 +1200,7 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 	]
 );
 
-// CType Employee
+// CType Giurato
 // Adds the content element to the "Type" dropdown
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
 	'tt_content',
@@ -1272,4 +1272,62 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_giurato'] = array
 				]
 			]
 		]
+);
+
+// CType Client
+// Adds the content element to the "Type" dropdown
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+	'tt_content',
+	'CType',
+	[
+		$ll .'partner',
+		'trameindipendenti_partner',
+		'partner',
+	],
+	'card:giurato',
+	'after'
+);
+
+// Configure the default backend fields for the content element scheda-persona
+$GLOBALS['TCA']['tt_content']['types']['trameindipendenti_partner'] = array(
+	'showitem' => '
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+			--palette--;;general,
+			--palette--;;,header;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:partner.partner_title,
+			--palette--;;,header_link;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:partner.partner_link,
+			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:partner.partner_description,
+			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:partner.partner_logo,	
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+			--palette--;;language,
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+			--palette--;;hidden,
+			--palette--;;access,
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
+			categories,
+		',
+	'columnsOverrides' => [
+		'image' => [
+			'config' => [
+				'maxitems' => 3,
+				'autoSizeMax' => true,
+				// custom configuration for displaying fields in the overlay/reference table
+				// to use the newsPalette and imageoverlayPalette instead of the basicoverlayPalette
+				'overrideChildTca' => [
+					'types' => [
+						\TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+							'showitem' => '
+								--palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageTramePalette,
+								--palette--;;imageoverlayPalette,
+								--palette--;;filePalette'
+						],
+					],
+				],
+			]
+		],
+		'bodytext' => [
+			'config' => [
+				'enableRichtext' => true,
+			]
+		]
+	]
 );
