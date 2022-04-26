@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.special {
+    elements {
+        trameindipendenti_slide {
+            iconIdentifier = slide
+            title = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:slide
+            description = LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:slide.description
+            tt_content_defValues {
+                CType = trameindipendenti_slide
+            }
+        }
+    }
+    show := addToList(trameindipendenti_slide)
+}

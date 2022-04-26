@@ -37,6 +37,7 @@ if (!defined('TYPO3_MODE'))
 /*register icon plugin*/
 if (TYPO3_MODE === 'BE') {
 	$icons = [
+		'slide' => 'slide.svg',
 		'accordion' => 'accordion.svg',
 		'card_film' => 'card_film.svg',
 		'card_giurato' => 'card_giurato.svg',

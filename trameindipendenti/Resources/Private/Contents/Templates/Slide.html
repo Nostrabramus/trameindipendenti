@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Slide" />
+<f:section name="Main">
+    <div class="carousel-item background_bg overlay_bg" data-img-src="/fileadmin/{files.0.originalFile.identifier}">
+        <div class="banner_slide_content">
+            <div class="container"><!-- STRART CONTAINER -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 {f:if(condition: '{data.header_position} ==', then: 'text-center', else: 'text-{data.header_position}')}">
+                        <div class="banner_content content_overlay_bg animation text_white">
+                            <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">{data.header}</h2>
+                            <h3 class="animation" data-animation="fadeInDown" data-animation-delay="1.2s">{data.subheader}</h3>
+                            <div class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s"><f:format.html>{data.bodytext}</f:format.html></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END CONTAINER-->
+        </div>
+    </div>
+</f:section>
+</html>

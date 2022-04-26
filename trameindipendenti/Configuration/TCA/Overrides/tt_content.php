@@ -10,6 +10,50 @@ defined('TYPO3_MODE') or die();
 
 $ll = 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:';
 
+// CType Slide
+// Adds the content element to the "Type" dropdown
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+	'tt_content',
+	'CType',
+	[
+		$ll .'slide',
+		'trameindipendenti_slide',
+		'slide',
+	],
+	'html',
+	'after'
+);
+
+// Configure the default backend fields for the content element slide
+$GLOBALS['TCA']['tt_content']['types']['trameindipendenti_slide'] = array(
+	'showitem' => '
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+			--palette--;;general,
+			--palette--;;,header;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:slide.titolo,
+			--palette--;;,subheader;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:slide.sottotitolo,
+			--palette--;;,bodytext;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:slide.testo,
+			--palette--;;,header_position;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:slide.allineamento,
+			--palette--;;,image;LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:slide.sfondo,	
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+			--palette--;;language,
+		--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+			--palette--;;hidden,
+			--palette--;;access,
+		',
+	'columnsOverrides' => [
+		'bodytext' => [
+			'config' => [
+				'enableRichtext' => true,
+			]
+		],
+		'image' => [
+			'config' => [
+				'maxitems' => 1,
+				'autoSizeMax' => true
+			]
+		]
+	]
+);
 
 // CType Accordion
 // Adds the content element to the "Type" dropdown
@@ -21,7 +65,7 @@ $ll = 'LLL:EXT:trameindipendenti/Resources/Private/Language/locallang_db.xlf:';
 		'trameindipendenti_accordion',
 		'accordion',
 	],
-	'html',
+	'slide',
 	'after'
 );
 
