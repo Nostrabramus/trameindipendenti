@@ -3,6 +3,27 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2020-03-25T11:48:33Z" product-name="template-bootstrap">
         <header/>
         <body>
+			<trans-unit id="slide" xml:space="preserve">
+				<source>Slide</source>
+			</trans-unit>
+			<trans-unit id="slide.description" xml:space="preserve">
+				<source>Contenuto slide da utilizzare nello slideshow di homepage</source>
+			</trans-unit>
+			<trans-unit id="slide.titolo" xml:space="preserve">
+				<source>Titolo della slide</source>
+			</trans-unit>
+			<trans-unit id="slide.sottotitolo" xml:space="preserve">
+				<source>Sottotitolo della slide</source>
+			</trans-unit>
+			<trans-unit id="slide.testo" xml:space="preserve">
+				<source>Testo della slide</source>
+			</trans-unit>
+			<trans-unit id="slide.allineamento" xml:space="preserve">
+				<source>Allineamento dei testi</source>
+			</trans-unit>
+			<trans-unit id="slide.sfondo" xml:space="preserve">
+				<source>Sfondo della slide</source>
+			</trans-unit>
 			<trans-unit id="accordion" xml:space="preserve">
 				<source>Accordion</source>
 			</trans-unit>
