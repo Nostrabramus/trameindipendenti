@@ -22,6 +22,10 @@ lib.titles {
             screenings = TEXT
             screenings.value = Proiezioni Pubbliche
         }
+        hall = TEXT
+        hall.value = Albo
+        offame = TEXT
+        offame.value = d'oro</h2>
     }
     festival {
         winner = TEXT
@@ -57,6 +61,8 @@ lib.titles {
                 prizes.value = Awards Awarded
                 screenings.value = Public Screening
             }
+            hall.value = Hall
+            offame.value = of Fame
         }
         festival {
             winner.value = <span class="bg-main text-white">Winning</span> Short Movies
