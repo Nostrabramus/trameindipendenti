@@ -54,53 +54,43 @@
             <f:render partial="Home/Jury" section="Default" arguments="{_all}" />
         </f:if>
 
-        <!-- numeri  FARE TObject -->
         <section class="counter-up-section">
             <div class="container">
                 <div class="row">
-
-                    <!-- Count-1 -->
                     <div class="col count-1 col-12 col-md-6 col-lg-3">
                         <div class="counter-up-inner">
                             <div class="counter-icon"><i class="fas fa-film"></i></div>
-                            <div class="counter">1387</div>
+                            <div class="counter">{settings.counters.movies}</div>
                             <hr class="hr-short hr-short-center">
-                            <h4>Cortometraggi Selezionati</h4>
+                            <h4><f:cObject typoscriptObjectPath="lib.titles.home.counter.movies" /></h4>
                         </div>
-                    </div> <!-- /.col -->
-
-                    <!-- Count-2 -->
+                    </div>
                     <div class="col count-2 col-12 col-md-6 col-lg-3">
                         <div class="counter-up-inner">
                             <div class="counter-icon"><i class="fas fa-globe-africa"></i></div>
-                            <div class="counter">36</div>
+                            <div class="counter">{settings.counters.countries}</div>
                             <hr class="hr-short hr-short-center">
-                            <h4>Paesi in Gara</h4>
+                            <h4><f:cObject typoscriptObjectPath="lib.titles.home.counter.countries" /></h4>
                         </div>
-                    </div> <!-- /.col -->
-
-                    <!-- Count-3 -->
+                    </div>
                     <div class="col count-3 col-12 col-md-6 col-lg-3">
                         <div class="counter-up-inner">
                             <div class="counter-icon"><i class="fas fa-trophy"></i></div>
-                            <div class="counter">12</div>
+                            <div class="counter">{settings.counters.prizes}</div>
                             <hr class="hr-short hr-short-center">
-                            <h4>Premi Assegnati</h4>
+                            <h4><f:cObject typoscriptObjectPath="lib.titles.home.counter.prizes" /></h4>
                         </div>
-                    </div> <!-- /.col -->
-
-                    <!-- Count-4 -->
+                    </div>
                     <div class="col count-4 col-12 col-md-6 col-lg-3">
                         <div class="counter-up-inner">
                             <div class="counter-icon"><i class="fas fa-video"></i></div>
-                            <div class="counter">87</div>
+                            <div class="counter">{settings.counters.screenings}</div>
                             <hr class="hr-short hr-short-center">
-                            <h4>Proiezioni Pubbliche</h4>
+                            <h4><f:cObject typoscriptObjectPath="lib.titles.home.counter.screenings" /></h4>
                         </div>
-                    </div> <!-- /.col -->
-
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
+                    </div>
+                </div>
+            </div>
         </section>
 
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.albodoro')}">

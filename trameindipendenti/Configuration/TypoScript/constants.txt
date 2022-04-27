@@ -56,5 +56,11 @@ credits_it = website developed by <a href="https://github.com/Nostrabramus">Nost
 # cat=site/07_Footer/4; type=string; label = Credits ENG
 credits_en = sito web sviluppato da <a href="https://github.com/Nostrabramus">Nostrabramus</a>
 
-# cat=site/08_Production/1; type=boolean; label = Production
+# cat=site/08_Numbers/1; type=boolean; label = Production
+counter_movies = 1387
+counter_countries = 36
+counter_prizes = 12
+counter_screenings = 87
+
+# cat=site/09_Production/1; type=boolean; label = Production
 production = true

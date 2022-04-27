@@ -12,6 +12,16 @@ lib.titles {
     home {
         finalisti = TEXT
         finalisti.value = <h2 class="heading-title"><span class="bg-white text-red">corti</span>finalisti</h2><p>guardali tutti <i class="fas fa-arrow-right"></i></p>
+        counter {
+            movies = TEXT
+            movies.value = Cortometraggi Selezionati
+            countries = TEXT
+            countries.value = Paesi in Gara
+            prizes = TEXT
+            prizes.value = Premi Assegnati
+            screenings = TEXT
+            screenings.value = Proiezioni Pubbliche
+        }
     }
     festival {
         winner = TEXT
@@ -41,6 +51,12 @@ lib.titles {
         finalisti.value = Finalists <span class="bg-main text-white">2021</span>
         home {
             finalisti.value = <h2 class="heading-title">short movie <span class="bg-white text-red">finalists</span></h2><p>look at them all <i class="fas fa-arrow-right"></i></p>
+            counter {
+                movies.value = Short Movies Selected
+                countries.value = Competing Countries
+                prizes.value = Awards Awarded
+                screenings.value = Public Screening
+            }
         }
         festival {
             winner.value = <span class="bg-main text-white">Winning</span> Short Movies

@@ -58,6 +58,12 @@ page.10 {
             instagram = {$instagram}
             youtube = {$youtube}
         }
+        counters {
+            movies = {$counter_movies}
+            countries = {$counter_countries}
+            prizes = {$counter_prizes}
+            screenings = {$counter_screenings}
+        }
     }
     variables {
         baseUrl = TEXT
