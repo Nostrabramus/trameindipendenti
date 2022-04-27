@@ -266,30 +266,9 @@
             <f:render partial="Home/Partner" section="Default" arguments="{_all}" />
         </f:if>
 
-        <!-- Partner Istituzionali FARE TObject -->
-        <section class="istitutions-section">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col col-lg-12">
-                        <div class="col-inner">
-
-                            <!-- Begin Heading
-                            ===================
-                            * Use class "heading-center" or "heading-right" to align heading.
-                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
-                            -->
-                            <div class="heading heading-xlg heading-center">
-                                <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.patrocini" /></h2>
-                            </div>
-                            <!-- End Heading -->
-
-                        </div> <!-- /.col-inner -->
-                    </div> <!-- /.col -->
-
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </section>
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.patrocini')}">
+            <f:render partial="Home/Patrocini" section="Default" arguments="{_all}" />
+        </f:if>
 
         <!-- contatti FARE Form-->
         <section class="contact-section padding-top-120 padding-bottom-120 bg-dark text-white bg-image" style="background-image: url(img/map-bg.jpg);">

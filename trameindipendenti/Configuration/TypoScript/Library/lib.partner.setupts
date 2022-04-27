@@ -1,66 +1,41 @@
-lib.partner = CONTENT
-lib.partner {
+lib.partnerModel = CONTENT
+lib.partnerModel {
     table = tt_content
+    select {
+        orderBy = sorting
+        languageField = sys_language_uid
+    }
+    renderObj = FLUIDTEMPLATE
+    renderObj {
+        file = EXT:trameindipendenti/Resources/Private/Contents/Templates/Partner.html
+        partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+        layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+        }
+    }
+}
+lib.partner < lib.partnerModel
+lib.partner {
     select {
         pidInList = {$id_partners}
         where = CType = 'trameindipendenti_partner' AND colPos=3
-        orderBy = sorting
-        languageField = sys_language_uid
-    }
-    renderObj = FLUIDTEMPLATE
-    renderObj {
-        file = EXT:trameindipendenti/Resources/Private/Contents/Templates/Partner.html
-        partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
-        layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
-        dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-                references.fieldName = image
-            }
-        }
     }
 }
-lib.patrocini = CONTENT
+lib.patrocini < lib.partnerModel
 lib.patrocini {
-    table = tt_content
     select {
         pidInList = {$id_partners}
         where = CType = 'trameindipendenti_partner' AND colPos=8
-        orderBy = sorting
-        languageField = sys_language_uid
-    }
-    renderObj = FLUIDTEMPLATE
-    renderObj {
-        file = EXT:trameindipendenti/Resources/Private/Contents/Templates/Partner.html
-        partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
-        layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
-        dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-                references.fieldName = image
-            }
-        }
     }
 }
-lib.sponsor = CONTENT
+lib.sponsor < lib.partnerModel
 lib.sponsor {
-    table = tt_content
     select {
         pidInList = {$id_partners}
         where = CType = 'trameindipendenti_partner' AND colPos=9
-        orderBy = sorting
-        languageField = sys_language_uid
-    }
-    renderObj = FLUIDTEMPLATE
-    renderObj {
-        file = EXT:trameindipendenti/Resources/Private/Contents/Templates/Partner.html
-        partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
-        layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
-        dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-                references.fieldName = image
-            }
-        }
     }
 }
