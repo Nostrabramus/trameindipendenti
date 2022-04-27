@@ -19,13 +19,13 @@ lib.content {
         slideshow {
             10 < styles.content.get
             10.select {
-                where = colPos=4 AND CType = 'trameindipendenti_slide'
+                where = colPos=3 AND CType = 'trameindipendenti_slide'
             }
         }
         evidence = COA
         evidence {
             10 < styles.content.get
-            10.select.where = colPos=3
+            10.select.where = colPos=4
         }
         rules = COA
         rules{

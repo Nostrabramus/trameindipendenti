@@ -1,5 +1,5 @@
 mod.web_layout.BackendLayouts {
-    Home {
+    HomeTrame {
         icon = EXT:trameindipendenti/Resources/Public/Icons/BackendLayouts/Home.jpg
         name = Home
         title = Home
@@ -12,7 +12,7 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Slideshow
-                                colPos = 4
+                                colPos = 3
                                 colspan = 12
                             }
                         }
@@ -21,7 +21,7 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Evidenza
-                                colPos = 3
+                                colPos = 4
                                 colspan = 12
                             }
                         }
