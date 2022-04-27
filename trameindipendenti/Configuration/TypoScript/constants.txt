@@ -11,15 +11,17 @@ favicon = EXT:trameindipendenti/Resources/Public/Icons/favicon.ico
 
 # cat=site/02_Pages/1; type=int; label= Id della pagina che contiene la Giuria della edizione in corso
 id_festival =
-# cat=site/02_Pages/2; type=int; label= Id della pagina di Registrazione
+# cat=site/02_Pages/2; type=int; label= Id della pagina che contiene partner, patrocini, sponsor
+id_partners =
+# cat=site/02_Pages/3; type=int; label= Id della pagina di Registrazione
 id_archivio_news =
-# cat=site/02_Pages/3; type=int; label= Id della pagina Accesso Civico
+# cat=site/02_Pages/4; type=int; label= Id della pagina Accesso Civico
 id_privacy =
-# cat=site/02_Pages/4; type=int; label= Id della pagina Note Legali
+# cat=site/02_Pages/5; type=int; label= Id della pagina Note Legali
 id_note_legali =
-# cat=site/02_Pages/5; type=int; label= Id della pagina Mappa del Sito
+# cat=site/02_Pages/6; type=int; label= Id della pagina Mappa del Sito
 id_mappa =
-# cat=site/02_Pages/6; type=int; label= Id della pagina Credits
+# cat=site/02_Pages/7; type=int; label= Id della pagina Credits
 id_credits =
 
 # cat=site/03_Folders/1; type=int; label= Id della folder che contiene le News

@@ -39,8 +39,8 @@ page.10 {
     }
     settings {
         pages{
-            id_giuria = {$id_giuria}
-            id_finalisti ={$id_finalisti}
+            id_festival = {$id_festival}
+            id_partners = {$id_partners}
             id_archivio_news = {$id_archivio_news}
             id_privacy = {$id_privacy}
             id_mappa = {$id_mappa}

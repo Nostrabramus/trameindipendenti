@@ -6,14 +6,32 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 1
-                rowCount = 1
+                rowCount = 3
                 rows {
                     1 {
                         columns {
                             1 {
-                                name = Schede Film / Giurati
+                                name = Partner
                                 colspan = 3
-                                colPos = 99
+                                colPos = 3
+                            }
+                        }
+                    }
+                    1 {
+                        columns {
+                            1 {
+                                name = Patrocini
+                                colspan = 3
+                                colPos = 8
+                            }
+                        }
+                    }
+                    1 {
+                        columns {
+                            1 {
+                                name = Sponsor
+                                colspan = 3
+                                colPos = 9
                             }
                         }
                     }
