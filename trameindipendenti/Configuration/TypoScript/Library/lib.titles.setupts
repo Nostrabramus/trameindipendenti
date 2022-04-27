@@ -6,7 +6,7 @@ lib.titles {
     partner = TEXT
     partner.value = I nostri <span class="bg-main text-white">Partner</span>
     patrocini = TEXT
-    patrocini.value = Con il <span class="bg-main text-white">Patrocinio</span> di
+    patrocini.value = Partner <span class="bg-main bg-white text-red">Istituzionali</span>
     contributi = TEXT
     contributi.value = Con il <span class="bg-main text-white">Contributo</span> di
     home {
