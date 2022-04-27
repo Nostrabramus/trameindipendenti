@@ -285,7 +285,6 @@
 
                     <div class="col-left col-lg-6">
                         <div class="col-inner">
-
                             <!-- Begin Heading
                             ===================
                             * Use class "heading-center" or "heading-right" to align heading.
@@ -306,12 +305,17 @@
                             <!-- Begin social icons -->
                             <div class="social-icons margin-bottom-50">
                                 <!-- <h5>Follow Us:</h5> -->
-                                <a href="https://www.facebook.com/themetorium" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Facebook">
-                                    <span class="btn-social-icon"><i class="fab fa-facebook"></i></span>
-                                </a>
-                                <a href="https://twitter.com/Themetorium" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Instagram">
-                                    <span class="btn-social-icon"><i class="fab fa-instagram"></i></span>
-                                </a>
+
+                                <f:if condition="{settings.social.facebook}!=''">
+                                    <a href="{settings.social.facebook}" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Facebook">
+                                        <span class="btn-social-icon"><i class="fab fa-facebook"></i></span>
+                                    </a>
+                                </f:if>
+                                <f:if condition="{settings.social.instagram}!=''">
+                                    <a href="{settings.social.instagram}" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Instagram">
+                                        <span class="btn-social-icon"><i class="fab fa-instagram"></i></span>
+                                    </a>
+                                </f:if>
                             </div>
                             <!-- End social icons -->
 
