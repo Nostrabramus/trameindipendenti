@@ -17,8 +17,8 @@ page.10 {
         default = TEXT
         default.value = EXT:trameindipendenti/Resources/Private/Templates/1Col.html
 
-        pagets__HomeTram = TEXT
-        pagets__HomeTram.value = EXT:trameindipendenti/Resources/Private/Templates/Home.html
+        pagets__HomeTrame = TEXT
+        pagets__HomeTrame.value = EXT:trameindipendenti/Resources/Private/Templates/Home.html
         pagets__1Col = TEXT
         pagets__1Col.value = EXT:trameindipendenti/Resources/Private/Templates/1Col.html
         pagets__2ColAsideLeft = TEXT
