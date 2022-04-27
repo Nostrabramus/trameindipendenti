@@ -29,21 +29,22 @@
             </div>
         </section>
 
-        <!-- rules -->
-        <section class="team-section split-box no-padding">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-left col-xl-6 no-padding">
-                        <div class="padding-height-70 bg-image" style="background-image: url(img/issalavela.jpg);"></div>
-                    </div>
-                    <div class="col-right col-xl-6 align-self-center no-padding">
-                        <div class="col-inner">
-                            <f:cObject typoscriptObjectPath="lib.content.home.evidence" />
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.home.rules')}">
+            <section class="team-section split-box no-padding">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-left col-xl-6 no-padding">
+                            <div class="padding-height-70 bg-image" style="background-image: url('/typo3conf/ext/trameindipendenti/Resources/Public/Images/issalavela.jpg');"></div>
+                        </div>
+                        <div class="col-right col-xl-6 align-self-center no-padding">
+                            <div class="col-inner">
+                                <f:cObject typoscriptObjectPath="lib.content.home.rules" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </f:if>
 
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.finalisti')}">
             <f:render partial="Home/Finalists" section="Default" arguments="{_all}" />
