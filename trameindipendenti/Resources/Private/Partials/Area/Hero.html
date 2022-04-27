@@ -1,18 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:section name="Default">
 
-    <div id="HeroSlider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+    <div class="intro-slider">
+        <div class="owl-carousel owl-size-full owl-size-full-m cc-hover-zoom cursor-grab dots-right nav-minimal nav-light nav-hover" data-items="1" data-loop="true" data-autoplay="true" data-autoplay-timeout="8000" data-autoplay-hover-pause="true" data-autoplay-speed="600" data-dots-speed="600" data-nav="true" data-nav-speed="600" data-drag-end-speed="600" data-animate-in="fadeIn" data-animate-out="fadeOut">
             <f:cObject typoscriptObjectPath="lib.content.home.slideshow" />
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+    </div>
+    <div class="scroll-down-arrow text-center parallax-3">
+        <a href="#page-content" class="page-scroll text-white"><span><i class="fas fa-arrow-down"></i></span></a>
     </div>
 
 </f:section>

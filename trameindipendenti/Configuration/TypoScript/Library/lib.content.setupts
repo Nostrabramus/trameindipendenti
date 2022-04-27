@@ -18,7 +18,9 @@ lib.content {
         slideshow = COA
         slideshow {
             10 < styles.content.get
-            10.select.where = colPos=4
+            10.select {
+                where = colPos=4 AND CType = 'trameindipendenti_slide'
+            }
         }
         evidence = COA
         evidence {
