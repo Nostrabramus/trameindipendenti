@@ -4,7 +4,8 @@
 # customsubcategory=04_Social=Social
 # customsubcategory=05_Contacts=Contatti
 # customsubcategory=06_Footer=Footer
-# customsubcategory=07_Production=Produzione/Sviluppo
+# customsubcategory=07_Counters=Numeri
+# customsubcategory=08_Production=Produzione/Sviluppo
 
 # cat=site/01_Images/1; type=string; label= url alla favicon
 favicon = EXT:trameindipendenti/Resources/Public/Icons/favicon.ico
@@ -49,20 +50,23 @@ tel =
 # cat=site/05_Contacts/4; type=string; label = Fax
 fax =
 
-# cat=site/07_Footer/1; type=string; label = Copyright ITA
+# cat=site/06_Footer/1; type=string; label = Copyright ITA
 copyright_it = © all right reserved by <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
-# cat=site/07_Footer/2; type=string; label = Copyright ENG
+# cat=site/06_Footer/2; type=string; label = Copyright ENG
 copyright_en = © tutti i diritti riservati da <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
-# cat=site/07_Footer/3; type=string; label = Credits ITA
+# cat=site/06_Footer/3; type=string; label = Credits ITA
 credits_it = website developed by <a href="https://github.com/Nostrabramus">Nostrabramus</a>
-# cat=site/07_Footer/4; type=string; label = Credits ENG
+# cat=site/06_Footer/4; type=string; label = Credits ENG
 credits_en = sito web sviluppato da <a href="https://github.com/Nostrabramus">Nostrabramus</a>
 
-# cat=site/08_Numbers/1; type=boolean; label = Production
+# cat=site/07_Counters/1; type=boolean; label = Cortometraggi selezionati
 counter_movies = 1387
+# cat=site/07_Counters/2; type=boolean; label = Paesi in gara
 counter_countries = 36
+# cat=site/07_Counters/3; type=boolean; label = Premi assegnati
 counter_prizes = 12
+# cat=site/07_Counters/4; type=boolean; label = Proiezioni pubbliche
 counter_screenings = 87
 
-# cat=site/09_Production/1; type=boolean; label = Production
+# cat=site/08_Production/1; type=boolean; label = Production
 production = true
