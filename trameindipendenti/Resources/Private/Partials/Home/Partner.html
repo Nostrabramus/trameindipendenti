@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="Default">
+
+    <section class="partners-carousel-section bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <div class="col-inner">
+                        <div class="heading heading-xlg heading-center">
+                            <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.partner" /></h2>
+                        </div>
+                    </div>
+                    <div class="partners-carousel">
+                        <div class="owl-carousel" data-lazy-load="true" data-items="5" data-margin="10" data-loop="true" data-autoplay="true" data-autoplay-timeout="7000" data-autoplay-hover-pause="true" data-autoplay-speed="600" data-dots="false" data-tablet-landscape="4" data-tablet-portrait="3" data-mobile-landscape="2" data-mobile-portrait="2">
+                            <f:cObject typoscriptObjectPath="lib.partner" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</f:section>
+

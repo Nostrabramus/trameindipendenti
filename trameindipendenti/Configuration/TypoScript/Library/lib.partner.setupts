@@ -17,14 +17,6 @@ lib.partner {
             10 {
                 references.fieldName = image
             }
-            20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
-            20 {
-                maxGalleryWidth = {$styles.content.textmedia.maxW}
-                maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
-                columnSpacing = {$styles.content.textmedia.columnSpacing}
-                borderWidth = {$styles.content.textmedia.borderWidth}
-                borderPadding = {$styles.content.textmedia.borderPadding}
-            }
         }
     }
 }
@@ -47,14 +39,6 @@ lib.patrocini {
             10 {
                 references.fieldName = image
             }
-            20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
-            20 {
-                maxGalleryWidth = {$styles.content.textmedia.maxW}
-                maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
-                columnSpacing = {$styles.content.textmedia.columnSpacing}
-                borderWidth = {$styles.content.textmedia.borderWidth}
-                borderPadding = {$styles.content.textmedia.borderPadding}
-            }
         }
     }
 }
@@ -76,14 +60,6 @@ lib.sponsor {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {
                 references.fieldName = image
-            }
-            20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
-            20 {
-                maxGalleryWidth = {$styles.content.textmedia.maxW}
-                maxGalleryWidthInText = {$styles.content.textmedia.maxWInText}
-                columnSpacing = {$styles.content.textmedia.columnSpacing}
-                borderWidth = {$styles.content.textmedia.borderWidth}
-                borderPadding = {$styles.content.textmedia.borderPadding}
             }
         }
     }

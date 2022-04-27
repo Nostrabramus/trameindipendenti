@@ -1,26 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:layout name="Default" />
+<f:layout name="Clean" />
 <f:section name="Main">
-    <div class="portfolio_item {data.subheader}">
-        <a href="#" class="image_link">
-            <f:for each="{files}" as="image">
-                <f:media class="image-embed-item" file="{image}" width="{image.width}" height="{image.height}" alt="{image.alternative}" title="{image.title}" loading="{settings.media.lazyLoading}" />
-            </f:for>
-        </a>
-        <div class="portfolio_content">
-            <h5>
-                <f:if condition="{data.header_link}">
-                    <f:then>
-                        <f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink>
-                    </f:then>
-                    <f:else>
-                        {data.header}
-                    </f:else>
-                </f:if>
-            </h5>
-            <f:format.html>{data.bodytext}</f:format.html>
-        </div>
+
+    <div class="cc-item">
+        <f:for each="{files}" as="image">
+            <f:link.typolink parameter="{data.header_link}" title="{image.title}" class="partners-carousel-item">
+                <f:media class="cc-client-logo owl-lazy" file="{image}" alt="{image.alternative}" title="{image.title}" />
+            </f:link.typolink>
+        </f:for>
     </div>
+
 </f:section>
 </html>
