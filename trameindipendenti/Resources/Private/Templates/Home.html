@@ -270,6 +270,10 @@
             <f:render partial="Home/Patrocini" section="Default" arguments="{_all}" />
         </f:if>
 
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.sponsor')}">
+            <f:render partial="Home/Sponsor" section="Default" arguments="{_all}" />
+        </f:if>
+
         <!-- contatti FARE Form-->
         <section class="contact-section padding-top-120 padding-bottom-120 bg-dark text-white bg-image" style="background-image: url(img/map-bg.jpg);">
 
