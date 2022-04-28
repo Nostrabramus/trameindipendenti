@@ -1651,6 +1651,7 @@ body:not(.is-mobile) .owl-carousel.nav-hover:hover .owl-nav {
 	display: block;
 	width: auto;
 	max-width: 100%;
+	height: auto;
 	margin: 0 auto;
 }
 
