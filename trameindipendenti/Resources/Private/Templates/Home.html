@@ -249,18 +249,19 @@
             </div> <!-- /.container -->
         </section>
 
-        <!-- FAQ FARE CType -->
-        <section class="faq-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-12">
-                        <div class="col-inner">
-                            <f:cObject typoscriptObjectPath="lib.content.home.aboutus" />
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.home.aboutus')}">
+            <section class="faq-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-12">
+                            <div class="col-inner">
+                                <f:cObject typoscriptObjectPath="lib.content.home.aboutus" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </f:if>
 
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.partner')}">
             <f:render partial="Home/Partner" section="Default" arguments="{_all}" />
