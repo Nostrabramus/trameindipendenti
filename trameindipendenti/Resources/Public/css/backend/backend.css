@@ -86,6 +86,14 @@
     margin-right: 50px;
 }
 
+.module-body form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos="3"] div[data-table="tt_content"] .t3-page-ce-dragitem,
+.module-body form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos="8"] div[data-table="tt_content"] .t3-page-ce-dragitem,
+.module-body form > .t3-grid-container > .t3-page-columns > tbody > tr > td[data-colpos="9"] div[data-table="tt_content"] .t3-page-ce-dragitem {
+    height: 200px !important;
+    overflow: hidden;
+}
+
+
 .t3-page-column-header-label {
     display: inline-block;
     min-width: 100px;
