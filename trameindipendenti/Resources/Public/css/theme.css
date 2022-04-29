@@ -61,6 +61,7 @@
 *  Footer
 *  Scroll to top button
 *  Card Movie
+*  Partner
 */
 
 
@@ -7387,4 +7388,42 @@ select.form-control-sm:not([size]):not([multiple]) {
 	padding: 0 0 0 40px;
 	color: #ffda00;
 	margin: 0;
+}
+
+
+/* ------------------------------------ *
+ *  Partner
+/* ------------------------------------ */
+.partner-grid {
+	text-align: center;
+}
+.partner-grid .partner-item {
+	display: inline-block;
+	max-width: 46%;
+	margin: 10px 2%;
+}
+.partner-grid .partner-item img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (min-width: 768px) {
+	.partner-grid .partner-item {
+		max-width: 30%;
+		margin: 10px 1.5%;
+	}
+}
+
+@media (min-width: 992px) {
+	.partner-grid .partner-item {
+		max-width: 23%;
+		margin: 10px 1%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.partner-grid .partner-item {
+		max-width: 19%;
+		margin: 10px 0.5%;
+	}
 }

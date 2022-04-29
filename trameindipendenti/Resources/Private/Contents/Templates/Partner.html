@@ -3,9 +3,9 @@
 <f:layout name="Clean" />
 <f:section name="Main">
 
-    <div class="cc-item">
+    <div class="partner-item">
         <f:for each="{files}" as="image">
-            <f:link.typolink parameter="{data.header_link}" title="{image.title}" class="partners-carousel-item">
+            <f:link.typolink parameter="{data.header_link}" title="{image.title}">
                 <f:media class="cc-client-logo owl-lazy" file="{image}" alt="{image.alternative}" title="{image.title}" />
             </f:link.typolink>
         </f:for>
