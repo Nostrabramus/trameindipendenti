@@ -42,7 +42,9 @@ lib.topNavigation {
         }
     }
 }
-lib.specialNavigation.wrap = <nav> | </nav>
+
+lib.festivalNavigation < lib.topNavigation
+lib.festivalNavigation.10.entryLevel = 1
 
 #### Main Navigation ####
 lib.mainNavigation = COA
