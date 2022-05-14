@@ -9,6 +9,8 @@ lib.titles {
     patrocini.value = Partner <span class="bg-main bg-white text-red">Istituzionali</span>
     contributi = TEXT
     contributi.value = Con il <span class="bg-main text-white">Contributo</span> di
+    hashtags = TEXT
+    hashtags.value = #festival #cortometraggi #cinema #animazioni #documentari
     home {
         finalisti = TEXT
         finalisti.value = <h2 class="heading-title"><span class="bg-white text-red">corti</span>finalisti</h2><p>guardali tutti <i class="fas fa-arrow-right"></i></p>
@@ -77,5 +79,6 @@ lib.titles {
         partner.value = Our <span class="bg-main text-white">Partners</span>
         patrocini.value = Under the <span class="bg-main text-white">Patronage</span> of
         contributi.value = With the <span class="bg-main text-white">Support</span> of
+        hashtags.value = #festival #shortmovies #cinema #animation #documentary
     }
 [global]
