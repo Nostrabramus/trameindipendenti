@@ -5,7 +5,7 @@ lib.albodoro {
         pidInList = 5
         recursive = 3
         where = frame_class <> 'default' AND frame_class <> '' AND CType = 'trameindipendenti_card_film' AND colPos=3
-        orderBy = pid, frame_class
+        orderBy = pid DESC, frame_class
         languageField = sys_language_uid
     }
     renderObj = FLUIDTEMPLATE
