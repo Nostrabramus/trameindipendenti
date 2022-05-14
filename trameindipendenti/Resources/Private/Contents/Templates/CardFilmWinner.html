@@ -48,10 +48,10 @@
                             <div class="col-md-8">
                                 <h3 class="no-margin-top"><span class="bg-main text-white">{data.header}</span></h3>
                                 <ul class="list-unstyled">
-                                    <li>Regia: <strong>{data.subheader}</strong></li>
-                                    <li>Paese: <strong>{data.header_layout}</strong></li>
-                                    <li>Anno: <strong><f:format.date format="Y">{data.date}</f:format.date></strong></li>
-                                    <li>Genere: <strong>{data.header_position}</strong></li>
+                                    <li><f:cObject typoscriptObjectPath="lib.titles.film.regia" />: <strong>{data.subheader}</strong></li>
+                                    <li><f:cObject typoscriptObjectPath="lib.titles.film.paese" />: <strong>{data.header_layout}</strong></li>
+                                    <li><f:cObject typoscriptObjectPath="lib.titles.film.anno" />: <strong><f:format.date format="Y">{data.date}</f:format.date></strong></li>
+                                    <li><f:cObject typoscriptObjectPath="lib.titles.film.genere" />: <strong>{data.header_position}</strong></li>
                                 </ul>
                                 <f:format.html>{data.bodytext}</f:format.html>
                             </div>

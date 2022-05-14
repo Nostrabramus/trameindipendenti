@@ -45,6 +45,16 @@ lib.titles {
         documentari = TEXT
         documentari.value = categoria<span class="bg-white text-red">documentari</span>
     }
+    film {
+        regia = TEXT
+        regia.value = Regia
+        paese = TEXT
+        paese.value = Paese
+        anno = TEXT
+        anno.value = Anno
+        genere = TEXT
+        genere.value = Genere
+    }
 }
 
 [siteLanguage("languageId") == 1]
@@ -74,6 +84,12 @@ lib.titles {
             narrativi.value = category<span class="bg-white text-red">narrative</span>
             animazioni.value = category<span class="bg-red text-white">animation</span>
             documentari.value = category<span class="bg-white text-red">documentary</span>
+        }
+        film {
+            regia.value = Director
+            paese.value = Country
+            anno.value = Year
+            genere.value = Genre
         }
         giuria.value = Our <span class="bg-main text-white">Jury</span>
         partner.value = Our <span class="bg-main text-white">Partners</span>
