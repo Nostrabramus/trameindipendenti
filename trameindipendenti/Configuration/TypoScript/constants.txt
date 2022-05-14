@@ -10,7 +10,7 @@
 # cat=site/01_Images/1; type=string; label= url alla favicon
 favicon = EXT:trameindipendenti/Resources/Public/Icons/favicon.ico
 
-# cat=site/02_Pages/1; type=int; label= Id della pagina che contiene la Giuria della edizione in corso
+# cat=site/02_Pages/1; type=int; label= Id della pagina che contiene la l'edizione in corso
 id_festival =
 # cat=site/02_Pages/2; type=int; label= Id della pagina che contiene partner, patrocini, sponsor
 id_partners =
@@ -31,7 +31,7 @@ id_newsfolder =
 id_userfolder =
 
 # cat=site/04_Social/1; type=string; label= Link alla pagina Facebook
-facebook = https://www.facebook.com/
+facebook = https://www.facebook.com/trameindipendenti
 # cat=site/04_Social/2; type=string; label= Link all'account Twitter
 twitter = https://twitter.com/
 # cat=site/04_Social/3; type=string; label= Link all'account Instagram
@@ -44,7 +44,7 @@ vimeo =
 # cat=site/05_Contacts/1; type=string; label = Indirizzo email
 email = trameindipendenti@gmail.com
 # cat=site/05_Contacts/2; type=string; label = Indirizzo PEC
-pec = 
+pec = associazione@pec.trameindipendenti.it
 # cat=site/05_Contacts/3; type=string; label = Telefono
 tel = 
 # cat=site/05_Contacts/4; type=string; label = Fax
@@ -59,13 +59,13 @@ credits_it = website developed by <a href="https://github.com/Nostrabramus">Nost
 # cat=site/06_Footer/4; type=string; label = Credits ENG
 credits_en = sito web sviluppato da <a href="https://github.com/Nostrabramus">Nostrabramus</a>
 
-# cat=site/07_Counters/1; type=boolean; label = Cortometraggi selezionati
+# cat=site/07_Counters/1; type=int; label = Cortometraggi selezionati
 counter_movies = 1387
-# cat=site/07_Counters/2; type=boolean; label = Paesi in gara
+# cat=site/07_Counters/2; type=int; label = Paesi in gara
 counter_countries = 36
-# cat=site/07_Counters/3; type=boolean; label = Premi assegnati
+# cat=site/07_Counters/3; type=int; label = Premi assegnati
 counter_prizes = 12
-# cat=site/07_Counters/4; type=boolean; label = Proiezioni pubbliche
+# cat=site/07_Counters/4; type=int; label = Proiezioni pubbliche
 counter_screenings = 87
 
 # cat=site/08_Production/1; type=boolean; label = Production
