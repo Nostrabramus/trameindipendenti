@@ -52,7 +52,7 @@
 	float: left;
 	background-color: #FFF;
 	margin: 14px 0 0 14px;
-	padding: 0 15px 15px 0px;
+	padding: 0 10px 10px 0px;
 	pointer-events: initial;
 }
 #cd-logo img {
@@ -62,6 +62,7 @@
 @media (max-width: 768px) {
 	#cd-logo img {
 		max-height: 45px;
+		width: auto;
 	}
 }
 

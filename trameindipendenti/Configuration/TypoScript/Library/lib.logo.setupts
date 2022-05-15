@@ -2,7 +2,7 @@ lib.logo = IMAGE
 lib.logo {
     file = EXT:trameindipendenti/Resources/Public/Images/logo-trameindipendenti.png
     file.width = 58
-    file.height = 54
+    file.height = 58
     altText = Trame Indipendneti
     titleText = Trame Indipendneti
 }
