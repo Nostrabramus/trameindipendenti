@@ -1174,6 +1174,10 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 						'horror'
 					],
 					[
+						'Mockumentary',
+						'mockumentary'
+					],
+					[
 						'Noir',
 						'noir'
 					],
