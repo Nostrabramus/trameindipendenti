@@ -208,45 +208,25 @@
             </div> <!-- /.container -->
         </section>
 
-        <!-- TRA LEVARE ? -->
         <section class="video-demo-section split-box no-padding">
             <div class="container-fluid">
                 <div class="row bg-light-gray">
-
                     <div class="col-left col-xl-6 no-padding">
                         <div class="col-inner no-padding">
-
-                            <!-- Begin embed video (more info about reffering embed videos: https://www.feedthebot.com/pagespeed/defer-videos.htm) -->
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gyI5144ruKk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <!-- End embed video -->
-
-                        </div> <!-- /.col-inner -->
-                    </div> <!-- /.col -->
-
+                        </div>
+                    </div>
                     <div class="col-right col-xl-6 align-self-center no-padding">
                         <div class="col-inner">
-
-                            <!-- Begin Heading
-                            ===================
-                            * Use class "heading-center" or "heading-right" to align heading.
-                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
-                            -->
                             <div class="heading heading-xlg">
                                 <h2 class="heading-title text-dark">Teatro <span class="bg-main text-white">Rossi</span> Aperto</h2>
                             </div>
-                            <!-- End Heading -->
-
-                            <p class="lead">Cras elementum, lacus nec egestas ultrices, felis purus lacinia ante,
-                                sollicitudin viverra ex eros ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Ut sagittis elit odio, a ultrices dolor dignissim eu.</p>
-
-                        </div> <!-- /.col-inner -->
-                    </div> <!-- /.col -->
-
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.home.aboutus')}">
@@ -286,45 +266,29 @@
 
                     <div class="col-left col-lg-6">
                         <div class="col-inner">
-                            <!-- Begin Heading
-                            ===================
-                            * Use class "heading-center" or "heading-right" to align heading.
-                            * Use class "heading-xsm", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to set heading size.
-                            -->
                             <div class="heading heading-xlg margin-bottom-50">
-                                <h2 class="heading-title">Contatta<span class="bg-main text-white">Ci</span></h2>
+                                <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.home.contattaci" /></h2>
                             </div>
-                            <!-- End Heading -->
-
-                            <!-- Begin contact info -->
                             <div class="contact-info margin-bottom-50">
                                 <p><span class="ci-icon"><i class="fas fa-home"></i></span> Studio legale Orsitto, via Oberdan 129, 56127 Pisa. Italia</p>
                                 <p><span class="ci-icon"><i class="fas fa-envelope"></i></span> trameindipendenti@gmail.com</p>
                             </div>
-                            <!-- End contact info -->
-
-                            <!-- Begin social icons -->
-                            <div class="social-icons margin-bottom-50">
-                                <!-- <h5>Follow Us:</h5> -->
-
-                                <f:if condition="{settings.social.facebook}!=''">
-                                    <a href="{settings.social.facebook}" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Facebook">
-                                        <span class="btn-social-icon"><i class="fab fa-facebook"></i></span>
-                                    </a>
-                                </f:if>
-                                <f:if condition="{settings.social.instagram}!=''">
-                                    <a href="{settings.social.instagram}" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Instagram">
-                                        <span class="btn-social-icon"><i class="fab fa-instagram"></i></span>
-                                    </a>
-                                </f:if>
-                            </div>
-                            <!-- End social icons -->
-
-                        </div> <!-- /.col-inner -->
+                        </div>
                     </div>
 
                     <div class="col-right col-lg-6">
-                        <div class="col-inner">
+                        <div class="col-inner text-right">
+                            <h5><f:cObject typoscriptObjectPath="lib.titles.home.seguici" /></h5>
+                            <f:if condition="{settings.social.facebook}!=''">
+                                <a href="{settings.social.facebook}" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Facebook">
+                                    <span class="btn-social-icon"><i class="fab fa-facebook"></i></span>
+                                </a>
+                            </f:if>
+                            <f:if condition="{settings.social.instagram}!=''">
+                                <a href="{settings.social.instagram}" class="btn btn-social-min btn-light btn-rounded-5x btn-lg" target="_blank" title="Follow on Instagram">
+                                    <span class="btn-social-icon"><i class="fab fa-instagram"></i></span>
+                                </a>
+                            </f:if>
 
                             <f:cObject typoscriptObjectPath="lib.content.home.contacts" />
 

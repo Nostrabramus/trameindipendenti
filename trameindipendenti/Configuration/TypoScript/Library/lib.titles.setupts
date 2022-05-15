@@ -28,6 +28,10 @@ lib.titles {
         hall.value = Albo
         offame = TEXT
         offame.value = d'oro</h2>
+        contattaci = TEXT
+        contattaci.value = Contatta<span class="bg-main text-white">Ci</span>
+        seguici = TEXT
+        seguici.value = Seguici su:
     }
     festival {
         winner = TEXT
@@ -75,6 +79,8 @@ lib.titles {
             }
             hall.value = Hall
             offame.value = of Fame
+            contattaci.value = Contact <span class="bg-main text-white">Us</span>
+            seguici.value = Follow us:
         }
         festival {
             winner.value = <span class="bg-main text-white">Winning</span> Short Movies
