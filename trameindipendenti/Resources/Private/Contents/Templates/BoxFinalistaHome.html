@@ -4,7 +4,7 @@
 <f:section name="Main">
     <article class="blog-grid-item">
 
-        <a href="blog-single-post.html" class="bgi-image-wrap">
+        <a class="bgi-image-wrap">
             <div class="bgi-image">
                 <img src="/fileadmin{files.0.originalFile.identifier}" alt="{data.header}">
             </div>
@@ -12,11 +12,11 @@
 
         <div class="bgi-info">
             <div class="bgi-categories-wrap">
-                <a href="#" class="bgi-category">{data.subheader}</a>
+                <a class="bgi-category">{data.subheader}</a>
             </div>
             <div class="bgi-comment-count"><i class="far fa-comment"></i> 0</div>
             <h2 class="bgi-title">
-                <a href="#">{data.header}</a>
+                <a>{data.header}</a>
             </h2>
             <div class="bgi-meta">
                 <span class="published"><f:format.date format="Y">{data.date}</f:format.date></span>
@@ -25,7 +25,7 @@
             <div class="bgi-description">
                 <f:format.html>{data.bodytext}</f:format.html>
             </div>
-            <a href="blog-single-post.html" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Read More</a>
+            <a href="#" class="bgi-read-more btn btn-outline-dark btn-sm btn-rounded-5x">Read More</a>
         </div>
 
     </article>
