@@ -62,6 +62,7 @@
 *  Scroll to top button
 *  Card Movie
 *  Partner
+*  Cookie Bar
 */
 
 
@@ -7426,4 +7427,35 @@ select.form-control-sm:not([size]):not([multiple]) {
 		max-width: 19%;
 		margin: 10px 0.5%;
 	}
+}
+
+/* ------------------------------------ *
+ *  Cookie Bar
+/* ------------------------------------ */
+.cc-theme-edgeless {
+	background-color: #F20000 !important;
+}
+.cc-theme-edgeless .cc-btn.cc-allow-all {
+	background-color: #a70404 !important;
+}
+.cc-theme-edgeless .cc-window.cc-bottom-left {
+	left: 0.9rem;
+}
+.cc-theme-edgeless .cc-compliance .cc-btn {
+	color: #ffffff;
+}
+
+.dp--revoke.cc-bottom-left {
+	bottom: 0.6rem;
+	left: 0.6rem;
+	background-color: #ffffff !important;
+	border-radius: 0;
+	height: 60px;
+}
+.dp--revoke.cc-bottom-left .dp--icon-fingerprint,
+.dp--revoke.cc-bottom-left .dp--hover {
+	color: #F20000 !important;
+	font-size: 28px;
+	margin-right: 7px;
+	margin-left: 6px;
 }
