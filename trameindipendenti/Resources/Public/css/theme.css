@@ -814,8 +814,7 @@ section .container {
 
 .page-header-title span {
 	display: inline-block;
-	padding: 0px 10px;
-	margin-right: 5px;
+	padding: 0px;
 	vertical-align: text-top;
 }
 
