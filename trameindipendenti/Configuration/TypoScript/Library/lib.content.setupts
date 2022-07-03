@@ -185,6 +185,26 @@ lib.content {
                     }
                 }
             }
+            lanteri = CONTENT
+            lanteri {
+                table = tt_content
+                select {
+                    where = frame_class = 'LANT' AND CType = 'trameindipendenti_card_film'
+                    languageField = sys_language_uid
+                }
+                renderObj = FLUIDTEMPLATE
+                renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
             menzione = CONTENT
             menzione {
                 table = tt_content
