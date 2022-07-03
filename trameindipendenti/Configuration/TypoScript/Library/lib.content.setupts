@@ -88,7 +88,7 @@ lib.content {
         vincitori {
             table = tt_content
             select {
-                where = frame_class <> 'default' AND frame_class <> '' AND CType = 'trameindipendenti_card_film'
+                where = (frame_class = 'NP' OR frame_class = 'NJ') AND CType = 'trameindipendenti_card_film'
                 languageField = sys_language_uid
             }
             renderObj = FLUIDTEMPLATE
@@ -104,6 +104,109 @@ lib.content {
                 }
             }
         }
+        premispeciali {
+            animazioni = CONTENT
+            animazioni {
+                table = tt_content
+                select {
+                    where = (frame_class = 'AJ' OR frame_class = 'AP') AND CType = 'trameindipendenti_card_film'
+                    languageField = sys_language_uid
+                }
+                renderObj = FLUIDTEMPLATE
+                renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+            documentari = CONTENT
+            documentari {
+                table = tt_content
+                select {
+                    where = (frame_class = 'DJ' OR frame_class = 'DP') AND CType = 'trameindipendenti_card_film'
+                    languageField = sys_language_uid
+                }
+                renderObj = FLUIDTEMPLATE
+                renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+            arsenale = CONTENT
+            arsenale {
+                table = tt_content
+                select {
+                    where = frame_class = 'ARS' AND CType = 'trameindipendenti_card_film'
+                    languageField = sys_language_uid
+                }
+                renderObj = FLUIDTEMPLATE
+                renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+            centrostudicommediaitaliana = CONTENT
+            centrostudicommediaitaliana {
+                table = tt_content
+                select {
+                    where = frame_class = 'CSCI' AND CType = 'trameindipendenti_card_film'
+                    languageField = sys_language_uid
+                }
+                renderObj = FLUIDTEMPLATE
+                renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+            menzione = CONTENT
+            menzione {
+                table = tt_content
+                select {
+                    where = frame_class = 'MS' AND CType = 'trameindipendenti_card_film'
+                    languageField = sys_language_uid
+                }
+                renderObj = FLUIDTEMPLATE
+                renderObj {
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
+                    layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+        }
+
         giuria = COA
         giuria {
             10 < styles.content.get
