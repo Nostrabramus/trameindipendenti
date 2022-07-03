@@ -1246,6 +1246,10 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 						'CSCI'
 					],
 					[
+						'Premio Lanteri',
+						'LANT'
+					],
+					[
 						'Menzione Speciale',
 						'MS'
 					],
