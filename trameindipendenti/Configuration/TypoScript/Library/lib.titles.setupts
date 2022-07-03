@@ -36,6 +36,10 @@ lib.titles {
     festival {
         winner = TEXT
         winner.value = Cortometraggi <span class="bg-main text-white">Vincitori</span>
+        categorieWinner = TEXT
+        categorieWinner.value = Cortometraggi <span class="bg-main text-white">Vincitori</span> di Categoria
+        speciali = TEXT
+        speciali.value = Premi <span class="bg-main text-white">Speciali</span>
         prizeG = TEXT
         prizeG.value = Premio della <span class="bg-white text-main">Giuria</span>
         prizeP = TEXT
@@ -84,6 +88,8 @@ lib.titles {
         }
         festival {
             winner.value = <span class="bg-main text-white">Winning</span> Short Movies
+            categorieWinner.value = Categories <span class="bg-main text-white">Winning</span> Short Movies
+            speciali.value = Special <span class="bg-main text-white">Prizes</span>
             prizeG.value = <span class="bg-white text-main">Jury</span> Prize
             prizeP.value = <span class="bg-white text-main">Audience</span> Prize
             finalisti.value = <p class="margin-bottom-20">Short Movies</p><h2 class="heading-title">Finalists</h2>
