@@ -1238,6 +1238,18 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 						'DP'
 					],
 					[
+						'Premio Arsenale',
+						'ARS'
+					],
+					[
+						'Premio Centro Studi Commedia all\'Italiana',
+						'CSCI'
+					],
+					[
+						'Menzione Speciale',
+						'MS'
+					],
+					[
 						'',
 						''
 					]
