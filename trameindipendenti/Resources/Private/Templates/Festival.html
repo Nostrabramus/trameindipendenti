@@ -19,7 +19,7 @@
         </f:if>
 
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.vincitori')}">
-            <section class="padding-top-120 padding-bottom-120 winner">
+            <section class="winner">
                 <div class="container">
                     <div class="heading heading-lg heading-center margin-bottom-60">
                         <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.festival.winner" /></h2>
@@ -38,8 +38,64 @@
             </section>
         </f:if>
 
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.animazioni')}||{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.documentari')}">
+            <section class="winner">
+                <div class="container">
+                    <div class="heading heading-md heading-center margin-bottom-60">
+                        <h3 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.festival.categorieWinner" /></h3>
+                    </div>
+                </div>
+                <div class="container-fluid no-padding">
+                    <div class="portfolio-grid pgi-counter pgi-hover-color">
+                        <div class="tt-grid ttg-layout-4">
+                            <div class="tt-grid-items-wrap isotope-items-wrap">
+                                <div class="isotope-grid-sizer"></div>
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.animazioni')}">
+                                    <f:cObject typoscriptObjectPath="lib.content.festival.premispeciali.animazioni" />
+                                </f:if>
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.documentari')}">
+                                    <f:cObject typoscriptObjectPath="lib.content.festival.premispeciali.documentari" />
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </f:if>
+
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.arsenale')}||{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.centrostudicommediaitaliana')}||{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.menzione')}">
+            <section class="winner">
+                <div class="container">
+                    <div class="heading heading-md heading-center margin-bottom-60">
+                        <h3 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.festival.speciali" /></h3>
+                    </div>
+                </div>
+                <div class="container-fluid no-padding">
+                    <div class="portfolio-grid pgi-counter pgi-hover-color">
+                        <div class="tt-grid ttg-layout-3">
+                            <div class="tt-grid-items-wrap isotope-items-wrap">
+                                <div class="isotope-grid-sizer"></div>
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.arsenale')}">
+                                    <f:cObject typoscriptObjectPath="lib.content.festival.premispeciali.arsenale" />
+                                </f:if>
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.centrostudicommediaitaliana')}">
+                                    <f:cObject typoscriptObjectPath="lib.content.festival.premispeciali.centrostudicommediaitaliana" />
+                                </f:if>
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.lanteri')}">
+                                    <f:cObject typoscriptObjectPath="lib.content.festival.premispeciali.lanteri" />
+                                </f:if>
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.premispeciali.menzione')}">
+                                    <f:cObject typoscriptObjectPath="lib.content.festival.premispeciali.menzione" />
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </f:if>
+
         <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.content.festival.giuria')}">
-            <section class="team-section">
+            <section class="padding-top-120 team-section">
                 <div class="container">
                     <div class="heading heading-lg heading-center margin-bottom-60">
                         <h2 class="heading-title"><f:cObject typoscriptObjectPath="lib.titles.giuria" /></h2>

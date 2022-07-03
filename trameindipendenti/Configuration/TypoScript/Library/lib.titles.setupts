@@ -44,6 +44,22 @@ lib.titles {
         prizeG.value = Premio della <span class="bg-white text-main">Giuria</span>
         prizeP = TEXT
         prizeP.value = Premio del <span class="bg-white text-main">Pubblico</span>
+        prizeAJ = TEXT
+        prizeAJ.value = Premio della <span class="bg-white text-main">Giuria</span> Categoria <span class="bg-white text-main">Animazioni</span>
+        prizeAP = TEXT
+        prizeAP.value = Premio del <span class="bg-white text-main">Pubblico</span> Categoria <span class="bg-white text-main">Animazioni</span>
+        prizeDJ = TEXT
+        prizeDJ.value = Premio della <span class="bg-white text-main">Giuria</span> Categoria <span class="bg-white text-main">Documentari</span>
+        prizeDP = TEXT
+        prizeDP.value = Premio del <span class="bg-white text-main">Pubblico</span> Categoria <span class="bg-white text-main">Documentari</span>
+        prizeARS = TEXT
+        prizeARS.value = Premio Speciale <span class="bg-white text-main">Arsenale</span>
+        prizeCSCI = TEXT
+        prizeCSCI.value = Premio Speciale <span class="bg-white text-main">Centro Studi Commedia all'Italiana</span>
+        prizeLANT = TEXT
+        prizeLANT.value = Premio Speciale <span class="bg-white text-main">Lanteri</span>
+        prizeMS = TEXT
+        prizeMS.value = Menzione Speciale della <span class="bg-white text-main">Giuria</span>
         finalisti = TEXT
         finalisti.value = <p class="margin-bottom-20">Cortometraggi</p><h2 class="heading-title">Finalisti</h2>
         narrativi = TEXT
@@ -92,6 +108,14 @@ lib.titles {
             speciali.value = Special <span class="bg-main text-white">Prizes</span>
             prizeG.value = <span class="bg-white text-main">Jury</span> Prize
             prizeP.value = <span class="bg-white text-main">Audience</span> Prize
+            prizeAJ.value = Premio della <span class="bg-white text-main">Giuria</span> Categoria <span class="bg-white text-main">Animazioni</span>
+            prizeAP.value = Premio del <span class="bg-white text-main">Pubblico</span> Categoria <span class="bg-white text-main">Animazioni</span>
+            prizeDJ.value = Premio della <span class="bg-white text-main">Giuria</span> Categoria <span class="bg-white text-main">Documentari</span>
+            prizeDP.value = Premio del <span class="bg-white text-main">Pubblico</span> Categoria <span class="bg-white text-main">Documentari</span>
+            prizeARS.value = Special Prize <span class="bg-white text-main">Arsenale</span>
+            prizeCSCI.value = Special Prize <span class="bg-white text-main">Centro Studi Commedia all'Italiana</span>
+            prizeLANT.value = Special Prize <span class="bg-white text-main">Lanteri</span>
+            prizeMS.value = Special <span class="bg-white text-main">Jury</span> Mention
             finalisti.value = <p class="margin-bottom-20">Short Movies</p><h2 class="heading-title">Finalists</h2>
             narrativi.value = category<span class="bg-white text-red">narrative</span>
             animazioni.value = category<span class="bg-red text-white">animation</span>

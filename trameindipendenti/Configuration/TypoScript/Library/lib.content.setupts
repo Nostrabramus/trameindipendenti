@@ -114,7 +114,7 @@ lib.content {
                 }
                 renderObj = FLUIDTEMPLATE
                 renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinnerSpecial.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
                     dataProcessing {
@@ -134,7 +134,7 @@ lib.content {
                 }
                 renderObj = FLUIDTEMPLATE
                 renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinnerSpecial.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
                     dataProcessing {
@@ -154,7 +154,7 @@ lib.content {
                 }
                 renderObj = FLUIDTEMPLATE
                 renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinnerSpecial.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
                     dataProcessing {
@@ -174,7 +174,7 @@ lib.content {
                 }
                 renderObj = FLUIDTEMPLATE
                 renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinnerSpecial.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
                     dataProcessing {
@@ -194,7 +194,7 @@ lib.content {
                 }
                 renderObj = FLUIDTEMPLATE
                 renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinnerSpecial.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
                     dataProcessing {
@@ -214,7 +214,7 @@ lib.content {
                 }
                 renderObj = FLUIDTEMPLATE
                 renderObj {
-                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinner.html
+                    file = EXT:trameindipendenti/Resources/Private/Contents/Templates/CardFilmWinnerSpecial.html
                     partialRootPath = EXT:trameindipendenti/Resources/Private/Contents/Partials/
                     layoutRootPath = EXT:trameindipendenti/Resources/Private/Contents/Layouts/
                     dataProcessing {
