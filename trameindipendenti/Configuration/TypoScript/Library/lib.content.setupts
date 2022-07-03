@@ -88,7 +88,7 @@ lib.content {
         vincitori {
             table = tt_content
             select {
-                where = (frame_class = 'NP' OR frame_class = 'NJ') AND CType = 'trameindipendenti_card_film'
+                where = (frame_class = 'NP' OR frame_class = 'NJ' OR frame_class = 'NP,NJ') AND CType = 'trameindipendenti_card_film'
                 languageField = sys_language_uid
             }
             renderObj = FLUIDTEMPLATE
@@ -109,7 +109,7 @@ lib.content {
             animazioni {
                 table = tt_content
                 select {
-                    where = (frame_class = 'AJ' OR frame_class = 'AP') AND CType = 'trameindipendenti_card_film'
+                    where = (frame_class = 'AJ' OR frame_class = 'AP' OR frame_class = 'AJ,AP') AND CType = 'trameindipendenti_card_film'
                     languageField = sys_language_uid
                 }
                 renderObj = FLUIDTEMPLATE
@@ -129,7 +129,7 @@ lib.content {
             documentari {
                 table = tt_content
                 select {
-                    where = (frame_class = 'DJ' OR frame_class = 'DP') AND CType = 'trameindipendenti_card_film'
+                    where = (frame_class = 'DJ' OR frame_class = 'DP' OR frame_class = 'DJ,DP') AND CType = 'trameindipendenti_card_film'
                     languageField = sys_language_uid
                 }
                 renderObj = FLUIDTEMPLATE

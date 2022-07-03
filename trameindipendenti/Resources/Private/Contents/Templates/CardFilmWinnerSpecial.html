@@ -27,11 +27,17 @@
                                     <f:case value="AP">
                                         <h3 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAP" /> <f:format.date format="Y">{data.starttime}</f:format.date></h3>
                                     </f:case>
+                                    <f:case value="AJ,AP">
+                                        <h3 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeAJ" /> <f:cObject typoscriptObjectPath="lib.titles.festival.prizeAP" /> <f:format.date format="Y">{data.starttime}</f:format.date></h3>
+                                    </f:case>
                                     <f:case value="DJ">
                                         <h3 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDJ" /> <f:format.date format="Y">{data.starttime}</f:format.date></h3>
                                     </f:case>
                                     <f:case value="DP">
                                         <h3 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDP" /> <f:format.date format="Y">{data.starttime}</f:format.date></h3>
+                                    </f:case>
+                                    <f:case value="DJ,DP">
+                                        <h3 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeDJ" /> <f:cObject typoscriptObjectPath="lib.titles.festival.prizeDP" /> <f:format.date format="Y">{data.starttime}</f:format.date></h3>
                                     </f:case>
                                     <f:case value="ARS">
                                         <h3 class="heading-title text-white text-center"><f:cObject typoscriptObjectPath="lib.titles.festival.prizeARS" /> <f:format.date format="Y">{data.starttime}</f:format.date></h3>
