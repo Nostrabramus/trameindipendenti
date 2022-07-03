@@ -4,7 +4,7 @@ lib.albodoro {
     select {
         pidInList = 5
         recursive = 3
-        where = frame_class <> 'default' AND frame_class <> '' AND CType = 'trameindipendenti_card_film' AND colPos=3
+        where = (frame_class = 'NP' OR frame_class = 'NJ') AND CType = 'trameindipendenti_card_film' AND colPos=3
         orderBy = pid DESC, frame_class
         languageField = sys_language_uid
     }
