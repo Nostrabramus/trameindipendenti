@@ -15,7 +15,7 @@
 ====================
 *  Base Styles
 *  Page preloader
-*  Bage borders
+*  Page borders
 *  Body content
 *  Page content
 *  Headings
@@ -142,6 +142,9 @@ code {
 /* ------------------------------------------------------------- *
  *  Page preloader (display loading animation while page loads)
 /* ------------------------------------------------------------- */
+body > a {
+	display: none;
+}
 
 #preloader {
 	position: fixed;
@@ -186,7 +189,7 @@ code {
 
 
 /* ------------------------------------ *
- *  Bage borders
+ *  Page borders
 /* ------------------------------------ */
 
 .border-top, .border-bottom, .border-left, .border-right {
