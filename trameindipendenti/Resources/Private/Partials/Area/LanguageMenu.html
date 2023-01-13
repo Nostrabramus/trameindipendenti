@@ -1,10 +1,19 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:section name="Default">
-
     <div class="langMenu">
+        <a class="hamburger" href="#cd-language-nav" aria-label="Open language menu">
+            <span class="sr-only">Open language menu</span>
+            <i class="fas fa-globe-europe" aria-hidden="true"></i>
+        </a>
         <nav id="cd-language-nav">
+            <f:variable name="navWidth">60</f:variable>
             <ul id="language_menu" class="language-menu">
-                <f:for each="{languagenavigation}" as="item">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <f:for each="{languagenavigation}" as="item" iteration="iterator">
                     <li class="{f:if(condition: item.active, then: 'active')}{f:if(condition: item.available, else: 'inactive')}">
                         <f:if condition="{item.available}">
                             <f:then>
@@ -17,9 +26,9 @@
                             </f:else>
                         </f:if>
                     </li>
+                    <f:variable name="navWidth">{navWidth + 40}</f:variable>
                 </f:for>
             </ul>
         </nav>
     </div>
-
 </f:section>
