@@ -406,6 +406,9 @@ h6 [class*="bg-"]:hover {
 		font-size: 36px;
 	}
 }
+.removeFirst {
+	margin-left: -3px;
+}
 .removeFirst::first-letter {
 	font-size: 0;
 }
