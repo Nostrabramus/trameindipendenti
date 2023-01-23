@@ -406,11 +406,10 @@ h6 [class*="bg-"]:hover {
 		font-size: 36px;
 	}
 }
-.removeFirst {
-	margin-left: -3px;
-}
-.removeFirst::first-letter {
-	font-size: 0;
+.bgFirst::first-letter {
+	background-color: #f20000 !important;
+	color: #ffffff;
+	padding: 0 1rem !important;
 }
 
 /* ------------------------------------ *
