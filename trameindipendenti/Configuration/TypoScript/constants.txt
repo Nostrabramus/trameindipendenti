@@ -54,10 +54,18 @@ fax =
 copyright_it = © all right reserved by <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
 # cat=site/06_Footer/2; type=string; label = Copyright ENG
 copyright_en = © tutti i diritti riservati da <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
-# cat=site/06_Footer/3; type=string; label = Credits ITA
+# cat=site/06_Footer/3; type=string; label = Copyright ESP
+copyright_es = © todos los derechos reservados por <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
+# cat=site/06_Footer/4; type=string; label = Copyright FRA
+copyright_fr = © tous droits réservés par <a href="http://www.trameindipendenti.it/">Trame Indipendenti</a>
+# cat=site/06_Footer/5; type=string; label = Credits ITA
 credits_it = website developed by <a href="https://github.com/Nostrabramus">Nostrabramus</a>
-# cat=site/06_Footer/4; type=string; label = Credits ENG
+# cat=site/06_Footer/6; type=string; label = Credits ENG
 credits_en = sito web sviluppato da <a href="https://github.com/Nostrabramus">Nostrabramus</a>
+# cat=site/06_Footer/7; type=string; label = Credits ENG
+credits_es = sitio web desarrollado por <a href="https://github.com/Nostrabramus">Nostrabramus</a>
+# cat=site/06_Footer/8; type=string; label = Credits ENG
+credits_fr = site développé par <a href="https://github.com/Nostrabramus">Nostrabramus</a>
 
 # cat=site/07_Counters/1; type=int; label = Cortometraggi selezionati
 counter_movies = 1387

@@ -94,3 +94,17 @@ page.10 {
         credits.value = {$credits_en}
     }
 [global]
+
+[siteLanguage("languageId") == 2]
+    page.10.variables {
+        copyright.value = {$copyright_es}
+        credits.value = {$credits_es}
+    }
+[global]
+
+[siteLanguage("languageId") == 3]
+    page.10.variables {
+        copyright.value = {$copyright_fr}
+        credits.value = {$credits_fr}
+    }
+[global]
