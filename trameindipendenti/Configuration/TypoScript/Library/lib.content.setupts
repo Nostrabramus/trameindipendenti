@@ -82,7 +82,10 @@ lib.content {
         main = COA
         main {
             10 < styles.content.get
-            10.select.where = colPos=0
+            10.select {
+                where = colPos=0
+                languageField = sys_language_uid
+            }
         }
         vincitori = CONTENT
         vincitori {
