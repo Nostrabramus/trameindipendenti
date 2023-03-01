@@ -78,3 +78,7 @@ counter_screenings = 87
 
 # cat=site/08_Production/1; type=boolean; label = Production
 production = true
+
+styles.content.textmedia {
+    maxWInText = 480
+}
