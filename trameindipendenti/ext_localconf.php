@@ -39,6 +39,7 @@ if (TYPO3_MODE === 'BE') {
 	$icons = [
 		'slide' => 'slide.svg',
 		'accordion' => 'accordion.svg',
+		'child-item' => 'child-item.svg',
 		'card_film' => 'card_film.svg',
 		'card_giurato' => 'card_giurato.svg',
 		'partner' => 'partner.svg',

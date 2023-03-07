@@ -39,7 +39,7 @@ return [
 			'endtime' => 'endtime',
 		],
 		'typeicon_classes' => [
-			'default' => 'content-bootstrappackage-accordion-item',
+			'default' => 'child-item',
 		],
 		'searchFields' => 'header,bodytext',
 		'iconfile' => 'EXT:trameindipendenti/Resources/Public/Icons/accordion.svg',
