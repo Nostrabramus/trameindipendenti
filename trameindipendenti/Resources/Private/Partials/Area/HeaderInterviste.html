@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="Default">
+
+    <header id="tt-header" class="is-fixed">
+
+        <f:link.typolink parameter="{baseUrl}" additionalAttributes="{id:'cd-logo'}"><f:cObject typoscriptObjectPath="lib.logo" /></f:link.typolink>
+
+        <nav id="cd-top-nav">
+            <f:cObject typoscriptObjectPath="lib.festivalNavigation" />
+        </nav>
+
+        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-icon"></span></a>
+
+    </header>
+
+</f:section>

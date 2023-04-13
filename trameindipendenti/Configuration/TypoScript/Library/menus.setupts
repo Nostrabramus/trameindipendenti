@@ -46,6 +46,9 @@ lib.topNavigation {
 lib.festivalNavigation < lib.topNavigation
 lib.festivalNavigation.10.entryLevel = 1
 
+lib.intervisteNavigation < lib.topNavigation
+lib.intervisteNavigation.10.entryLevel = 1
+
 #### Main Navigation ####
 lib.mainNavigation = COA
 lib.mainNavigation {

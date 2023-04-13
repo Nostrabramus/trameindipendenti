@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Interviste" />
+<f:section name="Header">
+    <f:render partial="Area/PageHeader" section="Default" arguments="{_all}" />
+</f:section>
+<f:section name="Main">
+    <div id="page-content">
+        <section class="padding-top-120 padding-bottom-120">
+            <div class="container">
+                <f:cObject typoscriptObjectPath="lib.content.main" />
+            </div>
+        </section>
+    </div>
+</f:section>
+</html>
