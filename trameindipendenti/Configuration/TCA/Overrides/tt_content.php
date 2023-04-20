@@ -1186,6 +1186,10 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 						'sci-if'
 					],
 					[
+						'Satira',
+						'satire'
+					],
+					[
 						'Sperimentale',
 						'sperimental'
 					]
