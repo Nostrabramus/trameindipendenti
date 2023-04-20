@@ -68,9 +68,9 @@ credits_es = sitio web desarrollado por <a href="https://github.com/Nostrabramus
 credits_fr = site développé par <a href="https://github.com/Nostrabramus">Nostrabramus</a>
 
 # cat=site/07_Counters/1; type=int; label = Cortometraggi selezionati
-counter_movies = 1387
+counter_movies = 1586
 # cat=site/07_Counters/2; type=int; label = Paesi in gara
-counter_countries = 36
+counter_countries = 38
 # cat=site/07_Counters/3; type=int; label = Premi assegnati
 counter_prizes = 12
 # cat=site/07_Counters/4; type=int; label = Proiezioni pubbliche
