@@ -2176,7 +2176,7 @@ a.info-box:focus {
 
 /* info box text fixed height (shows only 3 lines) */
 .info-box-wrap.ib-fixed-text .info-box-text {
-	max-height: 6em;
+	max-height: 9em;
 	line-height: 1.5em;
 	font-size: 19px;
 	overflow: hidden;
