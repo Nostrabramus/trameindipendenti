@@ -71,11 +71,12 @@ Definiti in `Configuration/TCA/Overrides/tt_content.php`:
 - `sys_file_reference.layout` — campo aggiuntivo per variante logo partner (default/nero/bianco)
 
 ### Multilanguage
-Il sito supporta 4 lingue (languageId):
+Il sito supporta 5 lingue (languageId):
 - `0` → Italiano
 - `1` → Inglese
 - `2` → Spagnolo
 - `3` → Francese
+- `4` → Russo
 
 Copyright e credits nel footer sono localizzati per lingua. Il menu lingua è gestito tramite `LanguageMenuProcessor` in TypoScript.
 
