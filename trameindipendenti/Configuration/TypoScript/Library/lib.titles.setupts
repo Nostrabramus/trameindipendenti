@@ -240,3 +240,56 @@ lib.titles {
 
     }
 [global]
+
+[siteLanguage("languageId") == 4]
+    lib.titles {
+        hero.value (
+                <h1>Trame Indipendenti</h1>
+                <h2>Международный фестиваль независимого короткометражного кино</h2>
+            )
+        finalisti.value = Финалисты <span class="bg-main text-white">2025</span>
+        home {
+            finalisti.value = <h2 class="heading-title">короткометражные <span class="bg-white text-red">финалисты</span></h2><p>смотреть все <i class="fas fa-arrow-right"></i></p>
+            counter {
+                movies.value = Отобранные короткометражки
+                countries.value = Страны-участницы
+                prizes.value = Присуждённые награды
+                screenings.value = Публичные показы
+            }
+            hall.value = Доска
+            offame.value = почёта
+            contattaci.value = Свяжитесь <span class="bg-main text-white">с нами</span>
+            seguici.value = Следите за нами:
+        }
+        festival {
+            winner.value = Короткометражки <span class="bg-main text-white">победители</span>
+            categorieWinner.value = Короткометражки <span class="bg-main text-white">победители</span> по категориям
+            speciali.value = Специальные <span class="bg-main text-white">призы</span>
+            prizeG.value = Приз <span class="bg-white text-main">жюри</span>
+            prizeP.value = Приз <span class="bg-white text-main">зрителей</span>
+            prizeAJ.value = Приз <span class="bg-white text-main">жюри</span> категория <span class="bg-white text-main">анимация</span>
+            prizeAP.value = Приз <span class="bg-white text-main">зрителей</span> категория <span class="bg-white text-main">анимация</span>
+            prizeDJ.value = Приз <span class="bg-white text-main">жюри</span> категория <span class="bg-white text-main">документальный</span>
+            prizeDP.value = Приз <span class="bg-white text-main">зрителей</span> категория <span class="bg-white text-main">документальный</span>
+            prizeARS.value = Специальный приз <span class="bg-white text-main">Arsenale</span>
+            prizeCSCI.value = Специальный приз <span class="bg-white text-main">Centro Studi Commedia all'Italiana</span>
+            prizeLANT.value = Специальный приз <span class="bg-white text-main">Lanteri</span>
+            prizeMS.value = Специальное упоминание <span class="bg-white text-main">жюри</span>
+            finalisti.value = <p class="margin-bottom-20">Короткометражки</p><h2 class="heading-title">Финалисты</h2>
+            narrativi.value = категория<span class="bg-white text-red">нарративные</span>
+            animazioni.value = категория<span class="bg-red text-white">анимация</span>
+            documentari.value = категория<span class="bg-white text-red">документальные</span>
+        }
+        film {
+            regia.value = Режиссёр
+            paese.value = Страна
+            anno.value = Год
+            genere.value = Жанр
+        }
+        giuria.value = Наше <span class="bg-main text-white">жюри</span>
+        partner.value = Наши <span class="bg-main text-white">партнёры</span>
+        patrocini.value = Институциональные <span class="bg-main bg-white text-red">партнёры</span>
+        contributi.value = При <span class="bg-main text-white">поддержке</span>
+        hashtags.value = Международный фестиваль независимого короткометражного кино<br>#festival #shortfilms #cinema #анимация #документальные
+    }
+[global]
