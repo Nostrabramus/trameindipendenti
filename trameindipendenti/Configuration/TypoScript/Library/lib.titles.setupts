@@ -1,6 +1,6 @@
 lib.titles {
     finalisti = TEXT
-    finalisti.value = Finalisti <span class="bg-main text-white">2021</span>
+    finalisti.value = Finalisti <span class="bg-main text-white">2025</span>
     giuria = TEXT
     giuria.value = La nostra <span class="bg-main text-white">Giuria</span>
     partner = TEXT
@@ -87,7 +87,7 @@ lib.titles {
                 <h1>Trame Indipendenti</h1>
                 <h2>International independent short film festival</h2>
             )
-        finalisti.value = Finalists <span class="bg-main text-white">2021</span>
+        finalisti.value = Finalists <span class="bg-main text-white">2025</span>
         home {
             finalisti.value = <h2 class="heading-title">short movie <span class="bg-white text-red">finalists</span></h2><p>look at them all <i class="fas fa-arrow-right"></i></p>
             counter {
@@ -140,7 +140,7 @@ lib.titles {
                 <h1>Trame Indipendenti</h1>
                 <h2>Festival Internacional del cortometraje independiente</h2>
         )
-        finalisti.value = Finalistas <span class="bg-main text-white">2021</span>
+        finalisti.value = Finalistas <span class="bg-main text-white">2025</span>
         home {
             finalisti.value = <h2 class="heading-title">cortometrajes <span class="bg-white text-red">finalistas</span></h2><p>míralos a todos <i class="fas fa-arrow-right"></i></p>
             counter {
@@ -191,52 +191,52 @@ lib.titles {
     lib.titles {
         hero.value (
                 <h1>Trame Indipendenti</h1>
-                <h2>International independent short film festival</h2>
-                <h6>June 24, 2022 Pisa - Capannori - Castiglioncello - Vicopisano - Volterra</h6>
+                <h2>Festival internazional du Court-Métage Indépendant</h2>
         )
-        finalisti.value = Finalists <span class="bg-main text-white">2021</span>
+        finalisti.value = Finalistes<span class="bg-main text-white"> 2025</span>
         home {
-            finalisti.value = <h2 class="heading-title">short movie <span class="bg-white text-red">finalists</span></h2><p>look at them all <i class="fas fa-arrow-right"></i></p>
+            finalisti.value = <h2 class="heading-title"><span class="bg-white text-red">courts</span>finalistes</h2><p>regardez-les tous <i class="fas fa-arrow-right"></i></p>
             counter {
-                movies.value = Short Movies Selected
-                countries.value = Competing Countries
-                prizes.value = Awards Awarded
-                screenings.value = Public Screening
+                movies.value = Courts-métrages sélectionnés
+                countries.value = Pays en compétition
+                prizes.value = Prix décernés
+                screenings.value = Projections publiques
             }
-            hall.value = Hall
-            offame.value = of Fame
-            contattaci.value = Contact <span class="bg-main text-white">Us</span>
-            seguici.value = Follow us:
+            hall.value = Palma
+            offame.value = rès
+            contattaci.value = Contacte<span class="bg-main text-white">Ci</span>
+            seguici.value = Suivez-nous sur:
         }
         festival {
-            winner.value = <span class="bg-main text-white">Winning</span> Short Movies
-            categorieWinner.value = Categories <span class="bg-main text-white">Winning</span> Short Movies
-            speciali.value = Special <span class="bg-main text-white">Prizes</span>
-            prizeG.value = <span class="bg-white text-main">Jury</span> Prize
-            prizeP.value = <span class="bg-white text-main">Audience</span> Prize
-            prizeAJ.value = Premio della <span class="bg-white text-main">Giuria</span> Categoria <span class="bg-white text-main">Animazioni</span>
-            prizeAP.value = Premio del <span class="bg-white text-main">Pubblico</span> Categoria <span class="bg-white text-main">Animazioni</span>
-            prizeDJ.value = Premio della <span class="bg-white text-main">Giuria</span> Categoria <span class="bg-white text-main">Documentari</span>
-            prizeDP.value = Premio del <span class="bg-white text-main">Pubblico</span> Categoria <span class="bg-white text-main">Documentari</span>
-            prizeARS.value = Special Prize <span class="bg-white text-main">Arsenale</span>
-            prizeCSCI.value = Special Prize <span class="bg-white text-main">Centro Studi Commedia all'Italiana</span>
-            prizeLANT.value = Special Prize <span class="bg-white text-main">Lanteri</span>
-            prizeMS.value = Special <span class="bg-white text-main">Jury</span> Mention
-            finalisti.value = <p class="margin-bottom-20">Short Movies</p><h2 class="heading-title">Finalists</h2>
-            narrativi.value = category<span class="bg-white text-red">narrative</span>
-            animazioni.value = category<span class="bg-red text-white">animation</span>
-            documentari.value = category<span class="bg-white text-red">documentary</span>
+            winner.value = Courts-métrages<span class="bg-main text-white">gagnants</span>
+            categorieWinner.value = courts-métrages<span class="bg-main text-white">gagnants</span>de Catégorie
+            speciali.value = Prix<span class="bg-main text-white">spéciaux</span>
+            prizeG.value = Prix du<span class="bg-main text-white">Jury</span>
+            prizeP.value = Prix du <span class="bg-main text-white">Public</span>
+            prizeAJ.value = Prix du<span class="bg-main text-white">Jury</span> Catégorie <span class="bg-white text-main">Animations</span>
+            prizeAP.value = Prix du <span class="bg-main text-white">Public</span> Catégorie <span class="bg-white text-main">Animations</span>
+            prizeDJ.value = Prix du<span class="bg-main text-white">Jury</span> Catégorie <span class="bg-white text-main">Documentaires</span>
+            prizeDP.value = Prix du <span class="bg-main text-white">Public</span> Catégorie <span class="bg-white text-main">Documentaires</span>
+            prizeARS.value = Prix spécial <span class="bg-white text-main">Arsenale</span>
+            prizeCSCI.value = Prix spécial <span class="bg-white text-main">Centro Studi Commedia all'Italiana</span>
+            prizeLANT.value = Prix spécial <span class="bg-white text-main">Lanteri</span>
+            prizeMS.value = Mention spéciale du<span class="bg-white text-main">Jury</span>
+            finalisti.value = <p class="margin-bottom-20">Courts-métreges</p><h2 class="heading-title">Finalistes</h2>
+            narrativi.value = catégorie<span class="bg-white text-red">narratifs</span>
+            animazioni.value = catégorie<span class="bg-red text-white">animations</span>
+            documentari.value = catégorie<span class="bg-white text-red">documentaires</span>
         }
         film {
-            regia.value = Director
-            paese.value = Country
-            anno.value = Year
+            regia.value = Réalisation
+            paese.value = Pays
+            anno.value = Année
             genere.value = Genre
         }
-        giuria.value = Our <span class="bg-main text-white">Jury</span>
-        partner.value = Our <span class="bg-main text-white">Partners</span>
-        patrocini.value = Under the <span class="bg-main text-white">Patronage</span> of
-        contributi.value = With the <span class="bg-main text-white">Support</span> of
-        hashtags.value = Festival international du court métrage indépendant<br>#festival #shortmovies #cinema #animation #documentary
+        giuria.value = Notre<span class="bg-main text-white">Jury</span>
+        partner.value = Nos<span class="bg-main text-white">partenaires</span>
+        patrocini.value = Partenaires<span class="bg-main bg-white text-red">Institutionnels</span>
+        contributi.value = Avec la<span class="bg-main text-white">Contribution</span> de
+        hashtags.value = Festival internazional du Court-Métage Indépendant<br>#festival #Courtsmétrages #Cinéma #animations #Documentaires
+
     }
 [global]
