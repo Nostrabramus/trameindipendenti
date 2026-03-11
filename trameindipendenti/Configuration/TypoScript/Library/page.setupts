@@ -110,3 +110,10 @@ page.10 {
         credits.value = {$credits_fr}
     }
 [global]
+
+[siteLanguage("languageId") == 4]
+    page.10.variables {
+        copyright.value = {$copyright_ru}
+        credits.value = {$credits_ru}
+    }
+[global]
