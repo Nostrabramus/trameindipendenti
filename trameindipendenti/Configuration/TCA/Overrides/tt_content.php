@@ -764,8 +764,8 @@ $GLOBALS['TCA']['tt_content']['types']['trameindipendenti_card_film'] = array(
 						'Netherland Antilles'
 					],
 					[
-						'Netherlands',
-						'Netherlands (Holland, Europe)'
+						'Netherlands (Holland)',
+						'Netherlands'
 					],
 					[
 						'Nevis',
